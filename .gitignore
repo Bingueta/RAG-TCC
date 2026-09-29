@@ -1,0 +1,26 @@
+# Ambiente Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Configuracoes locais do Claude Code (lock e settings)
+.claude/
+
+# Credenciais e configuracoes locais
+.env
+
+# Indices e caches gerados (reconstruidos a partir do corpus)
+*.faiss
+*.npy
+chroma/
+data/indices/
+data/cache/
+
+# Dados sensiveis: nao versionar ate decisao do grupo
+data/analise_manual.json
+*.csv
+
+# Rascunhos e anotacoes locais
+docs/rascunhos/
