@@ -19,7 +19,7 @@ Ex.: - [x] 3.2 Validar campos obrigatórios do JSON — 2026-10-08, Lucas — `s
 
 | Parte | Status | Quem | Última atualização |
 |-------|--------|------|--------------------|
-| 1 — Dados e unitarização | Concluído (falta só abrir o pull request, tarefa 9.3) | Franklyn/Lucas | 2026-10-07 19:01 |
+| 1 — Dados e unitarização | Concluído (pull request aguardando revisão) | Franklyn/Lucas | 2026-10-07 19:04 |
 | 2 — Base de conhecimento e busca | Não iniciado | a definir | — |
 | 3 — Geração com LLM e validação | Não iniciado | a definir | — |
 | 4 — Orquestração, configuração e Excel | Fica para o final | a definir | — |
@@ -37,8 +37,8 @@ Ex.: - [x] 3.2 Validar campos obrigatórios do JSON — 2026-10-08, Lucas — `s
   - `unitarizar` roda nas 59 sem erro;
   - o corpus de calibração existe;
   - os testes passam.
-- **Status geral:** Concluído (falta só abrir o pull request, tarefa 9.3)
-- **Última atualização:** 2026-10-07 19:01 — por Franklyn/Lucas
+- **Status geral:** Concluído (pull request aguardando revisão)
+- **Última atualização:** 2026-10-07 19:04 — por Franklyn/Lucas
 
 ### Checklist
 
@@ -89,10 +89,10 @@ Ex.: - [x] 3.2 Validar campos obrigatórios do JSON — 2026-10-08, Lucas — `s
 **Etapa 9 — Fechamento**
 - [x] 9.1 Todos os testes da Parte 1 passam (`python -m pytest tests/`) — 2026-10-07, Franklyn/Lucas — 64 passed
 - [x] 9.2 Conferir cada item do critério de pronto — 2026-10-07, Franklyn/Lucas — resultado no log: 3 de 4 itens cumpridos; falta a calibração
-- [ ] 9.3 Abrir o pull request `[Parte 1] …` para a `main`, com revisão de outro membro
+- [~] 9.3 Abrir o pull request `[Parte 1] Dados e unitarização` para a `main`, com revisão de outro membro — 2026-10-07: branch enviada ao GitHub (commit `26409dc`); falta abrir o pull request pelo site e a revisão
 
 ### Próximo passo
-Franklyn pedir o commit e o push da branch `feature/parte-1-dados` e abrir o pull request `[Parte 1] Dados e unitarização`, com revisão de outro membro (tarefa 9.3).
+Abrir o pull request em https://github.com/Bingueta/RAG-TCC/pull/new/feature/parte-1-dados e pedir a revisão de outro membro do grupo; depois do merge, marcar a 9.3 como concluída.
 
 ### Pendências e dúvidas em aberto
 - Nenhuma no momento.
@@ -144,6 +144,12 @@ O checklist de cada parte é criado aqui, numa seção própria, quando ela come
 ## Registro de auditoria (log)
 
 Entradas em ordem cronológica, a mais recente no TOPO. Cada entrada indica a parte.
+
+### 2026-10-07 19:04 — Franklyn/Lucas — Parte 1
+- **Feito:** tarefa 9.3 (parcial): commit `26409dc` com todo o trabalho da Parte 1 e push da branch `feature/parte-1-dados`. O pull request não foi aberto pela linha de comando porque o `gh` não está instalado nesta máquina; precisa ser aberto pelo site.
+- **Arquivos:** nenhum alterado além deste registro
+- **Testes:** antes do commit: nenhum arquivo de `venv/`, `__pycache__/`, rascunhos, CSV ou análise manual incluído; o nome do banco de dados da hospedagem não aparece em nenhum arquivo enviado; `python -m pytest -q` → 64 passed.
+- **Observações / problemas:** a `main` não mudou desde a criação da branch, então não houve nada para trazer (`git pull`).
 
 ### 2026-10-07 19:01 — Franklyn/Lucas — Parte 1
 - **Feito:** resolvidos os 2 avisos do corpus: com autorização do Franklyn, acrescentado o ponto final no fim dos resumos D057 e D059 no original. Regenerado o `corpus.json`. Atualizada a observação no planejamento (seção 6.1). Critério de pronto da Parte 1 todo cumprido.
