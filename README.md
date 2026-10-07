@@ -9,25 +9,26 @@ Trabalho de Conclusão de Curso — Sistemas de Informação, Universidade Vale 
 
 Uma ferramenta que usa IA para **ajudar na análise de conteúdo** de resumos de dissertações: identificar as **duas temáticas principais** e as **metodologias** de cada uma, sempre mostrando a frase do resumo que justifica a resposta. A IA roda no próprio computador (via Ollama) e usa RAG, isto é, busca os trechos certos do resumo antes de responder, para não inventar.
 
-O grupo já fez uma análise manual (sem IA) de 59 dissertações. Depois de construir a ferramenta, o grupo vai analisar as mesmas 59 com a ajuda dela e comparar os resultados, para saber se com a IA ficou melhor.
+O grupo já fez uma análise manual (sem IA) de 59 dissertações. A ferramenta vai ser avaliada de duas formas: comparando as respostas da IA sozinha com a análise manual, e comparando a análise manual com uma nova análise do grupo feita com o apoio da ferramenta.
 
 ## Situação atual
 
-**Em planejamento.** Ainda não há código. O formato da ferramenta (chat, sugestões ou geração automática) ainda vai ser decidido pelo grupo.
+**Em planejamento.** Ainda não há código. A ferramenta vai ser **automática**: roda as 59 dissertações em lote e gera uma planilha Excel, que é comparada com a análise manual.
 
 ## Por onde começar
 
-1. Leia [docs/PLANEJAMENTO_TCC.md](docs/PLANEJAMENTO_TCC.md). A seção 2 é um glossário com os termos técnicos.
-2. Veja as **decisões em aberto** na seção 12 do planejamento. Elas serão discutidas em reunião.
-3. Se quiser entender as técnicas que vão ser usadas, leia [docs/TECNICAS_RAG_REFERENCIA.md](docs/TECNICAS_RAG_REFERENCIA.md).
+1. Leia [docs/CONTEXTO_DO_PROJETO.md](docs/CONTEXTO_DO_PROJETO.md): o projeto inteiro em uma página.
+2. Veja como o código foi dividido em 5 partes em [docs/divisao-tarefas.md](docs/divisao-tarefas.md).
+3. Os detalhes estão em [docs/PLANEJAMENTO_TCC.md](docs/PLANEJAMENTO_TCC.md). A seção 2 é um glossário com os termos técnicos.
+4. Se quiser entender as técnicas que vão ser usadas, leia [docs/TECNICAS_RAG_REFERENCIA.md](docs/TECNICAS_RAG_REFERENCIA.md).
 
 ## Estrutura das pastas
 
 | Pasta | O que vai ter |
 | --- | --- |
-| `data/` | Os dados: resumos das dissertações (`corpus.json`), base de metodologia e respostas da IA (`sugestoes/`) |
+| `data/` | Os dados: as 59 dissertações (original em `brutos/dissertacoes.json`, versão preparada em `corpus.json`), base de metodologia e respostas da IA (`sugestoes/`) |
 | `src/` | O código da ferramenta, uma parte por arquivo |
-| `app/` | A forma de usar a ferramenta (tela ou chat, conforme o formato escolhido) |
+| `tests/` | Testes automáticos e dados de exemplo (será criada com o código) |
 | `docs/` | Os documentos de planejamento |
 | `notebooks/` | Testes e análises exploratórias |
 

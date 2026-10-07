@@ -20,6 +20,7 @@ data/cache/
 
 # Dados sensiveis: nao versionar ate decisao do grupo
 data/analise_manual.json
+data/avaliacao/
 *.csv
 
 # Rascunhos e anotacoes locais

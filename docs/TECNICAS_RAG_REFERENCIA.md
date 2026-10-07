@@ -207,7 +207,7 @@ pergunta ─┬─ denso (FAISS/e5, top 50) ─┐
 
 ## 5. O que isso significa para o TCC
 
-O TCC trabalha com título, resumo e palavras-chave de 59 dissertações e ajuda a identificar a temática 1, a temática 2 e as metodologias de cada uma. O formato da ferramenta (chat, sugestões ou geração automática) ainda não foi decidido. Nem tudo do projeto de referência se aplica.
+O TCC trabalha com título, resumo e palavras-chave de 59 dissertações e ajuda a identificar a temática 1, a temática 2 e as metodologias de cada uma. A ferramenta é automática: roda em lote e gera uma planilha, sem chat. Nem tudo do projeto de referência se aplica.
 
 | Técnica | Aplicar no TCC? | Observação |
 | --- | --- | --- |
@@ -222,7 +222,7 @@ O TCC trabalha com título, resumo e palavras-chave de 59 dissertações e ajuda
 | Citação única em vez de por frase | Sim, com modelo de 3B | Com modelo maior, dá para exigir evidência por campo |
 | Token de abstenção + "não informado no resumo" | Sim | Muitos resumos não dizem o método |
 | Proteção contra degeneração, `temperature=0` | Sim | Mesmos modelos locais |
-| Roteador de 4 rotas, SQL de metadados | Depende do formato | Se a ferramenta só gerar sugestões (ou rodar automática), a tarefa é sempre a mesma e o roteador não é necessário. Se for chat, um roteador simples ajuda a separar perguntas de temáticas, de metodologias e perguntas livres |
+| Roteador de 4 rotas, SQL de metadados | Não | A ferramenta é automática e faz sempre a mesma tarefa; não há perguntas para rotear |
 | Golden set, matriz 2×2, curva risco-cobertura | Adaptar | A avaliação principal do TCC é a comparação com a análise manual, mas um mini-golden ajuda a calibrar a ferramenta antes de o grupo usá-la |
 | `config.py` único com justificativas | Sim | Ajuda a fixar e documentar a configuração usada pelo grupo |
-| Escolha de modelo por custo (qwen2.5:3b × qwen3:4b) | Revisar | Para interpretar metodologias, vale testar também um modelo de 7B–8B: a máquina prevista (RTX 2060 com 6 GB) deve comportar um 7B–8B compactado, a confirmar em teste. Se o formato for automático ou de sugestões prontas, a geração roda poucas vezes e a velocidade pesa menos; se for chat, a velocidade importa mais |
+| Escolha de modelo por custo (qwen2.5:3b × qwen3:4b) | Revisar | Para interpretar metodologias, vale testar também um modelo de 7B–8B: a máquina prevista (RTX 2060 com 6 GB) deve comportar um 7B–8B compactado, a confirmar em teste. Como a ferramenta é automática, a velocidade pesa menos, mas importa: cada combinação de modelo × técnica roda as 59 dissertações |
