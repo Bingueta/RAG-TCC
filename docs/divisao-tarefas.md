@@ -1,6 +1,6 @@
 # Divisão de tarefas do RAG
 
-**Situação:** proposta, com as decisões da seção 0 já tomadas e aguardando aprovação final do grupo. Nada do que está aqui foi implementado ainda.
+**Situação:** em execução. Ordem decidida na reunião: a **Parte 1** começa primeiro; as **Partes 4 e 5** ficam para o final.
 
 Este documento divide a construção do RAG em **5 partes**, uma por pessoa, que podem ser feitas **ao mesmo tempo**. Para isso funcionar, ele define os **contratos** (o formato exato dos dados que uma parte entrega para a outra) e os **dados de exemplo** (mocks) que cada parte usa para trabalhar sem esperar as outras.
 
@@ -18,7 +18,7 @@ Os conflitos entre o pedido desta etapa e o planejamento foram resolvidos assim.
 | --- | --- | --- |
 | C1 | Formato da ferramenta | **Automático:** roda em lote e gera planilha, sem chat e sem tela. A análise das 59 **por pessoas usando a ferramenta** continua planejada, depois desta etapa: os analistas consultam a planilha da IA como apoio. Esta divisão cobre a construção da ferramenta e a avaliação da **IA sozinha × análise manual** |
 | C2 | Evidência na planilha | A primeira aba (`respostas`) tem **exatamente as 6 colunas** pedidas. Evidências, status e versão do prompt ficam na segunda aba (`detalhes`) |
-| C3 | Ajuste sem "roubar" | Prompt e base metodológica são ajustados só com **3 a 5 dissertações de fora das 59** (o grupo consegue). Depois são fixados, e só então todos os modelos e técnicas rodam nas 59 |
+| C3 | Ajuste sem "roubar" | Prompt e base metodológica são ajustados só com dissertações **de fora das 59**: as **20 dissertações de 2022** em `data/calibracao/`. Depois são fixados, e só então todos os modelos e técnicas rodam nas 59 |
 | C4 | Formato da base metodológica | **JSON**: `data/base_metodologia.json` |
 | C5 | Respostas da análise manual | **Ficam para depois:** a professora vai enviar as respostas do grupo quando o RAG estiver pronto. Nesta etapa só importam as respostas da IA. A leitura do arquivo da professora fica como tarefa posterior da Parte 5 |
 | C6 | Formato do JSON real | O original `data/brutos/dissertacoes.json` fica intacto. A Parte 1 gera o `corpus.json` com `id` (D001 a D059, na ordem do original) e palavras-chave em lista; `ano` é opcional. Como o Forms identificava a dissertação pelo **título colado**, a ligação com as respostas humanas (depois) será feita pelo título |
@@ -333,14 +333,14 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 **Tarefas, em ordem:**
 
 1. `carregar_corpus`: ler o JSON e conferir os campos. Os `id` não podem repetir, e título e resumo não podem estar vazios. Em caso de problema, a mensagem de erro deve ser clara, por exemplo: *"D017 está sem resumo"*.
-2. `normalizar_texto`: padronizar Unicode (NFKC), espaços, quebras de linha e hífen de fim de linha ("investiga-\nção" vira "investigação").
+2. `normalizar_texto`: padronizar Unicode (NFC; o NFKC trocaria "n.º" por "n.o"), consertar aspas do Windows corrompidas, espaços, quebras de linha e hífen de fim de linha ("investiga-\nção" vira "investigação").
 3. `unitarizar`: dividir o resumo em frases com spaCy `pt_core_news_sm` e numerar F1, F2…. **Não descartar frases curtas.** O filtro de lixo do projeto de referência foi feito para PDF completo; num resumo, toda frase pode ser evidência.
 4. `preparar_corpus`: ler o original e gerar `data/corpus.json`:
    - criar o `id` de cada dissertação (D001 a D059, na ordem do original);
    - transformar as palavras-chave (texto separado por vírgulas) em lista;
    - remover sobras da cópia do PDF. Caso já conhecido: o resumo do 48º item ("Embornal de saberes e fazeres") termina com "Palavras-chave: Referências C".
 5. Verificações automáticas: avisar quando um resumo tiver "Palavras-chave", "Abstract" ou "Resumo" no meio do texto, quando for muito curto ou terminar sem ponto final. Só as dissertações marcadas precisam ser conferidas contra o PDF.
-6. Montar `data/calibracao/corpus_calibracao.json` com 3 a 5 dissertações **de fora das 59** (ex.: de 2022), no mesmo formato. Se elas estiverem só em PDF, extrair o texto com PyMuPDF.
+6. Montar `data/calibracao/corpus_calibracao.json` com as dissertações **de fora das 59** (o grupo trouxe as 20 de 2022, em `data/brutos/calibracao.json`), no mesmo formato, com ids C001…: `python -m src.preparar_dados --calibracao`.
 
 **Pronto quando:**
 
@@ -356,7 +356,9 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 - Os ids saem sequenciais (F1, F2, F3).
 - Um JSON com campo faltando gera erro com o `id` da dissertação.
 
-**Dificuldade:** fácil. Como as 59 já estão em JSON, esta parte ficou mais leve que as outras; ver a pergunta sobre o rebalanceamento na seção 7.
+**Dificuldade:** fácil. Como as 59 já estão em JSON, esta parte ficou mais leve que as outras.
+
+**Andamento:** [PROGRESSO.md](PROGRESSO.md).
 
 ### Parte 2 — Base de conhecimento e busca
 
@@ -481,7 +483,7 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 4. **Funções de métrica**, testadas com dados de exemplo:
    - **Metodologias:** separar os termos (por "; ", "," e " e "), normalizar com os `sinonimos` da base metodológica (para que "entrevistas semi-estruturadas" e "entrevista semiestruturada" contem como o mesmo termo) e calcular **precisão**, **revocação** e **F1** por dissertação e por eixo. Exemplo: a referência diz "qualitativa, estudo de caso, entrevista" e a IA diz "qualitativa, entrevista, questionário". Precisão = 2/3 (do que a IA disse, quanto estava certo). Revocação = 2/3 (do que a referência diz, quanto a IA achou).
    - **Temáticas:** **similaridade de sentido** (embeddings `multilingual-e5`) entre o par de temáticas da IA e o par de referência, como **par sem ordem**: compara as duas combinações possíveis e fica com a melhor.
-5. **Gabarito da calibração:** o grupo escreve a temática 1, a temática 2 e as metodologias das 3 a 5 dissertações de calibração (de fora das 59). A Parte 5 mede cada versão do prompt contra esse gabarito. Isso ajuda a Parte 3 a escolher o prompt **sem olhar as 59**.
+5. **Gabarito da calibração:** o grupo escreve a temática 1, a temática 2 e as metodologias das dissertações de calibração (de fora das 59; todas as 20 de 2022 ou uma parte delas, a combinar). A Parte 5 mede cada versão do prompt contra esse gabarito. Isso ajuda a Parte 3 a escolher o prompt **sem olhar as 59**.
 6. Relatório por execução e `comparar_execucoes`: uma tabela com modelos × técnicas lado a lado, mais um gráfico de barras por indicador.
 
 **Tarefas depois (quando a professora enviar as respostas da análise manual):**
@@ -537,7 +539,7 @@ RAG-TCC/
 ├── data/
 │   ├── brutos/dissertacoes.json   # original das 59 (não editar)
 │   ├── corpus.json                # Parte 1 (gerado a partir do original)
-│   ├── calibracao/                # Parte 1 (3 a 5 dissertações de fora das 59); o gabarito delas é da Parte 5
+│   ├── calibracao/                # Parte 1 (20 dissertações de 2022, de fora das 59); o gabarito delas é da Parte 5
 │   ├── base_metodologia.json      # Parte 2
 │   ├── indices/                   # Parte 2 (gerado, fora do git)
 │   ├── sugestoes/                 # Parte 4 (uma pasta por execução)
@@ -571,7 +573,7 @@ RAG-TCC/
 ### 6.2 Branches
 
 - `main`: a versão que funciona. **Protegida:** ninguém envia direto para ela, só por pull request aprovado.
-- Uma branch por parte: `parte-1`, `parte-2`, `parte-3`, `parte-4` e `parte-5`.
+- Uma branch por parte, no padrão `feature/parte-N-tema`: `feature/parte-1-dados`, `feature/parte-2-busca`, `feature/parte-3-geracao`, `feature/parte-4-execucao` e `feature/parte-5-avaliacao`.
 - A branch continua existindo depois de cada merge. Antes de começar uma tarefa nova, cada um traz as novidades da `main` para a sua branch.
 
 ### 6.3 Commits e pull requests
@@ -622,7 +624,7 @@ RAG-TCC/
 # uma vez só: baixar o repositório
 git clone https://github.com/Bingueta/RAG-TCC.git
 cd RAG-TCC
-git checkout parte-1            # troque pelo número da sua parte
+git checkout feature/parte-1-dados   # troque pela branch da sua parte
 
 # antes de cada tarefa: trazer as novidades da main
 git pull origin main
@@ -631,9 +633,9 @@ git pull origin main
 git status                      # ver o que mudou
 git add src/unitarizar.py       # adicionar só os arquivos da sua parte
 git commit -m "parte-1: adiciona divisão do resumo em frases"
-git push origin parte-1
+git push origin feature/parte-1-dados
 
-# no site do GitHub: "Compare & pull request" → base: main ← parte-1 → pedir revisão
+# no site do GitHub: "Compare & pull request" → base: main ← feature/parte-1-dados → pedir revisão
 ```
 
 ---
@@ -648,5 +650,5 @@ git push origin parte-1
 - [ ] Meta de recall@5 da busca (sugestão: 80%)
 - [ ] Limiar de similaridade para considerar que uma temática "acertou" (Parte 5)
 - [ ] Se as planilhas da IA (`data/sugestoes/`) vão para o GitHub. Recomendação: sim, porque são o registro da execução e não contêm respostas humanas
-- [ ] Quais 3 a 5 dissertações de fora das 59 entram na calibração
+- [ ] Quantas das 20 dissertações de calibração vão ter gabarito escrito pelo grupo (Parte 5)
 - [ ] Quem assume cada parte

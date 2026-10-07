@@ -26,15 +26,16 @@ O grupo já fez, sem IA, uma análise de conteúdo de **59 dissertações** (202
 | Item | Situação |
 | --- | --- |
 | Análise manual | Concluída (118 análises no Google Forms). As respostas serão enviadas pela professora depois que o RAG estiver pronto |
-| Dissertações em JSON | Prontas: `data/brutos/dissertacoes.json` |
+| Dissertações em JSON | Prontas: `data/brutos/dissertacoes.json` (original) e `data/corpus.json` (preparado) |
 | Planejamento | [PLANEJAMENTO_TCC.md](PLANEJAMENTO_TCC.md) |
-| Divisão do código em 5 partes | Proposta em [divisao-tarefas.md](divisao-tarefas.md), aguardando aprovação |
-| Código | Ainda não começou |
+| Divisão do código em 5 partes | Em execução: [divisao-tarefas.md](divisao-tarefas.md). Andamento em [PROGRESSO.md](PROGRESSO.md) |
+| Código | Parte 1 (dados e frases) com código pronto e testado; Partes 4 e 5 ficam para o final |
+| Calibração | 20 dissertações de 2022, de fora das 59: `data/brutos/calibracao.json` |
 
 ## Regras que não podem ser quebradas
 
 1. **A ferramenta nunca lê as respostas da análise manual** (`data/analise_manual.json`). Elas só servem para a avaliação. Um teste automático garante isso.
-2. **Sem "roubar":** prompt e base de metodologias são ajustados só com 3 a 5 dissertações **de fora das 59**.
+2. **Sem "roubar":** prompt e base de metodologias são ajustados só com as 20 dissertações de 2022 **de fora das 59** (`data/calibracao/`).
 3. **Fixar antes de medir:** prompt e base ficam fixos antes de rodar nas 59, e todos os modelos rodam com a mesma versão.
 4. **O `corpus.json` não muda** depois que a análise com a ferramenta começar.
 5. **Reprodutível:** todos os parâmetros num único `config.py`, com justificativa; `temperature=0` e `seed` fixa.
@@ -47,7 +48,7 @@ O grupo já fez, sem IA, uma análise de conteúdo de **59 dissertações** (202
 | `data/brutos/dissertacoes.json` | As 59 dissertações, como foram passadas do PDF. **Não editar** |
 | `data/corpus.json` | Versão preparada pelo programa, com `id` (D001 a D059) |
 | `data/base_metodologia.json` | Base de metodologias que o RAG consulta |
-| `data/calibracao/` | Dissertações de fora das 59, para ajustar o prompt |
+| `data/calibracao/` | As 20 dissertações de 2022 (de fora das 59), para ajustar o prompt |
 | `data/sugestoes/` | Planilhas geradas pela IA, uma pasta por execução |
 | `src/` | Código, um arquivo por etapa |
 | `tests/` | Testes automáticos e dados de exemplo |
