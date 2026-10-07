@@ -29,7 +29,7 @@ Construir uma ferramenta RAG, com a IA rodando no próprio computador, que **aju
 | Evidência | A frase do resumo que justifica uma temática ou uma metodologia |
 | Embeddings e índice | Transformar cada frase em números para o programa achar rapidamente as frases parecidas com uma pergunta. O índice é como o índice remissivo de um livro |
 | Prompt | As instruções escritas que o programa manda para o LLM |
-| Calibração | Ajustar o prompt e a base de metodologias usando 3 a 5 dissertações **de fora das 59**, para não "roubar" |
+| Calibração | Ajustar o prompt e a base de metodologias usando dissertações **de fora das 59** (as 20 de 2022), para não "roubar" |
 
 ## 3. Contexto
 
@@ -135,7 +135,8 @@ Observações sobre o original:
 - 59 dissertações, sem título repetido e sem campo vazio.
 - Os resumos têm entre 1.138 e 3.585 caracteres (cerca de 5 a 18 frases) e de 3 a 7 palavras-chave.
 - Alguns títulos estão todos em maiúsculas ou com quebra de linha no meio (itens 6, 48 e 52). Como o Forms identificava a dissertação pelo **título colado**, a ligação entre as respostas e o `id` precisa ignorar maiúsculas, espaços e quebras de linha.
-- Dois resumos terminam sem ponto final (itens 57 e 59). O texto parece completo, mas vale conferir no PDF.
+- Dois resumos terminavam sem ponto final (itens 57 e 59); o texto estava completo e o ponto foi acrescentado no original.
+- Aspas e apóstrofos curvos viraram caracteres invisíveis na cópia do PDF (11 casos, ex.: "Olhos D’água"); a preparação os conserta.
 - Uma busca simples por termos de método (qualitativa, quantitativa, entrevista, questionário, estudo de caso, bibliográfica, documental) encontrou algum desses termos em 48 dos 59 resumos. Os outros 11 merecem atenção, porque podem cair em "não informado no resumo" ou descrever o método com outras palavras.
 
 Não incluir autor nem orientador. Não editar o `corpus.json` depois que a análise com a ferramenta começar.
@@ -260,7 +261,7 @@ RAG-TCC/
 ├── data/
 │   ├── brutos/dissertacoes.json  # original das 59; não editar
 │   ├── corpus.json               # gerado a partir do original
-│   ├── calibracao/               # 3 a 5 dissertações de fora das 59
+│   ├── calibracao/               # 20 dissertações de 2022, de fora das 59
 │   ├── base_metodologia.json
 │   ├── indices/                  # gerado, fora do git
 │   ├── sugestoes/                # planilhas da IA, uma pasta por execução
@@ -278,7 +279,7 @@ A pasta `app/` fica sem uso enquanto não houver tela.
 
 ### 7.7 Ajustar a ferramenta sem "roubar"
 
-- Ajustar os prompts e a base metodológica com **3 a 5 dissertações de fora das 59** (ex.: de 2022), guardadas em `data/calibracao/`. Se o grupo ajustasse a ferramenta olhando as 59, ela ficaria boa justamente nelas, e a comparação ficaria injusta.
+- Ajustar os prompts e a base metodológica só com as **20 dissertações de 2022**, de fora das 59, guardadas em `data/calibracao/`. Se o grupo ajustasse a ferramenta olhando as 59, ela ficaria boa justamente nelas, e a comparação ficaria injusta.
 - Medir os modelos e as técnicas nas 59 é permitido. **Ajustar o prompt olhando a nota nas 59 não é.**
 - Antes de rodar nas 59, **fixar** prompt e base metodológica (com uma marca de versão no git). Todos os modelos e técnicas rodam com a mesma versão.
 - A versão usada pelos analistas na análise com a ferramenta também fica fixa do começo ao fim.
@@ -370,6 +371,5 @@ Rotina sugerida: reunião curta semanal, quadro de tarefas (GitHub Projects) e p
 - [ ] Se o tempo da análise manual foi registrado (mesmo que aproximado)
 - [ ] Quem faz a classificação às cegas e a nota de qualidade (grupo, orientadora ou ambos)
 - [ ] Quais modelos do Ollama cabem na máquina prevista (teste)
-- [ ] Quais dissertações de fora das 59 usar para a calibração
 - [ ] As demais decisões técnicas da seção 7 de [divisao-tarefas.md](divisao-tarefas.md)
 - [ ] Responsáveis por cada parte

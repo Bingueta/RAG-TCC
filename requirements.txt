@@ -1,0 +1,11 @@
+# Dependências do projeto (Python 3.11).
+# Instalação: python -m pip install -r requirements.txt
+# Cada parte acrescenta aqui o que usar, com a versão fixa (reprodutibilidade).
+
+# ===== PARTE 1: dados e unitarização =====
+spacy==3.8.16
+# Modelo de português do spaCy, usado para dividir os resumos em frases
+pt_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl
+
+# ===== Testes =====
+pytest==9.1.1
