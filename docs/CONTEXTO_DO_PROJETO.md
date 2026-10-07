@@ -29,7 +29,7 @@ O grupo já fez, sem IA, uma análise de conteúdo de **59 dissertações** (202
 | Dissertações em JSON | Prontas: `data/brutos/dissertacoes.json` (original) e `data/corpus.json` (preparado) |
 | Planejamento | [PLANEJAMENTO_TCC.md](PLANEJAMENTO_TCC.md) |
 | Divisão do código em 5 partes | Em execução: [divisao-tarefas.md](divisao-tarefas.md). Andamento em [PROGRESSO.md](PROGRESSO.md) |
-| Código | Parte 1 (dados e frases) com código pronto e testado; Partes 4 e 5 ficam para o final |
+| Código | Partes 1 (dados e frases) e 2 (base de metodologias e busca) prontas e testadas; próximas: Parte 3 (LLM) e Parte 4 (Excel) |
 | Calibração | 20 dissertações de 2022, de fora das 59: `data/brutos/calibracao.json` |
 
 ## Regras que não podem ser quebradas

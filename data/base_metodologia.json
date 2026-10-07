@@ -1,0 +1,226 @@
+[
+  {
+    "id": "pesquisa_basica",
+    "termo": "Pesquisa básica",
+    "eixo": "natureza",
+    "definicao": "Pesquisa que busca ampliar o conhecimento teórico sobre um tema, sem a intenção imediata de resolver um problema prático.",
+    "sinais": ["contribuir para o debate teórico", "ampliar o conhecimento", "reflexão teórica", "discussão conceitual"],
+    "sinonimos": ["pesquisa pura", "pesquisa fundamental", "natureza básica"]
+  },
+  {
+    "id": "pesquisa_aplicada",
+    "termo": "Pesquisa aplicada",
+    "eixo": "natureza",
+    "definicao": "Pesquisa que produz conhecimento para resolver um problema prático e concreto, muitas vezes de uma instituição, comunidade ou política pública.",
+    "sinais": ["propor ações", "subsidiar políticas públicas", "produto técnico", "proposta de intervenção", "aplicação prática"],
+    "sinonimos": ["natureza aplicada"]
+  },
+  {
+    "id": "pesquisa_exploratoria",
+    "termo": "Pesquisa exploratória",
+    "eixo": "objetivos",
+    "definicao": "Pesquisa que busca maior familiaridade com um tema pouco estudado, para torná-lo mais claro ou levantar hipóteses.",
+    "sinais": ["tema pouco estudado", "aproximação inicial", "explorar", "levantar hipóteses", "primeiras aproximações"],
+    "sinonimos": ["estudo exploratório", "caráter exploratório"]
+  },
+  {
+    "id": "pesquisa_descritiva",
+    "termo": "Pesquisa descritiva",
+    "eixo": "objetivos",
+    "definicao": "Pesquisa que descreve as características de uma população, grupo ou fenômeno, ou estabelece relações entre variáveis, sem buscar explicar as causas.",
+    "sinais": ["descrever", "caracterizar", "perfil", "identificar as características", "levantar dados sobre"],
+    "sinonimos": ["estudo descritivo", "caráter descritivo"]
+  },
+  {
+    "id": "pesquisa_explicativa",
+    "termo": "Pesquisa explicativa",
+    "eixo": "objetivos",
+    "definicao": "Pesquisa que busca identificar os fatores que causam ou contribuem para a ocorrência de um fenômeno.",
+    "sinais": ["fatores que determinam", "causas", "explicar por que", "relação de causa e efeito", "fatores associados"],
+    "sinonimos": ["estudo explicativo", "caráter explicativo"]
+  },
+  {
+    "id": "abordagem_qualitativa",
+    "termo": "Abordagem qualitativa",
+    "eixo": "abordagem",
+    "definicao": "Abordagem que busca compreender significados, percepções, experiências e práticas, trabalhando com falas, textos e observações, sem foco em medir.",
+    "sinais": ["compreender", "percepções", "significados", "vivências", "experiências dos participantes", "narrativas"],
+    "sinonimos": ["pesquisa qualitativa", "estudo qualitativo", "natureza qualitativa"]
+  },
+  {
+    "id": "abordagem_quantitativa",
+    "termo": "Abordagem quantitativa",
+    "eixo": "abordagem",
+    "definicao": "Abordagem que mede e quantifica fenômenos, trabalhando com números, amostras e testes estatísticos.",
+    "sinais": ["amostra de", "variáveis", "percentual", "índice", "correlação", "dados numéricos", "estatisticamente significativo"],
+    "sinonimos": ["pesquisa quantitativa", "estudo quantitativo", "natureza quantitativa"]
+  },
+  {
+    "id": "abordagem_mista",
+    "termo": "Abordagem mista",
+    "eixo": "abordagem",
+    "definicao": "Abordagem que combina dados e técnicas qualitativas e quantitativas na mesma pesquisa.",
+    "sinais": ["quali-quantitativa", "qualitativa e quantitativa", "dados qualitativos e quantitativos", "métodos mistos"],
+    "sinonimos": ["pesquisa quali-quantitativa", "abordagem quali-quantitativa", "métodos mistos", "abordagem qualiquantitativa"]
+  },
+  {
+    "id": "pesquisa_bibliografica",
+    "termo": "Pesquisa bibliográfica",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa feita a partir de material já publicado, como livros, artigos, teses e dissertações.",
+    "sinais": ["revisão de literatura", "levantamento bibliográfico", "autores como", "à luz de", "referencial teórico"],
+    "sinonimos": ["revisão bibliográfica", "revisão de literatura", "estudo bibliográfico"]
+  },
+  {
+    "id": "pesquisa_documental",
+    "termo": "Pesquisa documental",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa feita a partir de documentos que ainda não receberam tratamento analítico, como leis, relatórios, atas, processos, prontuários e registros oficiais.",
+    "sinais": ["leis", "decretos", "relatórios", "atas", "processos judiciais", "registros", "documentos oficiais", "jurisprudência"],
+    "sinonimos": ["estudo documental"]
+  },
+  {
+    "id": "estudo_de_caso",
+    "termo": "Estudo de caso",
+    "eixo": "procedimento",
+    "definicao": "Investigação aprofundada de um ou de poucos casos (uma instituição, um grupo, um município, um programa) em seu contexto real.",
+    "sinais": ["o caso de", "em uma escola de", "na cidade de", "no município de", "em uma instituição", "caso estudado"],
+    "sinonimos": ["estudo de caso único", "estudo de casos múltiplos", "estudo de casos"]
+  },
+  {
+    "id": "levantamento",
+    "termo": "Levantamento (survey)",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa que interroga diretamente um número grande de pessoas, em geral com questionário, para conhecer opiniões, comportamentos ou características.",
+    "sinais": ["aplicação de questionário", "respondentes", "amostra de", "pesquisa de opinião", "participaram da pesquisa"],
+    "sinonimos": ["survey", "pesquisa de levantamento", "levantamento de campo"]
+  },
+  {
+    "id": "pesquisa_acao",
+    "termo": "Pesquisa-ação",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa em que pesquisador e participantes atuam juntos para resolver um problema coletivo, intervindo na realidade enquanto a estudam.",
+    "sinais": ["intervenção", "participação dos sujeitos", "ação coletiva", "ciclos de planejamento e ação", "construção conjunta"],
+    "sinonimos": ["pesquisa ação", "pesquisa-intervenção"]
+  },
+  {
+    "id": "pesquisa_etnografica",
+    "termo": "Pesquisa etnográfica",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa em que o pesquisador convive com um grupo por um período para compreender sua cultura, seus costumes e seu modo de vida.",
+    "sinais": ["imersão", "trabalho de campo", "diário de campo", "convivência", "cotidiano da comunidade"],
+    "sinonimos": ["etnografia", "estudo etnográfico"]
+  },
+  {
+    "id": "pesquisa_experimental",
+    "termo": "Pesquisa experimental",
+    "eixo": "procedimento",
+    "definicao": "Pesquisa em que o pesquisador manipula uma ou mais variáveis e compara grupos (por exemplo, experimental e controle) para observar os efeitos.",
+    "sinais": ["grupo controle", "grupo experimental", "intervenção controlada", "pré-teste e pós-teste", "variável independente"],
+    "sinonimos": ["experimento", "estudo experimental", "quase-experimental"]
+  },
+  {
+    "id": "entrevista_estruturada",
+    "termo": "Entrevista estruturada",
+    "eixo": "coleta",
+    "definicao": "Entrevista com perguntas fixas, feitas na mesma ordem e com as mesmas palavras para todos os entrevistados.",
+    "sinais": ["roteiro fechado", "perguntas padronizadas", "formulário"],
+    "sinonimos": ["entrevistas estruturadas", "entrevista padronizada"]
+  },
+  {
+    "id": "entrevista_semiestruturada",
+    "termo": "Entrevista semiestruturada",
+    "eixo": "coleta",
+    "definicao": "Entrevista com um roteiro de perguntas, mas com liberdade para o entrevistado desenvolver as respostas e para o entrevistador aprofundar temas.",
+    "sinais": ["roteiro de entrevista", "roteiro semiestruturado", "entrevistados", "foram entrevistados", "foram realizadas entrevistas"],
+    "sinonimos": ["entrevistas semiestruturadas", "entrevista semi-estruturada", "entrevistas semi-estruturadas"]
+  },
+  {
+    "id": "entrevista_aberta",
+    "termo": "Entrevista aberta",
+    "eixo": "coleta",
+    "definicao": "Entrevista sem roteiro fixo, em que o entrevistado fala livremente sobre um tema proposto, como nas entrevistas em profundidade e nas narrativas de vida.",
+    "sinais": ["fala livre", "histórias de vida", "relatos", "entrevista em profundidade", "narrativas dos participantes"],
+    "sinonimos": ["entrevista não estruturada", "entrevista em profundidade", "entrevista livre"]
+  },
+  {
+    "id": "questionario",
+    "termo": "Questionário",
+    "eixo": "coleta",
+    "definicao": "Conjunto de perguntas escritas respondidas pelo próprio participante, em papel ou online, com questões fechadas, abertas ou escalas.",
+    "sinais": ["questionário", "formulário online", "escala de", "questões fechadas", "respondentes", "Google Forms"],
+    "sinonimos": ["questionários", "questionário estruturado", "questionário online"]
+  },
+  {
+    "id": "grupo_focal",
+    "termo": "Grupo focal",
+    "eixo": "coleta",
+    "definicao": "Discussão em grupo, conduzida por um moderador, sobre um tema específico, para captar opiniões e a interação entre os participantes.",
+    "sinais": ["grupos focais", "discussão em grupo", "rodas de conversa", "moderador"],
+    "sinonimos": ["grupos focais", "grupo de discussão"]
+  },
+  {
+    "id": "observacao",
+    "termo": "Observação",
+    "eixo": "coleta",
+    "definicao": "Registro sistemático do que acontece no ambiente estudado, podendo o pesquisador participar ou não das atividades observadas.",
+    "sinais": ["observação participante", "diário de campo", "observações", "registro em campo", "notas de campo"],
+    "sinonimos": ["observação participante", "observação não participante", "observação direta"]
+  },
+  {
+    "id": "analise_documental",
+    "termo": "Análise documental",
+    "eixo": "coleta",
+    "definicao": "Coleta de dados a partir de documentos (leis, relatórios, prontuários, planos, atas, processos), usados como fonte de informação.",
+    "sinais": ["análise de documentos", "documentos institucionais", "prontuários", "legislação", "relatórios oficiais"],
+    "sinonimos": ["levantamento documental", "fontes documentais"]
+  },
+  {
+    "id": "dados_secundarios",
+    "termo": "Dados secundários",
+    "eixo": "coleta",
+    "definicao": "Uso de dados já coletados por outras fontes, como bases públicas, censos, sistemas de informação e registros administrativos.",
+    "sinais": ["IBGE", "DATASUS", "censo", "base de dados", "indicadores oficiais", "sistema de informação"],
+    "sinonimos": ["fontes secundárias", "dados de bases públicas"]
+  },
+  {
+    "id": "analise_de_conteudo",
+    "termo": "Análise de conteúdo",
+    "eixo": "analise",
+    "definicao": "Técnica de análise de textos e falas que organiza o material em unidades e categorias para fazer inferências, conforme Bardin.",
+    "sinais": ["Bardin", "categorias de análise", "unidades de registro", "categorização", "pré-análise"],
+    "sinonimos": ["análise de conteúdo de Bardin", "análise de conteúdo temática"]
+  },
+  {
+    "id": "analise_do_discurso",
+    "termo": "Análise do discurso",
+    "eixo": "analise",
+    "definicao": "Análise que estuda como a linguagem produz sentidos, considerando quem fala, de onde fala e o contexto social e histórico.",
+    "sinais": ["discurso", "produção de sentidos", "enunciados", "formação discursiva", "Foucault", "Pêcheux"],
+    "sinonimos": ["análise de discurso", "análise discursiva", "análise crítica do discurso"]
+  },
+  {
+    "id": "analise_tematica",
+    "termo": "Análise temática",
+    "eixo": "analise",
+    "definicao": "Análise qualitativa que identifica, organiza e interpreta os temas que se repetem nos dados.",
+    "sinais": ["temas emergentes", "eixos temáticos", "núcleos temáticos", "temáticas que emergiram"],
+    "sinonimos": ["análise por temas"]
+  },
+  {
+    "id": "estatistica_descritiva",
+    "termo": "Estatística descritiva",
+    "eixo": "analise",
+    "definicao": "Resumo dos dados numéricos por meio de frequências, percentuais, médias, desvios e gráficos.",
+    "sinais": ["frequência", "percentual", "média", "desvio padrão", "tabelas e gráficos"],
+    "sinonimos": ["análise estatística descritiva", "análise descritiva"]
+  },
+  {
+    "id": "estatistica_inferencial",
+    "termo": "Estatística inferencial",
+    "eixo": "analise",
+    "definicao": "Uso de testes estatísticos para tirar conclusões sobre uma população a partir de uma amostra, verificando relações e diferenças.",
+    "sinais": ["teste qui-quadrado", "regressão", "correlação", "p-valor", "significância estatística", "teste t"],
+    "sinonimos": ["análise estatística inferencial", "testes estatísticos"]
+  }
+]

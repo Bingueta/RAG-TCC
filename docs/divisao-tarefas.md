@@ -1,6 +1,6 @@
 # Divisão de tarefas do RAG
 
-**Situação:** em execução. Ordem decidida na reunião: a **Parte 1** começa primeiro; as **Partes 4 e 5** ficam para o final.
+**Situação:** em execução. **Objetivo atual: gerar o Excel** com a maior precisão possível (Partes 1 a 4). A avaliação da precisão (Parte 5, gabaritos e recall@5) fica para depois de tudo pronto.
 
 Este documento divide a construção do RAG em **5 partes**, uma por pessoa, que podem ser feitas **ao mesmo tempo**. Para isso funcionar, ele define os **contratos** (o formato exato dos dados que uma parte entrega para a outra) e os **dados de exemplo** (mocks) que cada parte usa para trabalhar sem esperar as outras.
 
@@ -65,13 +65,13 @@ Cada técnica é um valor de configuração (`tecnica`). Todas vêm do projeto d
 | Técnica | Como funciona | Obrigatória? |
 | --- | --- | --- |
 | `sem_rag` | Manda o resumo inteiro, sem busca e sem base metodológica. É a **linha de base**, que mostra se o RAG faz diferença | Sim |
-| `denso` | Busca por sentido: embeddings `multilingual-e5` com prefixos `query:` e `passage:`, mais FAISS | Sim |
+| `denso` | Busca por sentido: embeddings `multilingual-e5` com prefixos `query:` e `passage:`, comparados com NumPy | Sim |
 | `hibrido` | Busca por sentido + busca por palavra exata (BM25), juntas por RRF (k = 60) | Sim |
 | `hibrido_rerank` | `hibrido` + reordenação com o reranker `bge-reranker-v2-m3` | Opcional, se sobrar tempo |
 
 ### Pontos em aberto sobre o RAG
 
-- **A base metodológica ainda não existe.** Ela é escrita pela Parte 2, com revisão da orientadora. Sem ela, as técnicas `denso` e `hibrido` só buscam frases do resumo.
+- **A base metodológica** v1 foi escrita a partir de manuais de metodologia (`data/base_metodologia.json`); o grupo pode trocá-la por uma versão própria.
 - **Talvez o ganho do RAG nas temáticas seja pequeno**, justamente porque o resumo é curto. A comparação com `sem_rag` vai mostrar isso, e esse já é um resultado para o TCC.
 
 ---
@@ -370,10 +370,10 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 
 **Tarefas, em ordem:**
 
-1. Escrever `data/base_metodologia.json` com os eixos e termos da seção 6.3 do planejamento: definição, sinais e sinônimos de cada termo. Pedir revisão da orientadora. **Ajustar só olhando dissertações de calibração.**
+1. Escrever `data/base_metodologia.json` com os eixos e termos da seção 6.3 do planejamento: definição, sinais e sinônimos de cada termo. **Ajustar só olhando dissertações de calibração.**
 2. `carregar_base`: ler e conferir a base (eixo válido, `id` sem repetição).
 3. `recuperar(..., tecnica="sem_rag")`: devolver todas as frases e nenhum verbete. É a linha de base.
-4. `construir_indice`: gerar os embeddings com `multilingual-e5` (prefixo `passage:` nos textos, vetores normalizados) e montar um índice FAISS `IndexFlatIP` para frases e outro para verbetes. Salvar em `data/indices/`.
+4. `construir_indice`: gerar os embeddings com `multilingual-e5` (prefixo `passage:` nos textos, vetores normalizados) e salvar os vetores das frases e dos verbetes em NumPy (decidido: sem FAISS, que dá o mesmo resultado). Salvar em `data/indices/`.
 5. `recuperar(..., tecnica="denso")`: usar perguntas fixas, com prefixo `query:`. Exemplos: "procedimentos metodológicos, coleta de dados, participantes, análise dos dados" para metodologias; "objetivo e objeto de estudo da pesquisa" e o próprio título para temáticas. Depois buscar os verbetes mais parecidos com as frases de método encontradas.
 6. `recuperar(..., tecnica="hibrido")`: acrescentar BM25 (sugestão: biblioteca `rank-bm25`, mais simples que o SQLite FTS5 do projeto de referência) e juntar as listas com RRF (k = 60).
 7. Avaliar a busca na calibração: marcar à mão quais frases de cada resumo descrevem o método e medir o **recall@5**, isto é, quantas das frases certas aparecem entre as 5 primeiras.
@@ -383,8 +383,7 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 
 - [ ] As 3 técnicas obrigatórias funcionam.
 - [ ] O índice é reconstruído com um comando (`python -m src.indexar`).
-- [ ] O recall@5 das frases de método na calibração foi medido e registrado, com uma meta a combinar (sugestão: 80% ou mais).
-- [ ] A base metodológica foi revisada.
+- [ ] (Pausado, depende do gabarito) O recall@5 das frases de método na calibração foi medido e registrado.
 
 **Como testar sozinha:** com `frases_exemplo.json` e `base_metodologia_exemplo.json`. Testes sugeridos:
 
@@ -397,6 +396,10 @@ Cada parte tem: objetivo, arquivos, entradas e saídas, tarefas em ordem, crité
 ### Parte 3 — Geração com LLM e validação
 
 **Objetivo:** transformar dissertação + contexto numa `RespostaIA` válida, com evidências que existem de verdade no resumo.
+
+**Requisitos combinados com o grupo:**
+- **Comparar LLMs de forças diferentes:** rodar com um modelo mais fraco, um mais forte e um mais potente (ex.: `qwen2.5:3b`, `qwen2.5:7b` e `qwen2.5:14b`, a confirmar na máquina), trocando por configuração, para ver se a qualidade do Excel muda.
+- **Metodologias incomuns:** a base de metodologias é referência, não lista fechada. O LLM pode interpretar e nomear metodologias pouco comuns ou com nome de autor, como o resumo descreve, sempre com a frase que justifica. Se o resumo não diz o método: "Não informado no resumo".
 
 **Arquivos:** `src/sugerir.py`, `src/validar.py`, `src/prompts/v1.txt` (e as versões seguintes), `tests/test_parte3_*.py`
 
@@ -581,7 +584,7 @@ RAG-TCC/
 - **Mensagem de commit:** `parte-N: verbo no presente + o que mudou`. Exemplos:
   - `parte-1: adiciona divisão do resumo em frases`
   - `parte-3: trata JSON quebrado na saída do modelo`
-- **Título do pull request:** `[Parte N] O que foi feito`. Exemplo: `[Parte 2] Busca densa com e5 e FAISS`.
+- **Título do pull request:** `[Parte N] O que foi feito`. Exemplo: `[Parte 2] Busca densa com e5`.
 - **Pull requests pequenos:** uma tarefa terminada vira um PR. Evite juntar tudo num PR gigante no final.
 - **Checklist que todo PR deve ter na descrição:**
   - [ ] Os testes passam (`python -m pytest`).
@@ -644,7 +647,6 @@ git push origin feature/parte-1-dados
 
 - [ ] Formato do arquivo de respostas que a professora vai enviar (definir quando chegar)
 - [ ] Quem escreve o gabarito das dissertações de calibração (sugestão: 2 membros, cada um sozinho, como na análise manual)
-- [ ] FAISS ou ChromaDB. Recomendação: **FAISS**, já testado no projeto de referência e suficiente para alguns milhares de frases
 - [ ] Biblioteca do BM25. Recomendação: `rank-bm25`, mais simples que o SQLite FTS5
 - [ ] Lista final de modelos (depende do teste da Parte 3 na RTX 2060)
 - [ ] Meta de recall@5 da busca (sugestão: 80%)

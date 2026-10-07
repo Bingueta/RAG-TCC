@@ -4,11 +4,11 @@ Definidos na seção 3.1 de docs/divisao-tarefas.md. Ninguém altera este arquiv
 qualquer mudança passa por pull request aprovado pelas partes afetadas e é registrada
 como decisão em docs/PROGRESSO.md.
 
-Por enquanto só existem os tipos da Parte 1. Os das outras partes entram quando elas
+Por enquanto existem os tipos das Partes 1 e 2. Os das outras partes entram quando elas
 começarem.
 """
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 # ---------- Parte 1 entrega ----------
@@ -32,3 +32,32 @@ class Frase:
 class DissertacaoUnitarizada:
     dissertacao: Dissertacao
     frases: list[Frase]           # na ordem em que aparecem no resumo
+
+
+# ---------- Parte 2 entrega ----------
+
+@dataclass
+class Verbete:
+    id: str                       # "entrevista_semiestruturada"
+    termo: str                    # "Entrevista semiestruturada"
+    eixo: str                     # natureza, objetivos, abordagem, procedimento, coleta ou analise
+    definicao: str
+    sinais: list[str]             # expressões típicas no resumo: "roteiro de entrevista", "entrevistados"
+    sinonimos: list[str]          # outras formas de escrever: "entrevistas semi-estruturadas"
+
+
+@dataclass
+class TrechoRecuperado:
+    frase_id: str                 # "F3"
+    texto: str
+    score: float                  # quanto maior, mais parecido
+
+
+@dataclass
+class Contexto:
+    dissertacao_id: str
+    tecnica: str                  # sem_rag, denso, hibrido ou hibrido_rerank
+    frases_tematicas: list[TrechoRecuperado]
+    frases_metodologia: list[TrechoRecuperado]
+    verbetes: list[Verbete]
+    titulos_parecidos: list[str] = field(default_factory=list)

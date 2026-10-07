@@ -7,5 +7,14 @@ spacy==3.8.16
 # Modelo de português do spaCy, usado para dividir os resumos em frases
 pt_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.8.0/pt_core_news_sm-3.8.0-py3-none-any.whl
 
+# ===== PARTE 2: base de conhecimento e busca =====
+# Transforma frases em vetores (embeddings). Instala o torch junto; a versão padrão do
+# pip no Windows roda na CPU, o que basta para ~900 frases (a GPU fica para o Ollama).
+sentence-transformers==6.1.0
+torch==2.14.1
+numpy==2.4.6
+# Busca por palavra exata (BM25), usada na técnica "hibrido".
+rank-bm25==0.2.2
+
 # ===== Testes =====
 pytest==9.1.1
