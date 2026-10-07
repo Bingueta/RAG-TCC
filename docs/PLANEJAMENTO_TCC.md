@@ -208,7 +208,7 @@ data/base_metodologia.json ─────────────────�
 
 1. **Preparação:** gerar o `id`, transformar as palavras-chave em lista e padronizar acentos (Unicode), espaços e quebras de linha.
 2. **Unitarização:** dividir cada resumo em frases, que correspondem às unidades de registro de Bardin. Cada frase recebe um código (F1, F2…), para ser citada como evidência.
-3. **Embeddings e índice:** transformar em números as frases do corpus e os verbetes da base metodológica. Sugestão: `intfloat/multilingual-e5-base` (ou `-small`, se ficar lento; exige os prefixos `query:` e `passage:`), vetores normalizados e similaridade de cosseno, em FAISS (recomendado) ou ChromaDB.
+3. **Embeddings e índice:** transformar em números as frases do corpus e os verbetes da base metodológica. Sugestão: `intfloat/multilingual-e5-base` (ou `-small`, se ficar lento; exige os prefixos `query:` e `passage:`), vetores normalizados e similaridade de cosseno, calculada com NumPy (o FAISS dá o mesmo resultado; ver PROGRESSO.md).
 4. **Recuperação:**
     - *Metodologias:* achar as frases do resumo que descrevem o que foi feito (coleta, participantes, análise) e os verbetes da base metodológica mais parecidos com elas.
     - *Temáticas:* achar as frases centrais do resumo (objeto e objetivo) e, opcionalmente, títulos de dissertações parecidas do próprio corpus, para manter nomes de temas consistentes. Só títulos e resumos, nunca respostas da análise manual.
@@ -244,7 +244,7 @@ Cada metodologia vem separada, com a própria evidência. O formato exato (as "f
 - Ollama (LLM local), com 2–3 modelos testados (ex.: `qwen2.5:7b-instruct`, `llama3.1:8b`, `qwen2.5:3b-instruct`)
 - Máquina prevista para rodar o modelo: i5 de 10ª geração, 16 GB de RAM, RTX 2060 (6 GB). Modelos de 7B–8B compactados devem caber na placa; o `gemma2:9b` fica no limite. Confirmar em teste e registrar a máquina usada
 - sentence-transformers (embeddings)
-- FAISS (índice) e `rank-bm25` (busca por palavra exata): recomendados, ainda a confirmar (seção 7 de [divisao-tarefas.md](divisao-tarefas.md))
+- NumPy (busca por sentido; sem FAISS nem ChromaDB) e `rank-bm25` (busca por palavra exata)
 - spaCy `pt_core_news_sm` (divisão em frases)
 - pandas e openpyxl (planilha Excel)
 - scikit-learn e `krippendorff` (avaliação e comparação)
@@ -284,7 +284,7 @@ A pasta `app/` fica sem uso enquanto não houver tela.
 - Antes de rodar nas 59, **fixar** prompt e base metodológica (com uma marca de versão no git). Todos os modelos e técnicas rodam com a mesma versão.
 - A versão usada pelos analistas na análise com a ferramenta também fica fixa do começo ao fim.
 
-## 8. Como avaliar e comparar (proposta, a validar com o grupo e a orientadora)
+## 8. Como avaliar e comparar (proposta, a validar pelo grupo)
 
 As respostas são texto livre, então não dá para comparar só com "igual/diferente". Temática 1 e temática 2 são comparadas **como par** (a ordem não importa).
 
@@ -301,7 +301,7 @@ Feita automaticamente pelo programa, para cada execução (modelo × técnica). 
 
 ### 8.2 Análise manual × análise com a ferramenta
 
-1. **Classificação às cegas (principal).** Juntar todas as respostas (manuais e com a ferramenta), embaralhadas e **sem indicar de onde vieram**. O grupo (ou a orientadora) agrupa as temáticas em categorias e separa cada resposta de metodologias nos eixos da seção 6.3. Com isso as respostas ficam comparáveis.
+1. **Classificação às cegas (principal).** Juntar todas as respostas (manuais e com a ferramenta), embaralhadas e **sem indicar de onde vieram**. O grupo agrupa as temáticas em categorias e separa cada resposta de metodologias nos eixos da seção 6.3. Com isso as respostas ficam comparáveis.
 2. **Similaridade de sentido.** Medir, com embeddings, o quanto duas respostas dizem a mesma coisa (ex.: "saúde da pessoa idosa" ≈ "saúde do idoso"). Serve de apoio e de conferência da forma 1.
 3. **Nota de qualidade às cegas.** Um avaliador lê o resumo e dá nota de 1 a 5 para cada resposta, sem saber de onde ela veio: a temática representa o resumo? As metodologias estão corretas e completas?
 
@@ -344,7 +344,7 @@ Rotina sugerida: reunião curta semanal, quadro de tarefas (GitHub Projects) e p
 6. Receber da professora as respostas da análise manual e comparar com a IA sozinha (8.1)
 7. **Análise com a ferramenta**: cada membro analisa suas ~23 dissertações, consultando a planilha da IA
 8. Classificação às cegas, notas de qualidade, comparação (8.2)
-9. Escrita de resultados e discussão; revisão pela orientadora
+9. Escrita de resultados e discussão
 10. Revisão final e apresentação
 
 ## 11. Riscos
@@ -366,10 +366,10 @@ Rotina sugerida: reunião curta semanal, quadro de tarefas (GitHub Projects) e p
 ## 12. Decisões em aberto
 
 - [ ] Confirmar se a pergunta de pesquisa da seção 3 é o texto oficial do projeto
-- [ ] Qual execução (modelo × técnica) os analistas vão consultar na análise com a ferramenta. Atenção: escolher "a que mais concordou com a análise manual" pode empurrar a análise com a ferramenta na direção da manual; discutir com a orientadora
+- [ ] Qual execução (modelo × técnica) os analistas vão consultar na análise com a ferramenta. Atenção: escolher "a que mais concordou com a análise manual" pode empurrar a análise com a ferramenta na direção da manual; discutir no grupo
 - [ ] Formato do arquivo com as respostas da análise manual que a professora vai enviar
 - [ ] Se o tempo da análise manual foi registrado (mesmo que aproximado)
-- [ ] Quem faz a classificação às cegas e a nota de qualidade (grupo, orientadora ou ambos)
+- [ ] Quem do grupo faz a classificação às cegas e a nota de qualidade
 - [ ] Quais modelos do Ollama cabem na máquina prevista (teste)
 - [ ] As demais decisões técnicas da seção 7 de [divisao-tarefas.md](divisao-tarefas.md)
 - [ ] Responsáveis por cada parte

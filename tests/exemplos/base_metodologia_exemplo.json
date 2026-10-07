@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pesquisa_aplicada",
+    "termo": "Pesquisa aplicada",
+    "eixo": "natureza",
+    "definicao": "Pesquisa voltada a gerar conhecimento para resolver um problema prático e específico.",
+    "sinais": ["propor soluções", "intervenção", "aplicação prática"],
+    "sinonimos": ["natureza aplicada"]
+  },
+  {
+    "id": "pesquisa_descritiva",
+    "termo": "Pesquisa descritiva",
+    "eixo": "objetivos",
+    "definicao": "Pesquisa que descreve as características de um grupo, fenômeno ou situação.",
+    "sinais": ["descrever", "caracterizar", "perfil"],
+    "sinonimos": ["estudo descritivo"]
+  },
+  {
+    "id": "abordagem_qualitativa",
+    "termo": "Abordagem qualitativa",
+    "eixo": "abordagem",
+    "definicao": "Abordagem que busca compreender significados, percepções e experiências, sem foco em medir.",
+    "sinais": ["compreender", "percepções", "significados", "experiências"],
+    "sinonimos": ["pesquisa qualitativa", "estudo qualitativo"]
+  },
+  {
+    "id": "estudo_de_caso",
+    "termo": "Estudo de caso",
+    "eixo": "procedimento",
+    "definicao": "Investigação aprofundada de um ou poucos casos, como uma instituição, um grupo ou um município.",
+    "sinais": ["o caso de", "em uma escola de", "na cidade de"],
+    "sinonimos": ["estudo de caso único", "estudo de casos múltiplos"]
+  },
+  {
+    "id": "entrevista_semiestruturada",
+    "termo": "Entrevista semiestruturada",
+    "eixo": "coleta",
+    "definicao": "Entrevista com um roteiro de perguntas, mas com liberdade para o entrevistado desenvolver as respostas.",
+    "sinais": ["roteiro de entrevista", "entrevistados", "foram entrevistados"],
+    "sinonimos": ["entrevistas semiestruturadas", "entrevista semi-estruturada"]
+  },
+  {
+    "id": "analise_de_conteudo",
+    "termo": "Análise de conteúdo",
+    "eixo": "analise",
+    "definicao": "Técnica de análise de textos e falas que organiza o material em categorias, segundo Bardin.",
+    "sinais": ["Bardin", "categorias de análise", "unidades de registro"],
+    "sinonimos": ["análise temática de conteúdo"]
+  }
+]

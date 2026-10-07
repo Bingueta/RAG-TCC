@@ -6,7 +6,7 @@ Leia [docs/CONTEXTO_DO_PROJETO.md](docs/CONTEXTO_DO_PROJETO.md) e a seção da s
 
 ## Acompanhamento
 
-- Para qualquer trabalho em qualquer parte, leia [docs/PROGRESSO.md](docs/PROGRESSO.md) **antes** de começar e atualize-o **depois** de cada tarefa (checklist, status, próximo passo e uma entrada no log). Nunca apague entradas do log.
+- Para qualquer trabalho em qualquer parte, leia [docs/PROGRESSO.md](docs/PROGRESSO.md) **antes** de começar. Depois de cada tarefa, marque o checklist e atualize o próximo passo. Na tabela de decisões, registre **só decisões estratégicas e importantes**; não crie log de cada tarefa nem novos arquivos Markdown.
 
 ## Regras do projeto
 
