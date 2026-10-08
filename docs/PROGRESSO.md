@@ -17,8 +17,8 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 |-------|--------|------|
 | 1 — Dados e unitarização | Concluída (PR #1 na `main`) | Franklyn/Lucas |
 | 2 — Base de conhecimento e busca | Concluída (PR da branch `feature/parte-2-busca`) | Franklyn/Lucas |
-| 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-geracao`, no fork) | Lucas |
-| 4 — Orquestração, configuração e Excel | Concluída: `python -m src.pipeline`; as 59 rodadas com 3 modelos × 3 técnicas (branch `feature/parte-4-excel`, no fork) | Lucas |
+| 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-4-5`) | Lucas |
+| 4 — Orquestração, configuração e Excel | Concluída: `python -m src.pipeline`; as 59 rodadas com 3 modelos × 3 técnicas (branch `feature/parte-3-4-5`) | Lucas |
 | 5 — Avaliação das respostas da IA | Em andamento: calibração medida (rodadas 1 a 4) e indicadores sem gabarito nas 59 prontos; falta a comparação com a análise manual, quando a professora enviar | Lucas |
 
 ---
@@ -48,7 +48,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 ### Checklist
 
 **Etapa 1 — Ambiente**
-- [x] 1.1 Criar a branch `feature/parte-3-geracao` a partir da `main` atualizada (no fork `LucasFeres/RAG-TCC`; como levar ao repo do grupo é decisão do Franklyn)
+- [x] 1.1 Criar a branch `feature/parte-3-geracao` a partir da `main` atualizada (feita no fork `LucasFeres/RAG-TCC`; no repo do grupo, tudo está na branch `feature/parte-3-4-5`)
 - [x] 1.2 Instalar o Ollama e baixar os modelos (fraco, forte, mais potente); confirmar quais rodam na máquina e quanto tempo cada um leva por dissertação — Ollama 0.40.0, modelos em `D:\ollama\modelos`; `qwen3.5` 2b/4b/9b levam ~1,6 / 3,5 / 5 s por dissertação
 - [x] 1.3 Instalar a biblioteca `ollama` (Python) e fixar a versão no `requirements.txt` (`ollama==0.6.3`)
 - [x] 1.4 Acrescentar a `src/contratos.py` os tipos `Campo` e `RespostaIA` (seção 3.1 da divisão, sem mudança)
@@ -72,7 +72,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 - [x] 5.2 Ajustar o prompt **olhando só a calibração**; guardar cada versão (`v1`, `v2`…); fixar a versão final antes de rodar nas 59 — **fixado o `v3`** (`config.VERSAO_PROMPT`), pelo critério escrito antes da rodada. Números e passo a passo em [RESULTADOS.md](RESULTADOS.md)
 
 **Etapa 6 — Fechamento**
-- [x] 6.1 Testes passando. O Franklyn não pediu PR: o trabalho está no fork `LucasFeres/RAG-TCC`, branch `feature/parte-3-geracao`, que traz também a correção da busca (Parte 2) e a avaliação (Parte 5)
+- [x] 6.1 Testes passando. O trabalho está no repo do grupo na branch `feature/parte-3-4-5`, que traz também a correção da busca (Parte 2) e a avaliação (Parte 5). A pedido do Franklyn, numa branch nova, sem mexer na `main`
 
 ### Próximo passo
 Parte 3 concluída. Pendências que não são de código:
@@ -87,14 +87,14 @@ Parte 3 concluída. Pendências que não são de código:
 **Objetivo:** um comando que pega as 59 dissertações, roda busca (Parte 2) + LLM (Parte 3) e grava o **Excel**. Detalhes na seção "Parte 4" de [divisao-tarefas.md](divisao-tarefas.md).
 
 ### Checklist
-- [x] 1 Branch `feature/parte-4-excel` (no fork, a partir da `feature/parte-3-geracao`)
+- [x] 1 Branch `feature/parte-4-excel` (no fork, a partir da `feature/parte-3-geracao`; no repo do grupo, `feature/parte-3-4-5`)
 - [x] 2 `src/pipeline.py`: corpus → `unitarizar` → `recuperar` → `gerar_resposta` → Excel; opções `--modelo`, `--tecnica`, `--corpus` (calibração ou 59), `--todos`, `--mock` e `--sobrescrever`
 - [x] 3 `src/exportar.py`: aba `respostas` com exatamente `id`, `titulo`, `tematica_1`, `tematica_2`, `metodologias` (separadas por "; "), `modelo`; aba `detalhes` (evidência como texto das frases, status, técnica, versão do prompt); aba `execucao` (máquina, bibliotecas, modelo e digest, técnica, prompt, hashes, data, tempo)
 - [x] 4 Uma pasta por execução em `data/sugestoes/`; retoma execução interrompida; erro numa dissertação não para as outras; execução completa não é regravada (só a planilha)
 - [x] 5 Teste da regra de ouro (`tests/test_nao_le_analise_manual.py`): nenhum arquivo das Partes 1 a 4 cita a análise manual, e o pipeline em modo mock não abre nenhum arquivo com esse nome
 - [x] 6 Seções "Instalação" e "Uso" do `README.md`
 - [x] 7 Gerar os Excel finais: os 3 modelos × as 3 técnicas nas 59, com o prompt `v3` (`data/sugestoes/<modelo>__<tecnica>__v3/`)
-- [x] 8 ~~Pull request~~ O Franklyn não pediu PR: tudo está no fork, na branch `feature/parte-4-excel`, que contém as Partes 2 (correção), 3, 4 e 5
+- [x] 8 Enviado ao repo do grupo na branch nova `feature/parte-3-4-5`, a pedido do Franklyn (sem PR para a `main`); contém as Partes 2 (correção), 3, 4 e 5
 
 ### Próximo passo
 Parte 4 concluída. Qual das 9 planilhas os analistas vão consultar na análise com a ferramenta é decisão do grupo (seção 12 do planejamento): escolher pela que mais concordar com a análise manual empurraria a nova análise na direção da antiga.
