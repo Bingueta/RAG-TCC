@@ -109,7 +109,7 @@ Lucas: tarefa 1.1.
 - [x] 4 Métricas testadas com dados inventados: P/R/F1 por dissertação e por eixo (macro e micro); temáticas por similaridade e5 como par sem ordem, com linha de base
 - [~] 5 Gabarito da calibração: referência da IA pronta; o gabarito humano do grupo ainda não existe
 - [x] 5b Medir as rodadas de ajuste da Parte 3 (v1, v2, busca corrigida, v3) com a régua congelada; métricas em `data/metricas/calibracao/rodada1` a `rodada4`, cada uma com `origem.json` (sha256 de tudo que entrou). O critério do v3, escrito antes da rodada, manteve o v3 (`rodada4/criterio_v3.json`)
-- [ ] 6 Relatório em Excel (espera o `openpyxl` da Parte 4) e gráfico por indicador
+- [x] 6 Relatório em Excel e gráfico por indicador: `python -m src.relatorio_excel PASTA` grava o `.xlsx` ao lado de cada `comparacao.json` e `relatorio.json`. Fica num arquivo à parte para o `src/comparar.py` (a régua) não mudar de sha256
 - [ ] 7–9 Análise manual: só quando a professora enviar as respostas
 
 ### Próximo passo
