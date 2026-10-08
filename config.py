@@ -84,6 +84,17 @@ TENTATIVAS = 2
 # Tempo máximo de uma chamada ao modelo, em segundos. O 9b com parte na RAM é o mais lento.
 TEMPO_LIMITE = 300
 
+# ===== PARTE 4: execução =====
+# Corpus que o pipeline roda quando não se passa --corpus. Começou em "calibracao" (decisão
+# C3: nada roda nas 59 antes de o prompt e a base estarem fixos) e passou a "corpus" em
+# 07/10/2026, depois de fixados o prompt v3 e a base (tag v1-fixado no git).
+CORPUS_ATIVO = "corpus"
+# Modelo e técnica de um "python -m src.pipeline" sem argumentos. O 9b com o v3 teve o melhor
+# F1 nas três técnicas da calibração; entre as técnicas, a diferença ficou dentro do ruído, e
+# o hibrido é a proposta do TCC (busca por sentido + palavra exata). --todos roda tudo.
+MODELO_PADRAO = MODELOS_LLM["potente"]
+TECNICA_PADRAO = "hibrido"
+
 # ===== PARTE 5: avaliação =====
 # Execuções a avaliar: uma pasta por combinação de modelo, técnica e versão do prompt.
 PASTA_SUGESTOES_CALIBRACAO = RAIZ / "data" / "sugestoes" / "calibracao"

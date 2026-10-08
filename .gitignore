@@ -25,3 +25,6 @@ data/avaliacao/
 
 # Rascunhos e anotacoes locais
 docs/rascunhos/
+
+# Saidas do pipeline em modo --mock (dados de exemplo, refeitas a cada rodada)
+data/sugestoes/mock/
