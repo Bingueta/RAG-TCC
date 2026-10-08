@@ -11,11 +11,19 @@ v2, escada de modelos) e da Parte 2 (sinais da base), guardadas para dar para re
 - com --verbetes: quantas vezes a busca oferece cada verbete e quantos dos métodos da
   base inventados estavam entre os oferecidos (por que o híbrido atrapalhou o 9b).
 
+- com --pares: a diferença pareada entre duas execuções que o comparar não pareia
+  sozinho, porque mudam algo fora de modelo, técnica e prompt (ex.: a busca corrigida).
+
 A saída só tem contagens agregadas por execução: nenhuma linha diz qual termo a
 referência tem em qual dissertação.
 
+Os verbetes oferecidos dependem do src/recuperar.py da árvore onde a busca roda. Para
+medir execuções feitas com outra versão da busca, calcule lá com --gravar-oferecidos e
+traga o arquivo com --oferecidos.
+
 Uso (da raiz do repositório):
-    python notebooks/parte5_diagnosticos.py PASTA_SUGESTOES REFERENCIA SAIDA.json [--verbetes]
+    python notebooks/parte5_diagnosticos.py PASTA_SUGESTOES REFERENCIA SAIDA.json
+        [--verbetes | --oferecidos ARQ.json] [--pares DEPOIS=ANTES ...] [--sem-embedding]
 """
 
 import argparse
@@ -29,8 +37,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import config  # noqa: E402
 from src.comparar import (  # noqa: E402
-    Vocabulario, carregar_referencia, carregar_respostas, encontrar_execucoes,
-    metodologias_da_resposta, placar, separar_termos,
+    CodificadorE5, Vocabulario, avaliar_contra_referencia, carregar_referencia, carregar_respostas,
+    diferenca_pareada, encontrar_execucoes, metodologias_da_resposta, placar, separar_termos,
 )
 from src.indexar import carregar_base  # noqa: E402
 
@@ -90,19 +98,52 @@ def diagnosticar(pasta: Path, referencias, vocabulario: Vocabulario, oferecidos=
     return saida
 
 
+def diferenca_entre(pasta_depois: Path, pasta_antes: Path, referencias, vocabulario, codificar) -> dict:
+    """F1 (e, com codificar, similaridade das temáticas) pareado: depois − antes."""
+    linhas = {}
+    for nome, pasta in (("depois", pasta_depois), ("antes", pasta_antes)):
+        av = avaliar_contra_referencia(carregar_respostas(pasta), referencias, vocabulario, codificar)
+        linhas[nome] = {l["dissertacao_id"]: l for l in av["por_dissertacao"]}
+    saida = {"depois": pasta_depois.name, "antes": pasta_antes.name,
+             "f1": diferenca_pareada({k: l["f1"] for k, l in linhas["depois"].items()},
+                                     {k: l["f1"] for k, l in linhas["antes"].items()})}
+    if codificar is not None:
+        saida["similaridade_tematicas"] = diferenca_pareada(
+            {k: l["similaridade_tematicas"] for k, l in linhas["depois"].items()},
+            {k: l["similaridade_tematicas"] for k, l in linhas["antes"].items()})
+    return saida
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("sugestoes")
     parser.add_argument("referencia")
     parser.add_argument("saida")
-    parser.add_argument("--verbetes", action="store_true", help="roda a busca da Parte 2 (carrega o e5)")
+    parser.add_argument("--verbetes", action="store_true", help="roda a busca da Parte 2 desta árvore (carrega o e5)")
+    parser.add_argument("--oferecidos", help="verbetes oferecidos já calculados (de --gravar-oferecidos)")
+    parser.add_argument("--gravar-oferecidos", help="com --verbetes, grava os verbetes oferecidos neste arquivo")
+    parser.add_argument("--pares", nargs="*", default=[], metavar="DEPOIS=ANTES",
+                        help="nomes de pastas a parear (depois − antes)")
+    parser.add_argument("--sem-embedding", action="store_true", help="nos --pares, pula as temáticas")
     args = parser.parse_args()
 
     vocabulario = Vocabulario(carregar_base(config.CAMINHO_BASE))
     referencias = carregar_referencia(args.referencia, vocabulario)
-    oferecidos = verbetes_oferecidos() if args.verbetes else None
+    oferecidos = None
+    if args.oferecidos:
+        oferecidos = json.loads(Path(args.oferecidos).read_text(encoding="utf-8"))
+    elif args.verbetes:
+        oferecidos = verbetes_oferecidos()
+        if args.gravar_oferecidos:
+            Path(args.gravar_oferecidos).write_text(json.dumps(oferecidos, ensure_ascii=False, indent=1),
+                                                    encoding="utf-8")
     resultado = {"execucoes": [diagnosticar(p, referencias, vocabulario, oferecidos)
                                for p in encontrar_execucoes(args.sugestoes)]}
+    if args.pares:
+        codificar = None if args.sem_embedding else CodificadorE5()
+        resultado["pares"] = [diferenca_entre(Path(args.sugestoes) / d, Path(args.sugestoes) / a,
+                                              referencias, vocabulario, codificar)
+                              for d, a in (p.split("=", 1) for p in args.pares)]
     if oferecidos is not None:
         resultado["verbetes_oferecidos"] = {
             t: {"estudo_de_caso_em": sum("estudo_de_caso" in x for x in por_id.values()),
