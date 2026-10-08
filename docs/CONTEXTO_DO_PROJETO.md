@@ -29,7 +29,7 @@ O grupo já fez, sem IA, uma análise de conteúdo de **59 dissertações** (202
 | Dissertações em JSON | Prontas: `data/brutos/dissertacoes.json` (original) e `data/corpus.json` (preparado) |
 | Planejamento | [PLANEJAMENTO_TCC.md](PLANEJAMENTO_TCC.md) |
 | Divisão do código em 5 partes | Em execução: [divisao-tarefas.md](divisao-tarefas.md). Andamento em [PROGRESSO.md](PROGRESSO.md) |
-| Código | Partes 1 (dados e frases) e 2 (base de metodologias e busca) prontas e testadas; próximas: Parte 3 (LLM) e Parte 4 (Excel) |
+| Código | Partes 1 (dados e frases) e 2 (base de metodologias e busca) prontas e testadas; Parte 3 (LLM) em andamento; depois, Parte 4 (Excel) |
 | Calibração | 20 dissertações de 2022, de fora das 59: `data/brutos/calibracao.json` |
 
 ## Regras que não podem ser quebradas
@@ -56,7 +56,7 @@ O grupo já fez, sem IA, uma análise de conteúdo de **59 dissertações** (202
 
 ## Ambiente
 
-Python 3.11, Windows. Máquina prevista para rodar os modelos: i5 de 10ª geração, 16 GB de RAM, RTX 2060 (6 GB). A instalação será descrita no [README](../README.md) quando o código começar.
+Python 3.11, Windows. Máquina que roda os modelos: PC do Lucas, Ryzen 7 5700X, 16 GB de RAM, RTX 3060 Ti (8 GB). Antes era prevista uma com RTX 2060 (6 GB). A instalação será descrita no [README](../README.md) quando o código começar.
 
 ## Para saber mais
 
