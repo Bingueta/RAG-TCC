@@ -108,11 +108,12 @@ Lucas: tarefa 1.1.
 - [x] 3 Concordância entre execuções (Jaccard nas metodologias, similaridade nas temáticas)
 - [x] 4 Métricas testadas com dados inventados: P/R/F1 por dissertação e por eixo (macro e micro); temáticas por similaridade e5 como par sem ordem, com linha de base
 - [~] 5 Gabarito da calibração: referência da IA pronta; o gabarito humano do grupo ainda não existe
+- [x] 5b Medir as rodadas de ajuste da Parte 3 (v1, v2, busca corrigida, v3) com a régua congelada; métricas em `data/metricas/calibracao/rodada1` a `rodada4`, cada uma com `origem.json` (sha256 de tudo que entrou). O critério do v3, escrito antes da rodada, manteve o v3 (`rodada4/criterio_v3.json`)
 - [ ] 6 Relatório em Excel (espera o `openpyxl` da Parte 4) e gráfico por indicador
 - [ ] 7–9 Análise manual: só quando a professora enviar as respostas
 
 ### Próximo passo
-Medir o v2 com a busca corrigida (Parte 2) contra o v2 antigo no `hibrido`; depois, o v3 (último ajuste). A régua fica congelada até lá: `src/comparar.py` e a referência com o mesmo sha256 da medição do v2, e a base só pode mudar nos `sinais` (o `comparar.py` usa só `id`, `termo`, `eixo` e `sinonimos`).
+Quando existir o gabarito humano da calibração: medir v1, v2 e v3 contra ele, com a mesma régua. Ganho que só aparece na referência de IA foi ajuste ao estilo dela.
 
 ---
 
