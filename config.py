@@ -42,3 +42,18 @@ TOP_K_FRASES = 5
 TOP_K_VERBETES = 5
 # Constante do Reciprocal Rank Fusion: valor padrão da literatura, usado no projeto de referência.
 RRF_K = 60
+
+# ===== PARTE 5: avaliação =====
+# Execuções a avaliar: uma pasta por combinação de modelo, técnica e versão do prompt.
+PASTA_SUGESTOES_CALIBRACAO = RAIZ / "data" / "sugestoes" / "calibracao"
+# Relatórios da avaliação (fora do git: trazem trechos das referências e, depois, das
+# respostas humanas).
+PASTA_AVALIACAO = RAIZ / "data" / "avaliacao"
+# Referência escrita por IA, às cegas, para ajustar o prompt na calibração. Fica fora do
+# git e NÃO é o gabarito do TCC: esse é o do grupo, no caminho de baixo.
+CAMINHO_REFERENCIA_IA_CALIBRACAO = PASTA_AVALIACAO / "referencia_ia_calibracao.json"
+CAMINHO_GABARITO_CALIBRACAO = RAIZ / "data" / "calibracao" / "gabarito_calibracao.json"
+# Incerteza com só 20 dissertações: IC de 95% por bootstrap. 5000 reamostras deixam os
+# percentis estáveis na segunda casa; a semente fixa faz o intervalo sair igual em toda rodada.
+BOOTSTRAP_REPETICOES = 5000
+BOOTSTRAP_SEMENTE = 42
