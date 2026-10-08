@@ -17,7 +17,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 |-------|--------|------|
 | 1 — Dados e unitarização | Concluída (PR #1 na `main`) | Franklyn/Lucas |
 | 2 — Base de conhecimento e busca | Concluída (PR da branch `feature/parte-2-busca`) | Franklyn/Lucas |
-| 3 — Geração com LLM e validação | Em andamento (branch `feature/parte-3-geracao`) | Lucas |
+| 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-geracao`, no fork) | Lucas |
 | 4 — Orquestração, configuração e Excel | Depois da Parte 3 | Lucas |
 | 5 — Avaliação das respostas da IA | Depois de tudo pronto (fora do objetivo atual) | a definir |
 
@@ -69,13 +69,18 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 
 **Etapa 5 — Ajuste do prompt (só com a calibração)**
 - [x] 5.1 Rodar nas 20 dissertações de 2022 com os 3 modelos e ler as respostas — `notebooks/parte3_calibracao.py`; saídas em `data/sugestoes/calibracao/`
-- [~] 5.2 Ajustar o prompt **olhando só a calibração**; guardar cada versão (`v1`, `v2`…); fixar a versão final antes de rodar nas 59 — `v2` medido: o "estudo de caso" inventado caiu de 20 para 5 nas 9 rodadas, e a fonte dos dados (documental, secundários) passou a aparecer; o que sobrou vem da busca `hibrido` (ver decisão abaixo); o `v3` é o último
+- [x] 5.2 Ajustar o prompt **olhando só a calibração**; guardar cada versão (`v1`, `v2`…); fixar a versão final antes de rodar nas 59 — **fixado o `v3`** (`config.VERSAO_PROMPT`), pelo critério escrito antes da rodada. Números e passo a passo em [RESULTADOS.md](RESULTADOS.md)
 
 **Etapa 6 — Fechamento**
-- [ ] 6.1 Testes passando; pull request `[Parte 3] Geração com LLM e validação`
+- [x] 6.1 Testes passando. O Franklyn não pediu PR: o trabalho está no fork `LucasFeres/RAG-TCC`, branch `feature/parte-3-geracao`, que traz também a correção da busca (Parte 2) e a avaliação (Parte 5)
 
 ### Próximo passo
-Busca `hibrido` corrigida (branch `feature/parte-2-correcao-busca`, já trazida para esta): o verbete de estudo de caso caiu de 10 para 1 das 20. Falta: rodar de novo o `hibrido` com o `v2` (pastas `__busca-corrigida`), escrever o `v3`, medir e fixar.
+Parte 3 concluída. Pendências que não são de código:
+- O grupo decide se escreve o gabarito humano das 20 de calibração. Enquanto não decidir, a referência de IA fica fora do repositório, porque quem a lesse antes escreveria o gabarito influenciado.
+- O grupo confirma se, no Forms, a temática levava o lugar ("… em Tarumirim"). O `v3` tira o lugar; a medição não mostrou diferença.
+- O Franklyn decide se leva para o repo do grupo a correção da busca (`feature/parte-2-correcao-busca`).
+
+Depois: Parte 4 (pipeline nas 59 + Excel), com o `v3` e os 3 modelos.
 
 ---
 
@@ -121,5 +126,6 @@ Busca `hibrido` corrigida (branch `feature/parte-2-correcao-busca`, já trazida 
 | 2026-10-07 | 3 | O prompt v3 é o último ajuste; depois, fixar. Nenhuma regra nova depois de ver o resultado do v3: o que sobrar vira limitação registrada. A régua do v3 fica congelada (referência de IA e `src/comparar.py` com o mesmo sha256 do v2) | São 20 dissertações e uma referência só: cada nova rodada de ajuste aproxima o prompt do estilo da referência, não do problema. Quando existir o gabarito humano da calibração, v1, v2 e v3 são medidos contra ele também; ganho que só aparece na referência de IA foi ajuste ao estilo dela |
 | 2026-10-07 | 2 | Na técnica `hibrido`, sinal de várias palavras só casa como expressão inteira, e `estudo_de_caso` perde os sinais de lugar e instituição ("no município de", "em uma instituição"…) | O casamento tirava as preposições e cortava em 6 letras: "no município de" virava "munici", e o verbete de estudo de caso ia para o modelo em 10 das 20 da calibração (depois da correção, 1). O qwen3.5:9b copiava o verbete. Achado só com a calibração; o que a avaliação usa da base (id, termo, eixo, sinônimos) não mudou |
 | 2026-10-07 | 3 | Critério do `v3`, fixado antes da rodada: fica o `v3` se a média do F1 pareado (v3 − v2) nas 9 combinações (3 modelos × 3 técnicas) for ≥ 0, comparando com o `v2` de `sem_rag` e `denso` das rodadas antigas e de `hibrido` da rodada `__busca-corrigida`. Qualquer uma destas derruba o `v3`: alguma combinação com IC95 pareado inteiro abaixo de zero; acerto@1 das temáticas, na média, mais de 0,05 abaixo do `v2`; itens exatos (nome limpo) abaixo do `v2` | Escrito antes de ver o resultado, para a escolha não ser feita olhando o número. Com 20 dissertações, a média oscila uns ±0,03 só de ruído, daí as travas. Comparar com o `hibrido` antigo daria ao `v3` o crédito da correção da busca |
+| 2026-10-07 | 3 | Prompt fixado no `v3` | Critério escrito antes: F1 pareado médio v3 − v2 = +0,005 (≥ 0) e nenhuma trava. A margem é mínima: empate dentro do ruído, com o `v3` melhorando o 9b (+0,078 no `hibrido`, IC acima de zero) e não ajudando o 4b (−0,04 no `sem_rag` e no `denso`, dentro do ruído). Sem regra nova depois do resultado: o que sobrou está nas limitações do RESULTADOS.md |
 | 2026-10-07 | 3 | `Campo` e `RespostaIA` entram no `contratos.py` exatamente como na seção 3.1. Tempo e número de tentativas de cada dissertação ficam no `execucao.json` da rodada, fora do contrato | Atende a Parte 5 sem mudar o contrato |
 | 2026-10-07 | 2 | Na busca por sentido, cada verbete é representado pelo termo + sinônimos; a técnica `hibrido` soma a busca por palavra exata (BM25, juntos por RRF) | Na calibração, termos de método escritos no resumo que viram verbete: 16/26 com a definição, 20/26 só com termo + sinônimos, 27/27 com `hibrido` |

@@ -52,7 +52,8 @@ OLLAMA_HOST = "http://127.0.0.1:11434"
 # - família: o qwen3.5:9b passou o qwen2.5:7b (F1 das metodologias +0,16) e empatou com o
 #   qwen3:8b, com temáticas e formato melhores;
 # - escada: o 2b é claramente o fraco (F1 0,40 contra 0,80 do 4b, prompt v1); 4b e 9b
-#   empatam em qualidade, então a ordem forte/potente é pelo tamanho;
+#   empatavam em qualidade no prompt v2; com o v3, o 9b passa à frente (F1 médio nas três
+#   técnicas: 2b 0,62, 4b 0,79, 9b 0,83);
 # - tempo por dissertação: 2b ~1,6 s, 4b ~3,5 s, 9b ~5 s (o 9b fica ~88% na VRAM com o
 #   Windows e outros programas abertos).
 MODELOS_LLM = {
@@ -62,7 +63,11 @@ MODELOS_LLM = {
 }
 # Versão do prompt: o arquivo src/prompts/<versão>.txt. Cada ajuste vira um arquivo novo
 # (v1, v2…), para que toda execução registre exatamente com que texto rodou.
-VERSAO_PROMPT = "v1"
+# FIXADA no v3, o último ajuste, pelo critério escrito antes da rodada (PROGRESSO.md): na
+# calibração, o F1 médio das 9 combinações foi de 0,743 (v2) para 0,748 (v3), sem nenhuma
+# trava disparada. É um empate dentro do ruído de 20 dissertações: o v3 melhorou o 9b
+# (+0,08 no hibrido) e não ajudou o 4b. Daqui em diante não muda: as 59 rodam com o v3.
+VERSAO_PROMPT = "v3"
 # Temperatura 0 e seed fixa: a mesma dissertação gera sempre a mesma resposta na mesma máquina.
 TEMPERATURA = 0
 SEED = 42
