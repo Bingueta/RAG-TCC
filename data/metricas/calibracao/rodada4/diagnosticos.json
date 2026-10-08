@@ -1,0 +1,359 @@
+{
+  "execucoes": [
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__denso__v2",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.3616017316017316,
+      "base_inventados": 2,
+      "base_inventados_entre_oferecidos": 1,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 8,
+      "fonte_inventados": 1,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 14,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__denso__v3",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.3579799367299367,
+      "base_inventados": 2,
+      "base_inventados_entre_oferecidos": 1,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 7,
+      "fonte_inventados": 1,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 16,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.4236309523809524,
+      "base_inventados": 9,
+      "base_inventados_entre_oferecidos": 7,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 9,
+      "fonte_inventados": 0,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 12,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v3",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.38318142641672054,
+      "base_inventados": 6,
+      "base_inventados_entre_oferecidos": 4,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 10,
+      "fonte_inventados": 2,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 12,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__sem_rag__v2",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.33614468864468866,
+      "base_inventados": 3,
+      "base_inventados_entre_oferecidos": 0,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 12,
+      "fonte_inventados": 1,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 17,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.33703296703296703,
+      "base_inventados": 3,
+      "base_inventados_entre_oferecidos": 1,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 11,
+      "fonte_inventados": 2,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 17,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__denso__v2",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.6844899544899545,
+      "base_inventados": 5,
+      "base_inventados_entre_oferecidos": 3,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 14,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 21,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__denso__v3",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.6850455100455101,
+      "base_inventados": 6,
+      "base_inventados_entre_oferecidos": 3,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 15,
+      "fonte_inventados": 3,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 16,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7381623931623932,
+      "base_inventados": 7,
+      "base_inventados_entre_oferecidos": 6,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 13,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 19,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v3",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.749093795093795,
+      "base_inventados": 6,
+      "base_inventados_entre_oferecidos": 5,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 14,
+      "fonte_inventados": 2,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 19,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__sem_rag__v2",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.6937558275058275,
+      "base_inventados": 5,
+      "base_inventados_entre_oferecidos": 3,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 17,
+      "fonte_inventados": 3,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 21,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.6761038961038961,
+      "base_inventados": 3,
+      "base_inventados_entre_oferecidos": 2,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 15,
+      "fonte_inventados": 2,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 18,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__denso__v2",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.7640975690975691,
+      "base_inventados": 4,
+      "base_inventados_entre_oferecidos": 3,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 16,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 17,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__denso__v3",
+      "tecnica": "denso",
+      "dissertacoes": 20,
+      "f1_exato": 0.7741541791541792,
+      "base_inventados": 7,
+      "base_inventados_entre_oferecidos": 5,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 17,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 15,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7226905634048492,
+      "base_inventados": 9,
+      "base_inventados_entre_oferecidos": 8,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 12,
+      "fonte_inventados": 5,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 18,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v3",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7941496598639456,
+      "base_inventados": 7,
+      "base_inventados_entre_oferecidos": 4,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 15,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 17,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__sem_rag__v2",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.8245437895437895,
+      "base_inventados": 5,
+      "base_inventados_entre_oferecidos": 1,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 16,
+      "fonte_inventados": 3,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 19,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+      "tecnica": "sem_rag",
+      "dissertacoes": 20,
+      "f1_exato": 0.8034182192076929,
+      "base_inventados": 7,
+      "base_inventados_entre_oferecidos": 1,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 15,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 21,
+      "fora_da_base_obrigatorios": 27
+    }
+  ],
+  "verbetes_oferecidos": {
+    "denso": {
+      "estudo_de_caso_em": 1,
+      "entrevista_semiestruturada_em": 0,
+      "mais_oferecidos": [
+        [
+          "abordagem_qualitativa",
+          19
+        ],
+        [
+          "pesquisa_bibliografica",
+          17
+        ],
+        [
+          "abordagem_quantitativa",
+          15
+        ],
+        [
+          "analise_de_conteudo",
+          15
+        ],
+        [
+          "dados_secundarios",
+          11
+        ],
+        [
+          "pesquisa_exploratoria",
+          7
+        ],
+        [
+          "pesquisa_descritiva",
+          4
+        ],
+        [
+          "pesquisa_acao",
+          4
+        ],
+        [
+          "pesquisa_explicativa",
+          2
+        ],
+        [
+          "questionario",
+          2
+        ]
+      ],
+      "dissertacoes": 20
+    },
+    "hibrido": {
+      "estudo_de_caso_em": 1,
+      "entrevista_semiestruturada_em": 8,
+      "mais_oferecidos": [
+        [
+          "abordagem_qualitativa",
+          17
+        ],
+        [
+          "analise_de_conteudo",
+          13
+        ],
+        [
+          "pesquisa_bibliografica",
+          11
+        ],
+        [
+          "pesquisa_descritiva",
+          8
+        ],
+        [
+          "entrevista_semiestruturada",
+          8
+        ],
+        [
+          "pesquisa_documental",
+          7
+        ],
+        [
+          "dados_secundarios",
+          6
+        ],
+        [
+          "abordagem_quantitativa",
+          6
+        ],
+        [
+          "questionario",
+          5
+        ],
+        [
+          "observacao",
+          3
+        ]
+      ],
+      "dissertacoes": 20
+    }
+  }
+}

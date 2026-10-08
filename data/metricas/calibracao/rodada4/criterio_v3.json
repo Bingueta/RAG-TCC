@@ -1,0 +1,193 @@
+{
+  "fica": "v3",
+  "motivos": [],
+  "principal_media_f1_pareado": 0.005198333333333337,
+  "f1_medio": {
+    "v2": 0.7425427777777778,
+    "v3": 0.7477411111111111
+  },
+  "travas": {
+    "combinacao_com_ic95_abaixo_de_zero": [],
+    "itens_exatos": {
+      "v2": 0.7797346155551549,
+      "v3": 0.7804243689086283
+    },
+    "acerto_1": {
+      "v2": 0.8333333333333333,
+      "v3": 0.8333333333333334
+    }
+  },
+  "combinacoes": [
+    {
+      "modelo": "qwen3.5-2b-q4_K_M",
+      "tecnica": "sem_rag",
+      "v2": "qwen3.5-2b-q4_K_M__sem_rag__v2",
+      "v3": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+      "f1_v2": 0.657175,
+      "f1_v3": 0.63661,
+      "diferenca_f1": {
+        "n": 20,
+        "media": -0.020564999999999993,
+        "ic95": [
+          -0.07175499999999999,
+          0.028970000000000006
+        ],
+        "ganhou": 3,
+        "perdeu": 5,
+        "empatou": 12
+      }
+    },
+    {
+      "modelo": "qwen3.5-2b-q4_K_M",
+      "tecnica": "denso",
+      "v2": "qwen3.5-2b-q4_K_M__denso__v2",
+      "v3": "qwen3.5-2b-q4_K_M__denso__v3",
+      "f1_v2": 0.589105,
+      "f1_v3": 0.599545,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.010440000000000001,
+        "ic95": [
+          -0.09278,
+          0.14210499999999998
+        ],
+        "ganhou": 3,
+        "perdeu": 3,
+        "empatou": 14
+      }
+    },
+    {
+      "modelo": "qwen3.5-2b-q4_K_M",
+      "tecnica": "hibrido",
+      "v2": "qwen3.5-2b-q4_K_M__hibrido__v2__busca-corrigida",
+      "v3": "qwen3.5-2b-q4_K_M__hibrido__v3",
+      "f1_v2": 0.62175,
+      "f1_v3": 0.63431,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.012559999999999997,
+        "ic95": [
+          -0.056495,
+          0.09948499999999998
+        ],
+        "ganhou": 3,
+        "perdeu": 3,
+        "empatou": 14
+      }
+    },
+    {
+      "modelo": "qwen3.5-4b-q4_K_M",
+      "tecnica": "sem_rag",
+      "v2": "qwen3.5-4b-q4_K_M__sem_rag__v2",
+      "v3": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+      "f1_v2": 0.82798,
+      "f1_v3": 0.78909,
+      "diferenca_f1": {
+        "n": 20,
+        "media": -0.038889999999999994,
+        "ic95": [
+          -0.10277499999999999,
+          0.020580000000000008
+        ],
+        "ganhou": 4,
+        "perdeu": 5,
+        "empatou": 11
+      }
+    },
+    {
+      "modelo": "qwen3.5-4b-q4_K_M",
+      "tecnica": "denso",
+      "v2": "qwen3.5-4b-q4_K_M__denso__v2",
+      "v3": "qwen3.5-4b-q4_K_M__denso__v3",
+      "f1_v2": 0.815925,
+      "f1_v3": 0.77565,
+      "diferenca_f1": {
+        "n": 20,
+        "media": -0.040275,
+        "ic95": [
+          -0.12611,
+          0.04612000000000001
+        ],
+        "ganhou": 3,
+        "perdeu": 6,
+        "empatou": 11
+      }
+    },
+    {
+      "modelo": "qwen3.5-4b-q4_K_M",
+      "tecnica": "hibrido",
+      "v2": "qwen3.5-4b-q4_K_M__hibrido__v2__busca-corrigida",
+      "v3": "qwen3.5-4b-q4_K_M__hibrido__v3",
+      "f1_v2": 0.807105,
+      "f1_v3": 0.8097,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.002595,
+        "ic95": [
+          -0.08465500000000001,
+          0.08831
+        ],
+        "ganhou": 3,
+        "perdeu": 3,
+        "empatou": 14
+      }
+    },
+    {
+      "modelo": "qwen3.5-9b-q4_K_M",
+      "tecnica": "sem_rag",
+      "v2": "qwen3.5-9b-q4_K_M__sem_rag__v2",
+      "v3": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+      "f1_v2": 0.82454,
+      "f1_v3": 0.848545,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.024005000000000006,
+        "ic95": [
+          -0.0054799999999999875,
+          0.06439
+        ],
+        "ganhou": 5,
+        "perdeu": 2,
+        "empatou": 13
+      }
+    },
+    {
+      "modelo": "qwen3.5-9b-q4_K_M",
+      "tecnica": "denso",
+      "v2": "qwen3.5-9b-q4_K_M__denso__v2",
+      "v3": "qwen3.5-9b-q4_K_M__denso__v3",
+      "f1_v2": 0.789345,
+      "f1_v3": 0.80849,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.01914500000000001,
+        "ic95": [
+          -0.04681499999999999,
+          0.09772500000000002
+        ],
+        "ganhou": 3,
+        "perdeu": 4,
+        "empatou": 13
+      }
+    },
+    {
+      "modelo": "qwen3.5-9b-q4_K_M",
+      "tecnica": "hibrido",
+      "v2": "qwen3.5-9b-q4_K_M__hibrido__v2__busca-corrigida",
+      "v3": "qwen3.5-9b-q4_K_M__hibrido__v3",
+      "f1_v2": 0.74996,
+      "f1_v3": 0.82773,
+      "diferenca_f1": {
+        "n": 20,
+        "media": 0.07777,
+        "ic95": [
+          0.00908,
+          0.16506500000000002
+        ],
+        "ganhou": 6,
+        "perdeu": 1,
+        "empatou": 13
+      }
+    }
+  ]
+}

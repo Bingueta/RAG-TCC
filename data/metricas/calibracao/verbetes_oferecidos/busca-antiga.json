@@ -1,0 +1,286 @@
+{
+ "denso": {
+  "C001": [
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "pesquisa_descritiva",
+   "analise_de_conteudo",
+   "pesquisa_exploratoria"
+  ],
+  "C002": [
+   "pesquisa_exploratoria",
+   "pesquisa_descritiva",
+   "pesquisa_bibliografica",
+   "pesquisa_explicativa",
+   "abordagem_qualitativa"
+  ],
+  "C003": [
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "dados_secundarios",
+   "analise_de_conteudo",
+   "pesquisa_bibliografica"
+  ],
+  "C004": [
+   "analise_de_conteudo",
+   "questionario",
+   "pesquisa_explicativa",
+   "abordagem_qualitativa",
+   "pesquisa_bibliografica"
+  ],
+  "C005": [
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "pesquisa_bibliografica",
+   "abordagem_mista",
+   "pesquisa_descritiva"
+  ],
+  "C006": [
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "abordagem_quantitativa",
+   "pesquisa_acao",
+   "pesquisa_exploratoria"
+  ],
+  "C007": [
+   "abordagem_quantitativa",
+   "abordagem_qualitativa",
+   "pesquisa_descritiva",
+   "estudo_de_caso",
+   "pesquisa_bibliografica"
+  ],
+  "C008": [
+   "analise_de_conteudo",
+   "pesquisa_bibliografica",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "dados_secundarios"
+  ],
+  "C009": [
+   "dados_secundarios",
+   "abordagem_quantitativa",
+   "abordagem_qualitativa",
+   "analise_de_conteudo",
+   "questionario"
+  ],
+  "C010": [
+   "dados_secundarios",
+   "pesquisa_bibliografica",
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_acao"
+  ],
+  "C011": [
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "pesquisa_bibliografica",
+   "pesquisa_exploratoria"
+  ],
+  "C012": [
+   "dados_secundarios",
+   "analise_de_conteudo",
+   "abordagem_quantitativa",
+   "abordagem_qualitativa",
+   "pesquisa_bibliografica"
+  ],
+  "C013": [
+   "abordagem_quantitativa",
+   "abordagem_qualitativa",
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "pesquisa_acao"
+  ],
+  "C014": [
+   "pesquisa_bibliografica",
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "pesquisa_exploratoria"
+  ],
+  "C015": [
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_exploratoria"
+  ],
+  "C016": [
+   "analise_de_conteudo",
+   "pesquisa_bibliografica",
+   "analise_do_discurso",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa"
+  ],
+  "C017": [
+   "pesquisa_bibliografica",
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "dados_secundarios"
+  ],
+  "C018": [
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_acao"
+  ],
+  "C019": [
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "abordagem_quantitativa"
+  ],
+  "C020": [
+   "abordagem_qualitativa",
+   "analise_de_conteudo",
+   "abordagem_quantitativa",
+   "pesquisa_exploratoria",
+   "analise_do_discurso"
+  ]
+ },
+ "hibrido": {
+  "C001": [
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_descritiva",
+   "entrevista_semiestruturada",
+   "estatistica_descritiva"
+  ],
+  "C002": [
+   "pesquisa_exploratoria",
+   "pesquisa_descritiva",
+   "pesquisa_bibliografica",
+   "pesquisa_documental",
+   "entrevista_semiestruturada"
+  ],
+  "C003": [
+   "abordagem_qualitativa",
+   "analise_de_conteudo",
+   "abordagem_quantitativa",
+   "pesquisa_descritiva",
+   "observacao"
+  ],
+  "C004": [
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "pesquisa_bibliografica",
+   "estudo_de_caso",
+   "questionario"
+  ],
+  "C005": [
+   "abordagem_qualitativa",
+   "pesquisa_descritiva",
+   "pesquisa_bibliografica",
+   "entrevista_semiestruturada",
+   "pesquisa_etnografica"
+  ],
+  "C006": [
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "abordagem_qualitativa",
+   "pesquisa_documental",
+   "estudo_de_caso"
+  ],
+  "C007": [
+   "abordagem_quantitativa",
+   "estudo_de_caso",
+   "abordagem_qualitativa",
+   "estatistica_inferencial",
+   "pesquisa_descritiva"
+  ],
+  "C008": [
+   "abordagem_qualitativa",
+   "questionario",
+   "pesquisa_documental",
+   "pesquisa_bibliografica",
+   "analise_de_conteudo"
+  ],
+  "C009": [
+   "abordagem_qualitativa",
+   "observacao",
+   "estudo_de_caso",
+   "abordagem_quantitativa",
+   "analise_de_conteudo"
+  ],
+  "C010": [
+   "pesquisa_documental",
+   "entrevista_semiestruturada",
+   "estatistica_descritiva",
+   "dados_secundarios",
+   "pesquisa_bibliografica"
+  ],
+  "C011": [
+   "abordagem_qualitativa",
+   "analise_de_conteudo",
+   "questionario",
+   "analise_tematica",
+   "entrevista_semiestruturada"
+  ],
+  "C012": [
+   "abordagem_qualitativa",
+   "abordagem_quantitativa",
+   "pesquisa_descritiva",
+   "levantamento",
+   "estudo_de_caso"
+  ],
+  "C013": [
+   "abordagem_qualitativa",
+   "levantamento",
+   "questionario",
+   "estudo_de_caso",
+   "analise_documental"
+  ],
+  "C014": [
+   "pesquisa_exploratoria",
+   "pesquisa_explicativa",
+   "observacao",
+   "pesquisa_documental",
+   "pesquisa_descritiva"
+  ],
+  "C015": [
+   "abordagem_qualitativa",
+   "pesquisa_experimental",
+   "pesquisa_bibliografica",
+   "dados_secundarios",
+   "analise_de_conteudo"
+  ],
+  "C016": [
+   "abordagem_qualitativa",
+   "pesquisa_documental",
+   "estudo_de_caso",
+   "levantamento",
+   "observacao"
+  ],
+  "C017": [
+   "pesquisa_bibliografica",
+   "analise_de_conteudo",
+   "estudo_de_caso",
+   "abordagem_qualitativa",
+   "abordagem_quantitativa"
+  ],
+  "C018": [
+   "pesquisa_bibliografica",
+   "abordagem_qualitativa",
+   "pesquisa_documental",
+   "estudo_de_caso",
+   "analise_de_conteudo"
+  ],
+  "C019": [
+   "analise_de_conteudo",
+   "abordagem_qualitativa",
+   "questionario",
+   "entrevista_semiestruturada",
+   "abordagem_quantitativa"
+  ],
+  "C020": [
+   "abordagem_qualitativa",
+   "analise_de_conteudo",
+   "estudo_de_caso",
+   "pesquisa_experimental",
+   "entrevista_semiestruturada"
+  ]
+ }
+}

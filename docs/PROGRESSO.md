@@ -19,7 +19,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 | 2 — Base de conhecimento e busca | Concluída (PR da branch `feature/parte-2-busca`) | Franklyn/Lucas |
 | 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-geracao`, no fork) | Lucas |
 | 4 — Orquestração, configuração e Excel | Depois da Parte 3 | Lucas |
-| 5 — Avaliação das respostas da IA | Depois de tudo pronto (fora do objetivo atual) | a definir |
+| 5 — Avaliação das respostas da IA | Em andamento: métricas para escolher modelo e prompt na calibração | Lucas |
 
 ---
 
@@ -100,6 +100,28 @@ Depois: Parte 4 (pipeline nas 59 + Excel), com o `v3` e os 3 modelos.
 
 ---
 
+## Parte 5 — Avaliação das respostas da IA
+
+**Objetivo agora:** medir as execuções da calibração para a Parte 3 escolher modelo e prompt **sem olhar as 59**. Detalhes na seção "Parte 5" de [divisao-tarefas.md](divisao-tarefas.md).
+
+- **Comando:** `python -m src.comparar` avalia todas as pastas de `data/sugestoes/calibracao/` e grava `relatorio.json` de cada uma e `comparacao.json` em `data/avaliacao/` (fora do git). `--sem-embedding` pula as temáticas.
+- **Referência da calibração:** `data/avaliacao/referencia_ia_calibracao.json`, escrita por IA às cegas (antes de qualquer execução). Fora do git. **Não é o gabarito do TCC**; o gabarito humano continua sendo `data/calibracao/gabarito_calibracao.json`.
+
+### Checklist
+- [x] 1 Ler as execuções (`respostas.json` + `execucao.json`)
+- [x] 2 Indicadores sem gabarito: status, tempo, tentativas, eixos cobertos, formato dos itens
+- [x] 3 Concordância entre execuções (Jaccard nas metodologias, similaridade nas temáticas)
+- [x] 4 Métricas testadas com dados inventados: P/R/F1 por dissertação e por eixo (macro e micro); temáticas por similaridade e5 como par sem ordem, com linha de base
+- [~] 5 Gabarito da calibração: referência da IA pronta; o gabarito humano do grupo ainda não existe
+- [x] 5b Medir as rodadas de ajuste da Parte 3 (v1, v2, busca corrigida, v3) com a régua congelada; métricas em `data/metricas/calibracao/rodada1` a `rodada4`, cada uma com `origem.json` (sha256 de tudo que entrou). O critério do v3, escrito antes da rodada, manteve o v3 (`rodada4/criterio_v3.json`)
+- [ ] 6 Relatório em Excel (espera o `openpyxl` da Parte 4) e gráfico por indicador
+- [ ] 7–9 Análise manual: só quando a professora enviar as respostas
+
+### Próximo passo
+Quando existir o gabarito humano da calibração: medir v1, v2 e v3 contra ele, com a mesma régua. Ganho que só aparece na referência de IA foi ajuste ao estilo dela.
+
+---
+
 ## Decisões tomadas (só as estratégicas)
 
 | Data | Parte | Decisão | Motivo |
@@ -129,3 +151,5 @@ Depois: Parte 4 (pipeline nas 59 + Excel), com o `v3` e os 3 modelos.
 | 2026-10-07 | 3 | Prompt fixado no `v3` | Critério escrito antes: F1 pareado médio v3 − v2 = +0,005 (≥ 0) e nenhuma trava. A margem é mínima: empate dentro do ruído, com o `v3` melhorando o 9b (+0,078 no `hibrido`, IC acima de zero) e não ajudando o 4b (−0,04 no `sem_rag` e no `denso`, dentro do ruído). Sem regra nova depois do resultado: o que sobrou está nas limitações do RESULTADOS.md |
 | 2026-10-07 | 3 | `Campo` e `RespostaIA` entram no `contratos.py` exatamente como na seção 3.1. Tempo e número de tentativas de cada dissertação ficam no `execucao.json` da rodada, fora do contrato | Atende a Parte 5 sem mudar o contrato |
 | 2026-10-07 | 2 | Na busca por sentido, cada verbete é representado pelo termo + sinônimos; a técnica `hibrido` soma a busca por palavra exata (BM25, juntos por RRF) | Na calibração, termos de método escritos no resumo que viram verbete: 16/26 com a definição, 20/26 só com termo + sinônimos, 27/27 com `hibrido` |
+| 2026-10-07 | 5 | Referência da calibração escrita por IA, às cegas, fora do git, só para ajustar o prompt; não substitui o gabarito humano. Cada metodologia é marcada como dita no resumo (cobrada na revocação) ou interpretação aceitável (não tira precisão) | Sem gabarito humano ainda, a Parte 3 precisava de uma régua; escrita antes das execuções para não copiar o modelo |
+| 2026-10-07 | 5 | Metodologia é reconhecida pela base + sinônimos e, se não bater exata, pelo conteúdo: conta todo método cujas palavras estão no item. O formato (item curto e exato × frase) é medido à parte | Os modelos juntam vários métodos num item só; a comparação exata dava zero a respostas certas |
