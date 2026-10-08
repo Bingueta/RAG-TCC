@@ -1,0 +1,153 @@
+{
+  "_sobre": "As 59 dissertações, prompt v3 fixado (tag v1-fixado), qwen3.5 2b/4b/9b × sem_rag/denso/hibrido. Só indicadores sem gabarito e concordância entre as 9 execuções: não existe referência para as 59 e nada foi ajustado olhando para elas.",
+  "gerado_em": "2026-10-08T00:21:21",
+  "regua": {
+    "sha256_comparar_py_bytes_windows": "e2432157463173bae8e62876796bfc686b06189985dc4850be091a0ab735c9d2",
+    "sha256_comparar_py_lf": "765598027d7f5420db1cb008bb6b1e2ef6ed78a3a7fd23367c01206fba27f9cd",
+    "comparar_py": "o mesmo arquivo: bytes como estão no Windows (CRLF, o hash congelado combinado) e com quebra de linha LF (como o git guarda, o que um clone reproduz)",
+    "sha256_projecao_da_base": "743355ad5a71fde863c76616987c69069b6c6d8cb0d4f4318d1f3911263f8ab5",
+    "projecao_da_base": "sha256 de json.dumps([[id, termo, eixo, sinonimos] ...], ensure_ascii=False, sort_keys=True): é só o que o comparar.py lê da base"
+  },
+  "lido": "só respostas.json e execucao.json de cada execução; data/corpus.json e o original não foram abertos",
+  "comandos": [
+    "python -m src.comparar --sugestoes <pasta só com as 9 execuções> --referencia nenhuma",
+    "python -m src.relatorio_excel data/metricas/corpus"
+  ],
+  "calibracao_v3_mesma_regua.json": "o v3 da calibração medido também sem referência, com o vocabulário só da base. É a comparação justa com as 59: com a referência, os termos de fora da base dela contavam como exatos e com eixo, e isso infla itens exatos e eixos cobertos",
+  "observacoes": {
+    "tempo_4b_denso": {
+      "media_s": 6.45,
+      "mediana_s": 4.3,
+      "fato": "a média vem de poucos casos lentos, CONSECUTIVOS na fila (posições 44 a 52; o mais lento com 61,9 s), sem repetição e com saída de tamanho normal; as mesmas dissertações levaram de 2 a 5 s no sem_rag e no hibrido",
+      "inferencia": "episódio passageiro da máquina, não do modelo nem do texto. Não confirmado: a causa não está nos dados"
+    }
+  },
+  "execucoes": [
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__denso__v3",
+      "sha256_respostas_json": "96c6ac17a5f5dcbc98646b5d1b6c5ae76f02b3319ea9457b9f35891d21e2d502",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "digest_do_modelo": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:42:24",
+      "fim": "2026-10-07T23:44:09"
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v3",
+      "sha256_respostas_json": "beb5f05b441c4ee4fc514b95b0902252a7f96460c5dd0e407ed7e9e51b410548",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "digest_do_modelo": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:44:11",
+      "fim": "2026-10-07T23:45:50"
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+      "sha256_respostas_json": "c21e9df8cc1463ead6611a7f5110e7134ba1a2efc524e730f3a703b6b5a51f17",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "digest_do_modelo": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:40:43",
+      "fim": "2026-10-07T23:42:22"
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__denso__v3",
+      "sha256_respostas_json": "32811d6f7b7b25d0c88e9cf57d37d4946715cfe907e11c30f636b5f6bf808a26",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "digest_do_modelo": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:49:38",
+      "fim": "2026-10-07T23:56:02"
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v3",
+      "sha256_respostas_json": "c61fc4ebc9394f7629273588474dd0fbaf807567ce190be1f9ea2f79a30019c1",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "digest_do_modelo": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:56:29",
+      "fim": "2026-10-08T00:00:55"
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+      "sha256_respostas_json": "c39ecaa956ff61613645624fa9d51b6dfdaf94ecd0f2af19d5b6165b7e8506b8",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "digest_do_modelo": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-07T23:45:52",
+      "fim": "2026-10-07T23:49:35"
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__denso__v3",
+      "sha256_respostas_json": "d7cd1150a2674ca022952a1447a75c955dce698a065b8f6ca66f6a6408d1dc18",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "digest_do_modelo": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-08T00:06:19",
+      "fim": "2026-10-08T00:11:13"
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v3",
+      "sha256_respostas_json": "5e9fb5d119341644cbd64381b55a6c3257ee232dc72c73b4ffcde104c362292b",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "digest_do_modelo": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-08T00:11:15",
+      "fim": "2026-10-08T00:16:03"
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+      "sha256_respostas_json": "1d6872786b2178aeffbf6405e5b07bbdef14e3c6dfca2a05d03096e07460316e",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "digest_do_modelo": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+      "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+      "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+      "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+      "inicio": "2026-10-08T00:00:59",
+      "fim": "2026-10-08T00:06:17"
+    }
+  ]
+}

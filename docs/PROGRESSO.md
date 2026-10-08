@@ -112,8 +112,10 @@ Lucas: tarefa 1.1.
 - [x] 6 Relatório em Excel e gráfico por indicador: `python -m src.relatorio_excel PASTA` grava o `.xlsx` ao lado de cada `comparacao.json` e `relatorio.json`. Fica num arquivo à parte para o `src/comparar.py` (a régua) não mudar de sha256
 - [ ] 7–9 Análise manual: só quando a professora enviar as respostas
 
+- [x] 5c As 59 com o prompt fixado (v3): indicadores sem gabarito e concordância das 9 execuções em `data/metricas/corpus/`. Sem referência e sem nenhum ajuste; o corpus não foi aberto. `calibracao_v3_mesma_regua.json` mede a calibração do mesmo jeito (só a base no vocabulário), para a comparação ser justa
+
 ### Próximo passo
-Quando existir o gabarito humano da calibração: medir v1, v2 e v3 contra ele, com a mesma régua. Ganho que só aparece na referência de IA foi ajuste ao estilo dela.
+Quando existir o gabarito humano da calibração: medir v1, v2 e v3 contra ele, com a mesma régua. Ganho que só aparece na referência de IA foi ajuste ao estilo dela. Quando a professora enviar a análise manual: tarefas 7 a 9 (importar, medir as 59, teto humano).
 
 ---
 
