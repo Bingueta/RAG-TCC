@@ -48,7 +48,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 ### Checklist
 
 **Etapa 1 — Ambiente**
-- [x] 1.1 Criar a branch `feature/parte-3-geracao` a partir da `main` atualizada (no fork `LucasFeres/RAG-TCC`; o PR vai para o repo do grupo)
+- [x] 1.1 Criar a branch `feature/parte-3-geracao` a partir da `main` atualizada (no fork `LucasFeres/RAG-TCC`; como levar ao repo do grupo é decisão do Franklyn)
 - [x] 1.2 Instalar o Ollama e baixar os modelos (fraco, forte, mais potente); confirmar quais rodam na máquina e quanto tempo cada um leva por dissertação — Ollama 0.40.0, modelos em `D:\ollama\modelos`; `qwen3.5` 2b/4b/9b levam ~1,6 / 3,5 / 5 s por dissertação
 - [x] 1.3 Instalar a biblioteca `ollama` (Python) e fixar a versão no `requirements.txt` (`ollama==0.6.3`)
 - [x] 1.4 Acrescentar a `src/contratos.py` os tipos `Campo` e `RespostaIA` (seção 3.1 da divisão, sem mudança)
