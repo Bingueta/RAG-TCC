@@ -1,8 +1,8 @@
-# Resultados — calibração da Parte 3 (geração com LLM)
+# Resultados — calibração (Parte 3) e execução nas 59 (Parte 4)
 
 Registro do que foi rodado, com qual LLM, como e com que resultado, para qualquer pessoa do grupo (ou a orientadora) conferir e repetir. Pedido do Franklyn em 07/10/2026.
 
-**Escopo:** só as **20 dissertações de calibração** (2022, C001 a C020, de fora das 59). Nada foi rodado nas 59 ainda: isso é da Parte 4, depois de o prompt ser fixado (regra C3). O andamento e as decisões estão em [PROGRESSO.md](PROGRESSO.md); este arquivo guarda os **números** e o **passo a passo**.
+**Escopo:** o ajuste foi feito só com as **20 dissertações de calibração** (2022, C001 a C020, de fora das 59). Só depois de prompt e base fixados (tag `v1-fixado` no git) a ferramenta rodou nas 59 (seção 5.6), e nada foi ajustado olhando o resultado delas (regra C3). O andamento e as decisões estão em [PROGRESSO.md](PROGRESSO.md); este arquivo guarda os **números** e o **passo a passo**.
 
 ## 1. Resumo
 
@@ -12,6 +12,7 @@ Registro do que foi rodado, com qual LLM, como e com que resultado, para qualque
 | Técnicas de RAG | `sem_rag`, `denso`, `hibrido`, todas mantidas para comparar | 5.2 |
 | Prompt | `v3`, fixado pelo critério escrito antes da rodada; margem mínima (empate com o `v2` dentro do ruído) | 5.3 a 5.5 |
 | Busca `hibrido` | corrigida: sinal de várias palavras só casa como expressão inteira | 5.4 |
+| Execução nas 59 | 3 modelos × 3 técnicas, prompt `v3`: 9 planilhas em `data/sugestoes/` | 5.6 |
 
 ## 2. Ambiente
 
@@ -104,8 +105,11 @@ ollama pull qwen3.5:9b-q4_K_M
 .\.venv\Scripts\python notebooks/parte3_calibracao.py --versao v3 --tecnicas sem_rag denso hibrido `
     --modelos qwen3.5:2b-q4_K_M qwen3.5:4b-q4_K_M qwen3.5:9b-q4_K_M
 
-# 5. Medir (branch feature/parte-5-avaliacao)
+# 5. Medir a calibração (Parte 5)
 .\.venv\Scripts\python -m src.comparar
+
+# 6. Rodar nas 59 e gerar as planilhas (Parte 4): 3 modelos × 3 técnicas, prompt v3
+.\.venv\Scripts\python -m src.pipeline --todos
 ```
 
 Com a mesma máquina, o mesmo digest de modelo e os mesmos arquivos, as respostas saem iguais (temperatura 0 e seed fixa). Em outra placa, ou com outra fração do modelo na VRAM, pequenas diferenças numéricas podem mudar alguma resposta.
@@ -202,16 +206,45 @@ O `v3` serve ao 9b (melhora nas três técnicas, e no `hibrido` com o intervalo 
 - **Os dois:** entrevista promovida a semiestruturada só no `hibrido` (1 ou 2 vezes), porque esse verbete é oferecido em 8 das 20; e instrumentos ou técnicas com nome próprio fora da base seguem sendo o limite dos modelos.
 - **2b:** fora do alcance do prompt; continua copiando frase e escrevendo temáticas longas.
 
+### 5.6 Execução nas 59 (Parte 4)
+
+Depois de fixados o prompt `v3` e a base (tag `v1-fixado`), a ferramenta rodou nas 59 dissertações com os 3 modelos e as 3 técnicas: `python -m src.pipeline --todos`. Nada foi ajustado depois de ver o resultado.
+
+| Modelo | Tempo por dissertação | 59 dissertações, por técnica | Metodologias por resposta | Erros / 2ª tentativa | Campos sem evidência |
+| --- | --- | --- | --- | --- | --- |
+| qwen3.5:2b | 1,6–1,7 s | ~1,7 min | 1,6–1,7 | 0 / 0 | 1 (de 641) |
+| qwen3.5:4b | 3,6–3,7 s (6,4 s no `denso`) | 3,5–6,3 min | 3,4–3,7 | 0 / 0 | 3 (de 980) |
+| qwen3.5:9b | 4,8–4,9 s | ~4,8 min | 3,6–3,8 | 0 / 0 | 0 (de 1.009) |
+
+São 531 respostas (59 × 9) e 2.630 campos; 4 sem evidência.
+
+Nenhuma resposta saiu como "Não informado no resumo". O 4b no `denso` marcou 6,4 s de média, mas a mediana é 4,3 s: a diferença vem de 5 dissertações consecutivas na fila (a pior com 61,9 s), sem repetição e com saída de tamanho normal, e as mesmas levaram de 2 a 5 s nas outras técnicas. Aponta para um episódio passageiro da máquina, não do modelo nem do texto; sem causa confirmada.
+
+**Indicadores sem gabarito** (Parte 5, `data/metricas/corpus/`). Não há referência para as 59, então estes indicadores medem a forma e a estabilidade das respostas, não o acerto.
+
+- **A forma nas 59 é a mesma das 20.** Medida com a mesma régua da calibração (vocabulário só da base), nenhum indicador varia mais que uns 5 pontos de um conjunto para o outro. Não há sinal de que o prompt ajustado nas 20 escreva pior fora delas.
+- **Termo da base e tamanho das temáticas.** O 9b e o 4b escrevem de 65% a 72% dos itens de metodologia como termo da base; o 2b, cerca de metade. As temáticas têm 4 a 5 palavras no 9b, 6 a 8 no 4b e 17 a 19 no 2b.
+- **Eixos cobertos.** A cobertura dos quatro eixos (abordagem, procedimento, coleta e análise) é de 2,1 a 2,3 no 4b e no 9b e de 1,2 a 1,5 no 2b. É um piso, porque método de fora da base não tem eixo conhecido.
+- **O modelo pesa mais que a técnica na concordância.** O mesmo modelo com técnicas diferentes concorda 0,68 (4b) e 0,70 (9b) nas metodologias (Jaccard), e o 4b com o 9b, na mesma técnica, 0,67; com o 2b, a concordância cai para cerca de 0,4. Nas temáticas, a similaridade entre execuções vai de 0,90 a 0,97, mais alta entre técnicas do mesmo modelo (0,97) do que entre modelos (0,90 a 0,94).
+- **Dissertações estáveis e instáveis.** Por dissertação, a mediana do Jaccard nos 36 pares de execuções é 0,50: 19 das 59 têm metodologias estáveis (acima de 0,6) e 10 são instáveis (abaixo de 0,3). Essas 10 são as que mais pedem conferência humana; estão por dissertação em `data/metricas/corpus/comparacao.json`.
+
+**Concordância alta não é acerto**, porque dois modelos podem errar igual. Estes números dizem que a ferramenta roda de ponta a ponta, sem falha, quanto custa e onde ela hesita — não se as respostas estão certas. A qualidade nas 59 só se mede quando chegarem as respostas da análise manual (Parte 5, tarefas 7 a 9).
+
+**Qual planilha os analistas vão consultar** na análise com a ferramenta é decisão do grupo (seção 12 do planejamento). Na calibração, o 9b com o `v3` teve o melhor F1 nas três técnicas, mas escolher pela execução que mais concordar com a análise manual empurraria a nova análise na direção da antiga.
+
 ## 6. Onde está cada coisa
 
 | Caminho | O que é |
 | --- | --- |
-| `data/sugestoes/calibracao/<modelo>__<técnica>__<prompt>[__sufixo]/respostas.json` | As respostas de cada rodada, no formato `RespostaIA` (com a saída bruta do modelo) |
+| `data/sugestoes/<modelo>__<técnica>__v3/respostas.xlsx` | **As planilhas das 59**: abas `respostas` (as 6 colunas), `detalhes` (evidência como texto da frase) e `execucao`. Com `respostas.json` e `execucao.json` ao lado |
+| `data/sugestoes/calibracao/<modelo>__<técnica>__<prompt>[__sufixo]/respostas.json` | As respostas de cada rodada de calibração, no formato `RespostaIA` (com a saída bruta do modelo); as do `v3` também têm a planilha |
 | `.../execucao.json` | Modelo e digest, prompt e sha256, sha256 da base e da busca (da rodada 3 em diante), parâmetros, máquina, versão do Ollama, tempo e tentativas por dissertação |
 | `src/prompts/v1.txt`, `v2.txt`… | Cada versão do prompt, guardada sem alteração |
 | `notebooks/parte3_calibracao.py` | O script que roda a calibração (não tem opção para as 59, de propósito) |
 | `src/comparar.py`, `notebooks/parte5_diagnosticos.py`, `notebooks/parte5_criterio_v3.py` | As métricas, os diagnósticos e o critério do `v3` (Parte 5) |
-| `data/metricas/calibracao/rodada1` a `rodada4/` | As métricas de cada rodada, em JSON. O `origem.json` de cada uma traz o sha256 das respostas medidas, da régua, do prompt, da base e da busca |
+| `data/metricas/calibracao/rodada1` a `rodada4/` | As métricas de cada rodada de calibração, em JSON (e `comparacao.xlsx`, com gráficos). O `origem.json` de cada uma traz o sha256 das respostas medidas, da régua, do prompt, da base e da busca |
+| `data/metricas/corpus/` | Os indicadores sem gabarito das 9 execuções nas 59: `comparacao.json`/`.xlsx` (com concordância e gráficos), um relatório por execução e o `origem.json` |
+| `src/relatorio_excel.py` | Gera os `comparacao.xlsx` a partir das métricas já gravadas (Parte 5) |
 
 **Rodadas:** 1 = `v1` (5 modelos, `hibrido`; e os 3 Qwen3.5 em `sem_rag` e `denso`); 2 = `v2` (Qwen3.5, 3 técnicas); 3 = `v2` no `hibrido` com a busca corrigida (pastas `__busca-corrigida`); 4 = `v3` (Qwen3.5, 3 técnicas, busca corrigida).
 

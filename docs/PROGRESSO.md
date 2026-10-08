@@ -18,7 +18,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 | 1 — Dados e unitarização | Concluída (PR #1 na `main`) | Franklyn/Lucas |
 | 2 — Base de conhecimento e busca | Concluída (PR da branch `feature/parte-2-busca`) | Franklyn/Lucas |
 | 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-geracao`, no fork) | Lucas |
-| 4 — Orquestração, configuração e Excel | Depois da Parte 3 | Lucas |
+| 4 — Orquestração, configuração e Excel | Concluída: `python -m src.pipeline`; as 59 rodadas com 3 modelos × 3 técnicas (branch `feature/parte-4-excel`, no fork) | Lucas |
 | 5 — Avaliação das respostas da IA | Em andamento: métricas para escolher modelo e prompt na calibração | Lucas |
 
 ---
@@ -80,8 +80,6 @@ Parte 3 concluída. Pendências que não são de código:
 - O grupo confirma se, no Forms, a temática levava o lugar ("… em Tarumirim"). O `v3` tira o lugar; a medição não mostrou diferença.
 - O Franklyn decide se leva para o repo do grupo a correção da busca (`feature/parte-2-correcao-busca`).
 
-Depois: Parte 4 (pipeline nas 59 + Excel), com o `v3` e os 3 modelos.
-
 ---
 
 ## Parte 4 — Orquestração, configuração e Excel
@@ -89,14 +87,17 @@ Depois: Parte 4 (pipeline nas 59 + Excel), com o `v3` e os 3 modelos.
 **Objetivo:** um comando que pega as 59 dissertações, roda busca (Parte 2) + LLM (Parte 3) e grava o **Excel**. Detalhes na seção "Parte 4" de [divisao-tarefas.md](divisao-tarefas.md).
 
 ### Checklist
-- [ ] 1 Branch `feature/parte-4-excel`
-- [ ] 2 `src/pipeline.py`: corpus → `unitarizar` → `recuperar` → `gerar_resposta` → Excel; opções `--modelo`, `--tecnica`, `--corpus` (calibração ou 59) e `--todos` (todos os modelos × técnicas)
-- [ ] 3 `src/exportar.py`: aba `respostas` com exatamente `id`, `titulo`, `tematica_1`, `tematica_2`, `metodologias` (separadas por "; "), `modelo`; aba `detalhes` (frases de evidência, status, técnica, versão do prompt); aba `execucao` (máquina, modelo, técnica, prompt, data)
-- [ ] 4 Uma pasta por execução em `data/sugestoes/` (ex.: `qwen2.5-7b-instruct__hibrido__v1/`); retomar execução interrompida; erro numa dissertação não para as outras
-- [ ] 5 Teste da regra de ouro: nenhuma parte do pipeline lê `data/analise_manual.json`
-- [ ] 6 Seção "Instalação" do `README.md`
-- [ ] 7 Gerar os Excel finais: os 3 modelos nas 59 (técnica `hibrido`; `sem_rag` como comparação, se der tempo)
-- [ ] 8 Pull request `[Parte 4] Pipeline e Excel`
+- [x] 1 Branch `feature/parte-4-excel` (no fork, a partir da `feature/parte-3-geracao`)
+- [x] 2 `src/pipeline.py`: corpus → `unitarizar` → `recuperar` → `gerar_resposta` → Excel; opções `--modelo`, `--tecnica`, `--corpus` (calibração ou 59), `--todos`, `--mock` e `--sobrescrever`
+- [x] 3 `src/exportar.py`: aba `respostas` com exatamente `id`, `titulo`, `tematica_1`, `tematica_2`, `metodologias` (separadas por "; "), `modelo`; aba `detalhes` (evidência como texto das frases, status, técnica, versão do prompt); aba `execucao` (máquina, bibliotecas, modelo e digest, técnica, prompt, hashes, data, tempo)
+- [x] 4 Uma pasta por execução em `data/sugestoes/`; retoma execução interrompida; erro numa dissertação não para as outras; execução completa não é regravada (só a planilha)
+- [x] 5 Teste da regra de ouro (`tests/test_nao_le_analise_manual.py`): nenhum arquivo das Partes 1 a 4 cita a análise manual, e o pipeline em modo mock não abre nenhum arquivo com esse nome
+- [x] 6 Seções "Instalação" e "Uso" do `README.md`
+- [x] 7 Gerar os Excel finais: os 3 modelos × as 3 técnicas nas 59, com o prompt `v3` (`data/sugestoes/<modelo>__<tecnica>__v3/`)
+- [x] 8 ~~Pull request~~ O Franklyn não pediu PR: tudo está no fork, na branch `feature/parte-4-excel`, que contém as Partes 2 (correção), 3, 4 e 5
+
+### Próximo passo
+Parte 4 concluída. Qual das 9 planilhas os analistas vão consultar na análise com a ferramenta é decisão do grupo (seção 12 do planejamento): escolher pela que mais concordar com a análise manual empurraria a nova análise na direção da antiga.
 
 ---
 
