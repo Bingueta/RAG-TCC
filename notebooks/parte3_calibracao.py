@@ -9,6 +9,7 @@ Uso (na raiz do repositório):
     ... --versao v2          outra versão do prompt
     ... --ids C001 C002      só algumas dissertações
     ... --sobrescrever       refaz o que já existe (sem isso, retoma de onde parou)
+    ... --sufixo busca-corrigida   pasta nova para a mesma versão do prompt com outra busca
 
 Saída, uma pasta por combinação (modelo × técnica × versão do prompt):
     data/sugestoes/calibracao/<modelo>__<tecnica>__<versao>/
@@ -42,9 +43,17 @@ from src.unitarizar import unitarizar  # noqa: E402
 PASTA_SAIDA = RAIZ / "data" / "sugestoes" / "calibracao"
 
 
-def nome_da_pasta(modelo: str, tecnica: str, versao: str) -> str:
-    # O Windows não aceita ":" em nome de pasta (seção 3.4 da divisão).
-    return f"{modelo.replace(':', '-').replace('/', '-')}__{tecnica}__{versao}"
+def nome_da_pasta(modelo: str, tecnica: str, versao: str, sufixo: str = "") -> str:
+    # O Windows não aceita ":" em nome de pasta (seção 3.4 da divisão). O sufixo separa
+    # rodadas com o mesmo prompt e outra busca (ex.: "busca-corrigida"), sem apagar as antigas.
+    nome = f"{modelo.replace(':', '-').replace('/', '-')}__{tecnica}__{versao}"
+    return f"{nome}__{sufixo}" if sufixo else nome
+
+
+def sha256_do_texto(caminho: Path) -> str:
+    # Lido como texto (quebra de linha normalizada): o git no Windows troca LF por CRLF no
+    # checkout, e o hash não pode mudar por causa disso.
+    return hashlib.sha256(caminho.read_text(encoding="utf-8").encode("utf-8")).hexdigest()
 
 
 def _texto_de_comando(*comando) -> str:
@@ -114,8 +123,8 @@ def aquecer(cliente, modelo: str) -> dict:
     return {"segundos_para_carregar": carga}
 
 
-def rodar(modelo: str, tecnica: str, versao: str, corpus, sobrescrever: bool) -> Path:
-    pasta = PASTA_SAIDA / nome_da_pasta(modelo, tecnica, versao)
+def rodar(modelo: str, tecnica: str, versao: str, corpus, sobrescrever: bool, sufixo: str = "") -> Path:
+    pasta = PASTA_SAIDA / nome_da_pasta(modelo, tecnica, versao, sufixo)
     pasta.mkdir(parents=True, exist_ok=True)
     respostas: dict[str, RespostaIA] = {}
     segundos: dict[str, float] = {}
@@ -127,14 +136,14 @@ def rodar(modelo: str, tecnica: str, versao: str, corpus, sobrescrever: bool) ->
 
     cliente = _cliente()
     digest = next((m.digest for m in cliente.list().models if m.model == modelo), "")
-    # Lido como texto (quebra de linha normalizada): o git no Windows troca LF por CRLF no
-    # checkout, e o hash não pode mudar por causa disso — o texto que vai ao modelo não muda.
-    prompt = (PASTA_PROMPTS / f"{versao}.txt").read_text(encoding="utf-8").encode("utf-8")
     execucao = {
         "inicio": datetime.now().isoformat(timespec="seconds"),
         "modelo": modelo, "digest_do_modelo": digest, "tecnica": tecnica, "versao_prompt": versao,
-        # O hash prova que o v1 desta rodada é o mesmo v1 de hoje (prompt editado sem mudar de versão).
-        "sha256_do_prompt": hashlib.sha256(prompt).hexdigest(),
+        # Os hashes provam com que prompt, base e busca a rodada foi feita (um arquivo editado
+        # sem mudar de nome não passa despercebido).
+        "sha256_do_prompt": sha256_do_texto(PASTA_PROMPTS / f"{versao}.txt"),
+        "sha256_da_base": sha256_do_texto(config.CAMINHO_BASE),
+        "sha256_do_recuperar": sha256_do_texto(RAIZ / "src" / "recuperar.py"),
         "temperatura": config.TEMPERATURA, "seed": config.SEED, "num_ctx": config.NUM_CTX, "pensar": config.PENSAR,
         "tentativas": config.TENTATIVAS, "modelo_embedding": config.MODELO_EMBEDDING,
         "top_k_frases": config.TOP_K_FRASES, "top_k_verbetes": config.TOP_K_VERBETES,
@@ -170,6 +179,7 @@ def main() -> None:
     parser.add_argument("--versao", default=config.VERSAO_PROMPT)
     parser.add_argument("--ids", nargs="+", help="só estas dissertações (ex.: C001 C002)")
     parser.add_argument("--sobrescrever", action="store_true")
+    parser.add_argument("--sufixo", default="", help="acrescentado ao nome da pasta (ex.: busca-corrigida)")
     args = parser.parse_args()
 
     for modelo in args.modelos:
@@ -180,7 +190,7 @@ def main() -> None:
     cliente = _cliente()
     for modelo in args.modelos:
         for tecnica in args.tecnicas:
-            rodar(modelo, tecnica, args.versao, corpus, args.sobrescrever)
+            rodar(modelo, tecnica, args.versao, corpus, args.sobrescrever, args.sufixo)
         cliente.generate(model=modelo, keep_alive=0)  # libera a placa para o próximo modelo
 
 
