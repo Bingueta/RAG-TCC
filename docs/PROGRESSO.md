@@ -112,7 +112,7 @@ Lucas: tarefa 1.1.
 - [ ] 7–9 Análise manual: só quando a professora enviar as respostas
 
 ### Próximo passo
-Medir o prompt v2 da Parte 3 contra a mesma referência, sem mudá-la.
+Medir o v2 com a busca corrigida (Parte 2) contra o v2 antigo no `hibrido`; depois, o v3 (último ajuste). A régua fica congelada até lá: `src/comparar.py` e a referência com o mesmo sha256 da medição do v2, e a base só pode mudar nos `sinais` (o `comparar.py` usa só `id`, `termo`, `eixo` e `sinonimos`).
 
 ---
 
