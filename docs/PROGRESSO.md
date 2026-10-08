@@ -19,7 +19,7 @@ Legenda: [ ] pendente · [~] em andamento · [x] concluído · [!] bloqueado
 | 2 — Base de conhecimento e busca | Concluída (PR da branch `feature/parte-2-busca`) | Franklyn/Lucas |
 | 3 — Geração com LLM e validação | Concluída: prompt `v3`, `qwen3.5` 2b/4b/9b (branch `feature/parte-3-geracao`, no fork) | Lucas |
 | 4 — Orquestração, configuração e Excel | Concluída: `python -m src.pipeline`; as 59 rodadas com 3 modelos × 3 técnicas (branch `feature/parte-4-excel`, no fork) | Lucas |
-| 5 — Avaliação das respostas da IA | Em andamento: métricas para escolher modelo e prompt na calibração | Lucas |
+| 5 — Avaliação das respostas da IA | Em andamento: calibração medida (rodadas 1 a 4) e indicadores sem gabarito nas 59 prontos; falta a comparação com a análise manual, quando a professora enviar | Lucas |
 
 ---
 
