@@ -1,0 +1,2238 @@
+[
+  {
+    "dissertacao_id": "D001",
+    "tematica_1": {
+      "texto": "A análise das perspectivas territoriais e a integração entre as dimensões jurídicas, psicológicas e sociais da Síndrome de Alienação Parental.",
+      "evidencia": [
+        "F7",
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A aplicação da abordagem dramatística de Kenneth Burke para examinar a percepção do espaço-temporal na criança e no adolescente.",
+      "evidencia": [
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise das perspectivas territoriais e a integração entre as dimensões jurídicas, psicológicas e sociais da Síndrome de Alienação Parental.\",\n    \"evidencia\": [\n      \"F7\",\n      \"F9\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A aplicação da abordagem dramatística de Kenneth Burke para examinar a percepção do espaço-temporal na criança e no adolescente.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D002",
+    "tematica_1": {
+      "texto": "Conflitos territoriais entre a comunidade de Pingo D'Agua e o Parque Estadual do Rio Doce, analisados sob as dimensões socioeconômicas e socioambientais.",
+      "evidencia": [
+        "F7",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A relação entre a gestão do parque e a população residente, identificando ações de integração e lacunas no processo participativo.",
+      "evidencia": [
+        "F6",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa por meio do método fenomenográfico.",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Conflitos territoriais entre a comunidade de Pingo D'Agua e o Parque Estadual do Rio Doce, analisados sob as dimensões socioeconômicas e socioambientais.\",\n    \"evidencia\": [\n      \"F7\",\n      \"F10\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A relação entre a gestão do parque e a população residente, identificando ações de integração e lacunas no processo participativo.\",\n    \"evidencia\": [\n      \"F6\",\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa por meio do método fenomenográfico.\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D003",
+    "tematica_1": {
+      "texto": "A relação com o saber estabelecida por mulheres estudantes do ensino superior na transição para o ensino remoto durante a pandemia.",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Os lugares-dentro dos-lugares e as práticas socioespaciais organizadas pelos participantes em contextos de cuidado e simultaneidade.",
+      "evidencia": [
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa biográfica e (auto)biográfica em educação, com foco na teoria da relação com o saber.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevistas narrativas com as participantes do estudo.",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A relação com o saber estabelecida por mulheres estudantes do ensino superior na transição para o ensino remoto durante a pandemia.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Os lugares-dentro dos-lugares e as práticas socioespaciais organizadas pelos participantes em contextos de cuidado e simultaneidade.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa biográfica e (auto)biográfica em educação, com foco na teoria da relação com o saber.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevistas narrativas com as participantes do estudo.\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D004",
+    "tematica_1": {
+      "texto": "A migração como estratégia de proteção do corpo-território para mulheres vítimas de violência doméstica em Governador Valadares.",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A efetividade da migração para a proteção do corpo-território após o atendimento às medidas protetivas.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista em profundidade",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A migração como estratégia de proteção do corpo-território para mulheres vítimas de violência doméstica em Governador Valadares.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A efetividade da migração para a proteção do corpo-território após o atendimento às medidas protetivas.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista em profundidade\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D005",
+    "tematica_1": {
+      "texto": "Práticas de numeramento e territórios vividos por estudantes dos anos finais do Ensino Fundamental",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Corporificação das práticas de numeramento em meio à vulnerabilidade do lugar",
+      "evidencia": [
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Investigação com abordagem qualitativa e uso de dados secundários",
+        "evidencia": [
+          "F1",
+          "F2",
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Práticas de numeramento e territórios vividos por estudantes dos anos finais do Ensino Fundamental\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F3\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Corporificação das práticas de numeramento em meio à vulnerabilidade do lugar\",\n    \"evidencia\": [\n      \"F9\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Investigação com abordagem qualitativa e uso de dados secundários\",\n      \"evidencia\": [\n        \"F1\",\n        \"F2\",\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D006",
+    "tematica_1": {
+      "texto": "A percepção ambiental da população rural de Marliéria sobre a transformação do lugar em decorrência da pavimentação da estrada LMG-760.",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Os impactos socioambientais decorrentes da pavimentação da LMG-760 na região do Parque Estadual do Rio Doce.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental e história oral.",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A percepção ambiental da população rural de Marliéria sobre a transformação do lugar em decorrência da pavimentação da estrada LMG-760.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Os impactos socioambientais decorrentes da pavimentação da LMG-760 na região do Parque Estadual do Rio Doce.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental e história oral.\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D007",
+    "tematica_1": {
+      "texto": "Análise dos fatores sociodemográficos e epidemiológicos associados ao tempo para início do tratamento do câncer de próstata.",
+      "evidencia": [
+        "F1",
+        "F5",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Força de associação entre fatores sociodemográficos e epidemiológicos com o tempo para início do tratamento.",
+      "evidencia": [
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo epidemiológico observacional, analítico, de coorte retrospectivo",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise descritiva das características sociodemográficas e epidemiológicas",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise dos fatores sociodemográficos e epidemiológicos associados ao tempo para início do tratamento do câncer de próstata.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F5\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Força de associação entre fatores sociodemográficos e epidemiológicos com o tempo para início do tratamento.\",\n    \"evidencia\": [\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo epidemiológico observacional, analítico, de coorte retrospectivo\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Análise descritiva das características sociodemográficas e epidemiológicas\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D008",
+    "tematica_1": {
+      "texto": "Racismo e injúrias vividas pelos docentes negros no ambiente escolar",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Análise da literatura sobre o racismo vivido por docentes negros no território escolar",
+      "evidencia": [
+        "F8",
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa qualitativa",
+        "evidencia": [
+          "F4",
+          "F5",
+          "F12"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Racismo e injúrias vividas pelos docentes negros no ambiente escolar\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Análise da literatura sobre o racismo vivido por docentes negros no território escolar\",\n    \"evidencia\": [\n      \"F8\",\n      \"F9\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa qualitativa\",\n      \"evidencia\": [\n        \"F4\",\n        \"F5\",\n        \"F12\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D009",
+    "tematica_1": {
+      "texto": "A mediação como prática adequada de tratamento de conflitos",
+      "evidencia": [
+        "F3",
+        "F5",
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Desenvolvimento de pesquisas que ampliem os conhecimentos, posicionamentos, críticas e análise da contribuição da mediação no campo de atuação do profissional contábil.",
+      "evidencia": [
+        "F10",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica, análise documental e aplicação de questionário on-line",
+        "evidencia": [
+          "F7",
+          "F8",
+          "F10"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A mediação como prática adequada de tratamento de conflitos\",\n    \"evidencia\": [\n      \"F3\",\n      \"F5\",\n      \"F9\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Desenvolvimento de pesquisas que ampliem os conhecimentos, posicionamentos, críticas e análise da contribuição da mediação no campo de atuação do profissional contábil.\",\n    \"evidencia\": [\n      \"F10\",\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica, análise documental e aplicação de questionário on-line\",\n      \"evidencia\": [\n        \"F7\",\n        \"F8\",\n        \"F10\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D010",
+    "tematica_1": {
+      "texto": "Estudo da transmissão domiciliar da covid-19 e vulnerabilidades das famílias.",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Análise quantitativa de taxas de ataque secundário em municípios mineiros.",
+      "evidencia": [
+        "F6",
+        "F8",
+        "F14"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo transversal com análise quantitativa de bases de dados notificados.",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Estudo da transmissão domiciliar da covid-19 e vulnerabilidades das famílias.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Análise quantitativa de taxas de ataque secundário em municípios mineiros.\",\n    \"evidencia\": [\n      \"F6\",\n      \"F8\",\n      \"F14\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo transversal com análise quantitativa de bases de dados notificados.\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D011",
+    "tematica_1": {
+      "texto": "Análise de conteúdo das entrevistas para identificar motivos da saída do emprego anterior e decisão de empreender.",
+      "evidencia": [
+        "F14"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Posição social de submissão e desigualdade da mulher em relação ao homem no mercado formal.",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F11"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F12"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise de conteúdo das entrevistas para identificar motivos da saída do emprego anterior e decisão de empreender.\",\n    \"evidencia\": [\n      \"F14\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Posição social de submissão e desigualdade da mulher em relação ao homem no mercado formal.\",\n    \"evidencia\": [\n      \"F4\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F11\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F12\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D012",
+    "tematica_1": {
+      "texto": "A análise da territorialização das ações coletivas e individuais do cirurgião-dentista na Estratégia Saúde da Família no município de Ipanema/MG.",
+      "evidencia": [
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A formação acadêmica dos cirurgiões-dentistas e sua adaptação ao modelo de atenção primária da Estratégia Saúde da Família.",
+      "evidencia": [
+        "F9",
+        "F11",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo de caso com abordagem qualitativa e coleta por meio de entrevista semiestruturada.",
+        "evidencia": [
+          "F4",
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise da territorialização das ações coletivas e individuais do cirurgião-dentista na Estratégia Saúde da Família no município de Ipanema/MG.\",\n    \"evidencia\": [\n      \"F3\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A formação acadêmica dos cirurgiões-dentistas e sua adaptação ao modelo de atenção primária da Estratégia Saúde da Família.\",\n    \"evidencia\": [\n      \"F9\",\n      \"F11\",\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo de caso com abordagem qualitativa e coleta por meio de entrevista semiestruturada.\",\n      \"evidencia\": [\n        \"F4\",\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D013",
+    "tematica_1": {
+      "texto": "A proposta de restauração ambiental do Instituto Terra, por meio do Programa Olhos D'Água, como caminho para o desenvolvimento sustentável e a racionalidade ambiental.",
+      "evidencia": [
+        "F1",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A análise da construção da racionalidade econômica hegemônica e sua influência na história da Bacia Hidrográfica do Vale do Rio Doce.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A proposta de restauração ambiental do Instituto Terra, por meio do Programa Olhos D'Água, como caminho para o desenvolvimento sustentável e a racionalidade ambiental.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A análise da construção da racionalidade econômica hegemônica e sua influência na história da Bacia Hidrográfica do Vale do Rio Doce.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D014",
+    "tematica_1": {
+      "texto": "Exploração e análise dos aspectos do Sagrado Feminino, incluindo mente, corpo e espiritualidade feminina.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Verificação da percepção das mulheres sobre as dificuldades e benefícios das práticas do Sagrado Feminino.",
+      "evidencia": [
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa exploratória",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Exploração e análise dos aspectos do Sagrado Feminino, incluindo mente, corpo e espiritualidade feminina.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Verificação da percepção das mulheres sobre as dificuldades e benefícios das práticas do Sagrado Feminino.\",\n    \"evidencia\": [\n      \"F9\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa exploratória\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D015",
+    "tematica_1": {
+      "texto": "Análise das relações de poder e construção do território simbólico no filme \"The Batman\".",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Representações sociais de vingança e justiça na narrativa cinematográfica contemporânea.",
+      "evidencia": [
+        "F5",
+        "F7",
+        "F10",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise do discurso",
+        "evidencia": [
+          "F4",
+          "F6",
+          "F8",
+          "F10",
+          "F12"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise das relações de poder e construção do território simbólico no filme \\\"The Batman\\\".\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Representações sociais de vingança e justiça na narrativa cinematográfica contemporânea.\",\n    \"evidencia\": [\n      \"F5\",\n      \"F7\",\n      \"F10\",\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise do discurso\",\n      \"evidencia\": [\n        \"F4\",\n        \"F6\",\n        \"F8\",\n        \"F10\",\n        \"F12\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D016",
+    "tematica_1": {
+      "texto": "A análise das motivações dos motoristas de aplicativos revela que, apesar da percepção de precarização e a ausência de garantias trabalhistas, não há intenção de migrar para o trabalho formal.",
+      "evidencia": [
+        "F6",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O fenômeno da uberização é complexo e moldado pela influência das ideias neoliberais sobre a atividade laboral dos trabalhadores.",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise das motivações dos motoristas de aplicativos revela que, apesar da percepção de precarização e a ausência de garantias trabalhistas, não há intenção de migrar para o trabalho formal.\",\n    \"evidencia\": [\n      \"F6\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O fenômeno da uberização é complexo e moldado pela influência das ideias neoliberais sobre a atividade laboral dos trabalhadores.\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D017",
+    "tematica_1": {
+      "texto": "A análise etnográfica das postagens no Instagram e a avaliação da agenda socioambiental das ações de coleta seletiva.",
+      "evidencia": [
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A eficácia das práticas educacionais da ASCCOR na mudança de hábitos e a gestão individual dos resíduos.",
+      "evidencia": [
+        "F1",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise etnográfica",
+        "evidencia": [
+          "F4",
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise etnográfica das postagens no Instagram e a avaliação da agenda socioambiental das ações de coleta seletiva.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A eficácia das práticas educacionais da ASCCOR na mudança de hábitos e a gestão individual dos resíduos.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise etnográfica\",\n      \"evidencia\": [\n        \"F4\",\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D018",
+    "tematica_1": {
+      "texto": "O neoliberalismo promove uma alteração sutil e súbita no indivíduo, desconstruindo lugares e excluindo o Outro, enquanto a Geografia das Emoções conceitua espaço e lugar para entender essas tentativas de desconstrução.",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O sujeito do desempenho é categorizado como feliz, acelerado, narcisista, solitário, doente e sem conclusão, habitando não lugares onde a sociedade atual é construída.",
+      "evidencia": [
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "A pesquisa contextualiza o leitor sobre o plano de fundo das relações sociais, especificamente no neoliberalismo e no psicopoder como instrumento de dominação.",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "O grau de (des)estruturação que atinge o sujeito atual é compreendido através da categorização das características do sujeito que só trabalha, em sua paradoxal liberdade.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "A nova forma de vida e a tentativa de desconstrução dos lugares pelo neoliberalismo são registradas para compreender a virada humanista da Geografia, com a finalidade de conceituar o espaço e o lugar.",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "A sociedade atual passa a ser construída por não lugares onde habita o sujeito do desempenho, demonstrando como esse contexto é inscrito no trabalho.",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O neoliberalismo promove uma alteração sutil e súbita no indivíduo, desconstruindo lugares e excluindo o Outro, enquanto a Geografia das Emoções conceitua espaço e lugar para entender essas tentativas de desconstrução.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O sujeito do desempenho é categorizado como feliz, acelerado, narcisista, solitário, doente e sem conclusão, habitando não lugares onde a sociedade atual é construída.\",\n    \"evidencia\": [\n      \"F3\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"A pesquisa contextualiza o leitor sobre o plano de fundo das relações sociais, especificamente no neoliberalismo e no psicopoder como instrumento de dominação.\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"O grau de (des)estruturação que atinge o sujeito atual é compreendido através da categorização das características do sujeito que só trabalha, em sua paradoxal liberdade.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"A nova forma de vida e a tentativa de desconstrução dos lugares pelo neoliberalismo são registradas para compreender a virada humanista da Geografia, com a finalidade de conceituar o espaço e o lugar.\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"A sociedade atual passa a ser construída por não lugares onde habita o sujeito do desempenho, demonstrando como esse contexto é inscrito no trabalho.\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D019",
+    "tematica_1": {
+      "texto": "A análise de territorialidades discentes em ambientes virtuais e a percepção sobre paradigmas pedagógicos no ensino jurídico.",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A ruptura com os paradigmas do ensino jurídico e a necessidade de uma relação dialógica para o processo de aprendizagem.",
+      "evidencia": [
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa de campo com questionários on-line e grupo focal online.",
+        "evidencia": [
+          "F1",
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise de territorialidades discentes em ambientes virtuais e a percepção sobre paradigmas pedagógicos no ensino jurídico.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A ruptura com os paradigmas do ensino jurídico e a necessidade de uma relação dialógica para o processo de aprendizagem.\",\n    \"evidencia\": [\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa de campo com questionários on-line e grupo focal online.\",\n      \"evidencia\": [\n        \"F1\",\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D020",
+    "tematica_1": {
+      "texto": "A relação entre alunos ingressantes e patrimônios culturais como materialização da identidade social.",
+      "evidencia": [
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Os afetos, memórias e a importância turística dos patrimônios para a história da cidade.",
+      "evidencia": [
+        "F5",
+        "F7",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Mapas afetivos",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A relação entre alunos ingressantes e patrimônios culturais como materialização da identidade social.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Os afetos, memórias e a importância turística dos patrimônios para a história da cidade.\",\n    \"evidencia\": [\n      \"F5\",\n      \"F7\",\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Mapas afetivos\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D021",
+    "tematica_1": {
+      "texto": "Interseções entre práticas de letramento cartográfico e práticas de numeramento em cartografias produzidas com estudantes do 6º ano.",
+      "evidencia": [
+        "F2",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Análise das representações, formas e distribuições dos elementos nas imagens acompanhadas de relatos orais e escritos.",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F3",
+          "F4",
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Interseções entre práticas de letramento cartográfico e práticas de numeramento em cartografias produzidas com estudantes do 6º ano.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Análise das representações, formas e distribuições dos elementos nas imagens acompanhadas de relatos orais e escritos.\",\n    \"evidencia\": [\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F3\",\n        \"F4\",\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D022",
+    "tematica_1": {
+      "texto": "Engajamento de estudantes como cientistas cidadãos na ciência cidadã sobre leishmaniose visceral e seus impactos territoriais.",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Construção coletiva de conhecimento científico e produção de mapas para a compreensão do território.",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa-ação",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Engajamento de estudantes como cientistas cidadãos na ciência cidadã sobre leishmaniose visceral e seus impactos territoriais.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\",\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Construção coletiva de conhecimento científico e produção de mapas para a compreensão do território.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\",\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\",\n        \"F3\",\n        \"F4\",\n        \"F5\",\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa-ação\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D023",
+    "tematica_1": {
+      "texto": "A análise do impacto da Reforma Trabalhista e a precarização do trabalho intermitente no contexto da pandemia.",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A avaliação crítica dos direitos constitucionais e das garantias trabalhistas sob a influência do contexto pandêmico.",
+      "evidencia": [
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental e análise de dados secundários com abordagem mista.",
+        "evidencia": [
+          "F1",
+          "F4",
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise do impacto da Reforma Trabalhista e a precarização do trabalho intermitente no contexto da pandemia.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A avaliação crítica dos direitos constitucionais e das garantias trabalhistas sob a influência do contexto pandêmico.\",\n    \"evidencia\": [\n      \"F6\",\n      \"F7\",\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental e análise de dados secundários com abordagem mista.\",\n      \"evidencia\": [\n        \"F1\",\n        \"F4\",\n        \"F6\",\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D024",
+    "tematica_1": {
+      "texto": "Transformações vivenciadas no processo de trabalho e Diversidade no uso dos meios de comunicação entre docentes, discentes e gestão/chefia.",
+      "evidencia": [
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Materiais/recursos adaptados utilizados nas atividades docentes e Gestão/chefia: Apoio, treinamento, capacitação para atuar nas atividades remotas.",
+      "evidencia": [
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo observacional, descritivo, de corte transversal, com abordagem qualitativa.",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada.",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Transformações vivenciadas no processo de trabalho e Diversidade no uso dos meios de comunicação entre docentes, discentes e gestão/chefia.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Materiais/recursos adaptados utilizados nas atividades docentes e Gestão/chefia: Apoio, treinamento, capacitação para atuar nas atividades remotas.\",\n    \"evidencia\": [\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo observacional, descritivo, de corte transversal, com abordagem qualitativa.\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada.\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D025",
+    "tematica_1": {
+      "texto": "O currículo da educação básica é permeado pela colonialidade do poder, gênero, saber, ser e sexualidade.",
+      "evidencia": [
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Os currículos apresentam tensões que dão manutenção às assimetrias referentes ao gênero e sexualidade, ao passo que na vivência escolar as múltiplas identidades e corpos-territórios-sapatão estão latentes reivindicando suas identidades como território vivido na desobediência desterritorial da heterossexualidade compulsória, reterritorializando e reencantando o mundo.",
+      "evidencia": [
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F6",
+          "F7",
+          "F8",
+          "F11"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O currículo da educação básica é permeado pela colonialidade do poder, gênero, saber, ser e sexualidade.\",\n    \"evidencia\": [\n      \"F10\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Os currículos apresentam tensões que dão manutenção às assimetrias referentes ao gênero e sexualidade, ao passo que na vivência escolar as múltiplas identidades e corpos-territórios-sapatão estão latentes reivindicando suas identidades como território vivido na desobediência desterritorial da heterossexualidade compulsória, reterritorializando e reencantando o mundo.\",\n    \"evidencia\": [\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F6\",\n        \"F7\",\n        \"F8\",\n        \"F11\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D026",
+    "tematica_1": {
+      "texto": "A comunicação familiar dos migrantes valadarenses é reconfigurada pelas tecnologias digitais, transformando a experiência de cartas em mensagens instantâneas e afetividade.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O processo migratório é um evento cotidiano na vida dos moradores, marcado pela saudade da correspondência tradicional e pela falta de conexão emocional.",
+      "evidencia": [
+        "F1",
+        "F6",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A comunicação familiar dos migrantes valadarenses é reconfigurada pelas tecnologias digitais, transformando a experiência de cartas em mensagens instantâneas e afetividade.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O processo migratório é um evento cotidiano na vida dos moradores, marcado pela saudade da correspondência tradicional e pela falta de conexão emocional.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F6\",\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D027",
+    "tematica_1": {
+      "texto": "A mediação escolar como instrumento de gestão e prevenção de conflitos educacionais, fundamentada na circunstancialidade do ambiente escolar.",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A aplicação da Metodologia de Diagnóstico de Situações (MDS) para identificar conflitos e formular estratégias de mediação.",
+      "evidencia": [
+        "F6",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A mediação escolar como instrumento de gestão e prevenção de conflitos educacionais, fundamentada na circunstancialidade do ambiente escolar.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A aplicação da Metodologia de Diagnóstico de Situações (MDS) para identificar conflitos e formular estratégias de mediação.\",\n    \"evidencia\": [\n      \"F6\",\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D028",
+    "tematica_1": {
+      "texto": "O Programa Olhos D'água busca recuperar nascentes na bacia do Rio Manhuaçu através de uma parceria entre produtores rurais e o Instituto Terra, visando promover o desenvolvimento sustentável e a manutenção dos recursos hídricos.",
+      "evidencia": [
+        "F4",
+        "F5",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A pesquisa investiga o engajamento atual dos proprietários rurais na implementação do Programa Olhos D'água, verificando se a participação no programa influencia positivamente seus cuidados com as nascentes recuperadas.",
+      "evidencia": [
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O Programa Olhos D'água busca recuperar nascentes na bacia do Rio Manhuaçu através de uma parceria entre produtores rurais e o Instituto Terra, visando promover o desenvolvimento sustentável e a manutenção dos recursos hídricos.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A pesquisa investiga o engajamento atual dos proprietários rurais na implementação do Programa Olhos D'água, verificando se a participação no programa influencia positivamente seus cuidados com as nascentes recuperadas.\",\n    \"evidencia\": [\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D029",
+    "tematica_1": {
+      "texto": "Análise jurisprudencial das doenças psicossomáticas no teletrabalho e responsabilidade do empregador.",
+      "evidencia": [
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Impactos das doenças psicossomáticas no corpo-território do teletrabalhador e perda de técnicas.",
+      "evidencia": [
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise jurisprudencial",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem multidisciplinar",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise jurisprudencial das doenças psicossomáticas no teletrabalho e responsabilidade do empregador.\",\n    \"evidencia\": [\n      \"F3\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Impactos das doenças psicossomáticas no corpo-território do teletrabalhador e perda de técnicas.\",\n    \"evidencia\": [\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise jurisprudencial\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem multidisciplinar\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D030",
+    "tematica_1": {
+      "texto": "Territorialidades dos estudantes e impacto da pandemia no ensino presencial",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Ressignificação das práticas pedagógicas para o contexto pós-pandemia",
+      "evidencia": [
+        "F6",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista estruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F11"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Territorialidades dos estudantes e impacto da pandemia no ensino presencial\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Ressignificação das práticas pedagógicas para o contexto pós-pandemia\",\n    \"evidencia\": [\n      \"F6\",\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista estruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F11\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D031",
+    "tematica_1": {
+      "texto": "Análise do enfrentamento, prevenção e repressão da violência doméstica contra as mulheres no âmbito interdisciplinar.",
+      "evidencia": [
+        "F1",
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Avaliação das características das mulheres atendidas nos órgãos públicos do Estado de Minas Gerais no período de 2019 a 2021.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva, epidemiológica e ecológica, com abordagem quantitativa e observacional.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise do enfrentamento, prevenção e repressão da violência doméstica contra as mulheres no âmbito interdisciplinar.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Avaliação das características das mulheres atendidas nos órgãos públicos do Estado de Minas Gerais no período de 2019 a 2021.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa descritiva, epidemiológica e ecológica, com abordagem quantitativa e observacional.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D032",
+    "tematica_1": {
+      "texto": "Divergências na legislação urbanística que permitem o uso indevido do solo na zona de amortecimento do Parque Estadual do Rio Doce.",
+      "evidencia": [
+        "F7",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Expansão de aglomerados urbanos na zona de amortecimento do parque, com destaque para o distrito de Cava Grande.",
+      "evidencia": [
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Divergências na legislação urbanística que permitem o uso indevido do solo na zona de amortecimento do Parque Estadual do Rio Doce.\",\n    \"evidencia\": [\n      \"F7\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Expansão de aglomerados urbanos na zona de amortecimento do parque, com destaque para o distrito de Cava Grande.\",\n    \"evidencia\": [\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D033",
+    "tematica_1": {
+      "texto": "A análise da evolução legislativa e a compreensão do corpo-território feminino como objetivo central.",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A contribuição dos grupos de responsabilização e educação para homens autores de violência doméstica.",
+      "evidencia": [
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Revisão bibliográfica com abordagem acerca dos grupos de responsabilização e educação para homens autores de violência doméstica.",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise da evolução legislativa e a compreensão do corpo-território feminino como objetivo central.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A contribuição dos grupos de responsabilização e educação para homens autores de violência doméstica.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Revisão bibliográfica com abordagem acerca dos grupos de responsabilização e educação para homens autores de violência doméstica.\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D034",
+    "tematica_1": {
+      "texto": "Relações com o saber estabelecidas por estudantes do ensino médio em tempo integral, da zona urbana e rural, no território educativo do CEIER de Águia Branca",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Desafios e potencialidades da educação integral no contexto dos CEIERs, reforçando a importância de políticas que respeitem as territorialidades construídas por seus estudantes",
+      "evidencia": [
+        "F14"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva de natureza qualitativa, empregando dois instrumentos de coleta de dados: o \"balanço de saber\" e a realização de grupos focais",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Relações com o saber estabelecidas por estudantes do ensino médio em tempo integral, da zona urbana e rural, no território educativo do CEIER de Águia Branca\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F3\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Desafios e potencialidades da educação integral no contexto dos CEIERs, reforçando a importância de políticas que respeitem as territorialidades construídas por seus estudantes\",\n    \"evidencia\": [\n      \"F14\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa descritiva de natureza qualitativa, empregando dois instrumentos de coleta de dados: o \\\"balanço de saber\\\" e a realização de grupos focais\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D035",
+    "tematica_1": {
+      "texto": "Análise das dinâmicas de enchentes urbanas e sua relação com o planejamento territorial em Águia Branca.",
+      "evidencia": [
+        "F2",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Integração entre poder público, comunidade e tecnologias para gestão sustentável de recursos hídricos.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3",
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F3",
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise das dinâmicas de enchentes urbanas e sua relação com o planejamento territorial em Águia Branca.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Integração entre poder público, comunidade e tecnologias para gestão sustentável de recursos hídricos.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F3\",\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F3\",\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D036",
+    "tematica_1": {
+      "texto": "As territorialidades construídas a partir das experiências e de práticas coletivas das adolescências, bem como do sentimento de pertencimento a um grupo social podem contribuir na formação de identidade e ocasionar vicissitudes.",
+      "evidencia": [
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Os adolescentes experimentam várias territorialidades que podem contribuir na formação de identidades e, consequentemente, gerar vicissitudes.",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo observacional",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Grupo focal",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"As territorialidades construídas a partir das experiências e de práticas coletivas das adolescências, bem como do sentimento de pertencimento a um grupo social podem contribuir na formação de identidade e ocasionar vicissitudes.\",\n    \"evidencia\": [\n      \"F12\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Os adolescentes experimentam várias territorialidades que podem contribuir na formação de identidades e, consequentemente, gerar vicissitudes.\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo observacional\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Grupo focal\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D037",
+    "tematica_1": {
+      "texto": "A resistência cultural Krenak como um processo de construção identitária e territorial frente à opressão histórica.",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O uso da metáfora da dança Krenak como ferramenta de autoconstrução e descolonização do pensamento.",
+      "evidencia": [
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa qualitativa",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A resistência cultural Krenak como um processo de construção identitária e territorial frente à opressão histórica.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O uso da metáfora da dança Krenak como ferramenta de autoconstrução e descolonização do pensamento.\",\n    \"evidencia\": [\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa qualitativa\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D038",
+    "tematica_1": {
+      "texto": "O assédio moral é definido como uma conduta ilícita que causa danos à saúde pública e viola direitos fundamentais, sendo analisada no contexto de relações de poder assimétricas no mercado de trabalho.",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A pesquisa examina a jurisprudência do Tribunal Regional do Trabalho da 3ª Região, focando na prevenção e combate ao assédio moral através de políticas de compliance e códigos de conduta.",
+      "evidencia": [
+        "F1",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F1",
+          "F2",
+          "F5",
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O assédio moral é definido como uma conduta ilícita que causa danos à saúde pública e viola direitos fundamentais, sendo analisada no contexto de relações de poder assimétricas no mercado de trabalho.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A pesquisa examina a jurisprudência do Tribunal Regional do Trabalho da 3ª Região, focando na prevenção e combate ao assédio moral através de políticas de compliance e códigos de conduta.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F1\",\n        \"F2\",\n        \"F5\",\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D039",
+    "tematica_1": {
+      "texto": "A narrativa do cotidiano de Carlos Pereira (1988) apresentou situações que evidenciam inúmeras violações aos direitos fundamentais daquelas pessoas.",
+      "evidencia": [
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Aqueles que lutavam pela terra, os posseiros, vivenciaram situações de violência territorial que supera o território físico e perpassa o território simbólico, configurando uma territorialidade camponesa.",
+      "evidencia": [
+        "F11"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "A metodologia contemplou uma análise de narrativa por meio de dois eixos: o primeiro explorou os Elementos da Narrativa, tais como: enredo, espaço, tempo, lugar, personagens; e o segundo eixo abordou de maneira analítica os Elementos da Codificação que se configuraram por intermédio dos eventos, espaço tridimensional, personagens cardinais e as epifanias.",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A narrativa do cotidiano de Carlos Pereira (1988) apresentou situações que evidenciam inúmeras violações aos direitos fundamentais daquelas pessoas.\",\n    \"evidencia\": [\n      \"F12\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Aqueles que lutavam pela terra, os posseiros, vivenciaram situações de violência territorial que supera o território físico e perpassa o território simbólico, configurando uma territorialidade camponesa.\",\n    \"evidencia\": [\n      \"F11\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"A metodologia contemplou uma análise de narrativa por meio de dois eixos: o primeiro explorou os Elementos da Narrativa, tais como: enredo, espaço, tempo, lugar, personagens; e o segundo eixo abordou de maneira analítica os Elementos da Codificação que se configuraram por intermédio dos eventos, espaço tridimensional, personagens cardinais e as epifanias.\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D040",
+    "tematica_1": {
+      "texto": "A análise das narrativas e memórias dos ribeirinhos urbanos na enchente de 1979 em Governador Valadares, focando no impacto da inundação na identidade coletiva e nas transformações sociais.",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A correlação entre as narrativas sobre a enchente de 1979 e outros episódios semelhantes no Brasil, visando refletir sobre riscos ambientais e políticas de mitigação.",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A análise das narrativas e memórias dos ribeirinhos urbanos na enchente de 1979 em Governador Valadares, focando no impacto da inundação na identidade coletiva e nas transformações sociais.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A correlação entre as narrativas sobre a enchente de 1979 e outros episódios semelhantes no Brasil, visando refletir sobre riscos ambientais e políticas de mitigação.\",\n    \"evidencia\": [\n      \"F4\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D041",
+    "tematica_1": {
+      "texto": "Conformações dos corpos-territórios de jovens negros e a produção discursiva do racismo no bairro Turmalina.",
+      "evidencia": [
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Mecanismos de exclusão, vigilância e extermínio da juventude negra através do dispositivo de racialidade.",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista narrativa autobiográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Conformações dos corpos-territórios de jovens negros e a produção discursiva do racismo no bairro Turmalina.\",\n    \"evidencia\": [\n      \"F3\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Mecanismos de exclusão, vigilância e extermínio da juventude negra através do dispositivo de racialidade.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista narrativa autobiográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D042",
+    "tematica_1": {
+      "texto": "Herança digital e transmissão de bens existenciais na web 2.0",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Interseção entre Direito, Comunicação e Estudos Territoriais",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Herança digital e transmissão de bens existenciais na web 2.0\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Interseção entre Direito, Comunicação e Estudos Territoriais\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D043",
+    "tematica_1": {
+      "texto": "A interseccionalidade entre gênero, participação social e políticas públicas em áreas de conservação, com foco especial na perspectiva das mulheres agricultoras familiares.",
+      "evidencia": [
+        "F2",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Estratégias territoriais construídas por mulheres agricultoras familiares da Comunidade do Celeste, em sua relação com o Parque Estadual do Rio Doce.",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem exploratória, qualitativa e empírica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevistas semiestruturadas",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A interseccionalidade entre gênero, participação social e políticas públicas em áreas de conservação, com foco especial na perspectiva das mulheres agricultoras familiares.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Estratégias territoriais construídas por mulheres agricultoras familiares da Comunidade do Celeste, em sua relação com o Parque Estadual do Rio Doce.\",\n    \"evidencia\": [\n      \"F3\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem exploratória, qualitativa e empírica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevistas semiestruturadas\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D044",
+    "tematica_1": {
+      "texto": "Experiências de des-locamento corpóreo e acúmulo racial na permanência no ensino superior",
+      "evidencia": [
+        "F2",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Construção histórica e social do Brasil como resultado do des-locamento corpóreo de mulheres negras",
+      "evidencia": [
+        "F7",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista semiestruturada com abordagem fenomenológica",
+        "evidencia": [
+          "F3",
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Experiências de des-locamento corpóreo e acúmulo racial na permanência no ensino superior\",\n    \"evidencia\": [\n      \"F2\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Construção histórica e social do Brasil como resultado do des-locamento corpóreo de mulheres negras\",\n    \"evidencia\": [\n      \"F7\",\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista semiestruturada com abordagem fenomenológica\",\n      \"evidencia\": [\n        \"F3\",\n        \"F5\",\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D045",
+    "tematica_1": {
+      "texto": "A permanência de pessoas em situação de rua com dependência química é determinada por múltiplas determinações sociais, econômicas e territoriais, sendo o território um espaço vivido e simbólico fundamental para a sobrevivência.",
+      "evidencia": [
+        "F9",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O consumo de substâncias psicoativas atua tanto como causa quanto consequência da permanência nas ruas, funcionando como mecanismo de enfrentamento da dor física e emocional.",
+      "evidencia": [
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "A pesquisa foi composta por análise documental de prontuários e entrevistas semiestruturadas, com abordagem mista.",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A permanência de pessoas em situação de rua com dependência química é determinada por múltiplas determinações sociais, econômicas e territoriais, sendo o território um espaço vivido e simbólico fundamental para a sobrevivência.\",\n    \"evidencia\": [\n      \"F9\",\n      \"F12\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O consumo de substâncias psicoativas atua tanto como causa quanto consequência da permanência nas ruas, funcionando como mecanismo de enfrentamento da dor física e emocional.\",\n    \"evidencia\": [\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"A pesquisa foi composta por análise documental de prontuários e entrevistas semiestruturadas, com abordagem mista.\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D046",
+    "tematica_1": {
+      "texto": "A produção socioespacial das cidades é um fenômeno complexo, influenciado por dinâmicas históricas, econômicas, sociais e políticas, e a compreensão de como as cidades se desenvolvem, seus espaços são produzidos e os grupos sociais se distribuem é relevante para entender as desigualdades e conflitos urbanos.",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "O presente trabalho analisa o processo de produção socioespacial na área central de Governador Valadares/MG, buscando compreender como a influência da Estrada de Ferro Vitória a Minas (EFVM) contribuiu para a configuração atual da cidade e para a produção de desigualdades intraurbanas.",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "A metodologia utilizada combina pesquisa bibliográfica, documental, cartográfica, e dados secundários, analisando aspectos históricos, socioeconômicos e espaciais.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A produção socioespacial das cidades é um fenômeno complexo, influenciado por dinâmicas históricas, econômicas, sociais e políticas, e a compreensão de como as cidades se desenvolvem, seus espaços são produzidos e os grupos sociais se distribuem é relevante para entender as desigualdades e conflitos urbanos.\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"O presente trabalho analisa o processo de produção socioespacial na área central de Governador Valadares/MG, buscando compreender como a influência da Estrada de Ferro Vitória a Minas (EFVM) contribuiu para a configuração atual da cidade e para a produção de desigualdades intraurbanas.\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"A metodologia utilizada combina pesquisa bibliográfica, documental, cartográfica, e dados secundários, analisando aspectos históricos, socioeconômicos e espaciais.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D047",
+    "tematica_1": {
+      "texto": "Educação matemática inclusiva e a construção de territorialidades por estudantes com transtorno do espectro autista",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Avaliação das experiências escolares e socialização dos estudantes com TEA",
+      "evidencia": [
+        "F6",
+        "F7",
+        "F8",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Educação matemática inclusiva e a construção de territorialidades por estudantes com transtorno do espectro autista\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Avaliação das experiências escolares e socialização dos estudantes com TEA\",\n    \"evidencia\": [\n      \"F6\",\n      \"F7\",\n      \"F8\",\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D048",
+    "tematica_1": {
+      "texto": "As referências culturais fortalecem territorialidades e identidades rurais através de práticas que articulam memória, afeto e resistência.",
+      "evidencia": [
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A pesquisa investiga como as referências culturais fortalecem territorialidades e identidades rurais em Chonin de Cima.",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Inventário Participativo",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"As referências culturais fortalecem territorialidades e identidades rurais através de práticas que articulam memória, afeto e resistência.\",\n    \"evidencia\": [\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A pesquisa investiga como as referências culturais fortalecem territorialidades e identidades rurais em Chonin de Cima.\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Inventário Participativo\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D049",
+    "tematica_1": {
+      "texto": "A contratação temporária de servidores como instrumento de influência política e fortalecimento do clientelismo eleitoral.",
+      "evidencia": [
+        "F2",
+        "F8",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A análise da relação entre a precariedade dos vínculos temporários e o impacto nas eleições municipais.",
+      "evidencia": [
+        "F3",
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica e documental",
+        "evidencia": [
+          "F3",
+          "F4",
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A contratação temporária de servidores como instrumento de influência política e fortalecimento do clientelismo eleitoral.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F8\",\n      \"F10\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A análise da relação entre a precariedade dos vínculos temporários e o impacto nas eleições municipais.\",\n    \"evidencia\": [\n      \"F3\",\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica e documental\",\n      \"evidencia\": [\n        \"F3\",\n        \"F4\",\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D050",
+    "tematica_1": {
+      "texto": "A escolha de cursar uma segunda graduação constitui um processo complexo, permeado por múltiplas influências sociais, culturais e subjetivas.",
+      "evidencia": [
+        "F15"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A escolha de cursar uma segunda graduação é influenciada pela influência da primeira graduação na escolha da segunda.",
+      "evidencia": [
+        "F10",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Trata-se de um estudo observacional, descritivo, de corte transversal, com abordagem qualitativa.",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Os dados foram coletados por meio da aplicação de uma entrevista semiestruturada baseada em um roteiro.",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "As falas foram analisadas a partir da técnica de Análise de Conteúdo proposta por Bardin.",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A escolha de cursar uma segunda graduação constitui um processo complexo, permeado por múltiplas influências sociais, culturais e subjetivas.\",\n    \"evidencia\": [\n      \"F15\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A escolha de cursar uma segunda graduação é influenciada pela influência da primeira graduação na escolha da segunda.\",\n    \"evidencia\": [\n      \"F10\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Trata-se de um estudo observacional, descritivo, de corte transversal, com abordagem qualitativa.\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Os dados foram coletados por meio da aplicação de uma entrevista semiestruturada baseada em um roteiro.\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"As falas foram analisadas a partir da técnica de Análise de Conteúdo proposta por Bardin.\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D051",
+    "tematica_1": {
+      "texto": "A relação entre Transtornos do Neurodesenvolvimento e Distúrbio Alimentar Pediátrico em crianças de 3 a 6 anos, com foco na complexidade da dinâmica alimentar e territorialização do corpo.",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A articulação entre corpo, território e saúde como fundamento conceitual para a análise da vulnerabilidade infantil frente aos transtornos do neurodesenvolvimento.",
+      "evidencia": [
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo de abordagem mista",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A relação entre Transtornos do Neurodesenvolvimento e Distúrbio Alimentar Pediátrico em crianças de 3 a 6 anos, com foco na complexidade da dinâmica alimentar e territorialização do corpo.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A articulação entre corpo, território e saúde como fundamento conceitual para a análise da vulnerabilidade infantil frente aos transtornos do neurodesenvolvimento.\",\n    \"evidencia\": [\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo de abordagem mista\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D052",
+    "tematica_1": {
+      "texto": "Constituição de territorialidades de jovens em meio aberto e suas táticas de sobrevivência",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F5",
+        "F6",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Interseção entre estratégias e táticas construídas pelos jovens em contextos de vulnerabilidade",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F5",
+        "F6",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F2",
+          "F3",
+          "F5",
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F1",
+          "F4",
+          "F5",
+          "F6",
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Constituição de territorialidades de jovens em meio aberto e suas táticas de sobrevivência\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F5\",\n      \"F6\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Interseção entre estratégias e táticas construídas pelos jovens em contextos de vulnerabilidade\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F5\",\n      \"F6\",\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F2\",\n        \"F3\",\n        \"F5\",\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F1\",\n        \"F4\",\n        \"F5\",\n        \"F6\",\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D053",
+    "tematica_1": {
+      "texto": "Viabilidade de um Mosaico entre o Parque Estadual do Rio Doce e as Unidades de Conservação em seu entorno.",
+      "evidencia": [
+        "F2",
+        "F4",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Cooperação integrada entre os diversos gestores das áreas protegidas e fortalecimento do planejamento territorial estratégico.",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise documental de arquivos de domínio público, incluindo planos de manejo, conselhos consultivos e leis de criação.",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Viabilidade de um Mosaico entre o Parque Estadual do Rio Doce e as Unidades de Conservação em seu entorno.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F4\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Cooperação integrada entre os diversos gestores das áreas protegidas e fortalecimento do planejamento territorial estratégico.\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise documental de arquivos de domínio público, incluindo planos de manejo, conselhos consultivos e leis de criação.\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D054",
+    "tematica_1": {
+      "texto": "Análise de indicadores secundários e referenciais teóricos sobre territorialidade e desterritorialização.",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Ciclo vicioso de esvaziamento populacional e perda de capital humano.",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem multidimensional",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise de indicadores secundários e referenciais teóricos sobre territorialidade e desterritorialização.\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Ciclo vicioso de esvaziamento populacional e perda de capital humano.\",\n    \"evidencia\": [\n      \"F3\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem multidimensional\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D055",
+    "tematica_1": {
+      "texto": "O Projeto Apolo Umidade Natural é mais do que um simples empreendimento minerário, situado no Quadrilátero Ferrífero de Minas Gerais, nas cidades de Caeté e Santa Bárbara.",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Levantaremos questões importantes sobre o uso do território pela mineração, com uma abordagem interdisciplinar.",
+      "evidencia": [
+        "F2",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O Projeto Apolo Umidade Natural é mais do que um simples empreendimento minerário, situado no Quadrilátero Ferrífero de Minas Gerais, nas cidades de Caeté e Santa Bárbara.\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Levantaremos questões importantes sobre o uso do território pela mineração, com uma abordagem interdisciplinar.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D056",
+    "tematica_1": {
+      "texto": "A saúde das mulheres migrantes no contexto de reterritorialização e seus determinantes sociais.",
+      "evidencia": [
+        "F2",
+        "F4",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A necessidade de políticas públicas intersetoriais sensíveis ao gênero para o cuidado integral.",
+      "evidencia": [
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa exploratória-descritiva com entrevistas semiestruturadas.",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A saúde das mulheres migrantes no contexto de reterritorialização e seus determinantes sociais.\",\n    \"evidencia\": [\n      \"F2\",\n      \"F4\",\n      \"F8\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A necessidade de políticas públicas intersetoriais sensíveis ao gênero para o cuidado integral.\",\n    \"evidencia\": [\n      \"F9\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa exploratória-descritiva com entrevistas semiestruturadas.\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D057",
+    "tematica_1": {
+      "texto": "A judicialização da saúde tem se consolidado como um fenômeno crescente no Brasil, refletindo tanto a consolidação do direito à saúde como direito fundamental pela Constituição Federal de 1988 quanto as deficiências estruturais e operacionais do Sistema Único de Saúde (SUS).",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "No contexto municipal, os efeitos da judicialização se tornam expressivos, exigindo dos gestores respostas imediatas que, muitas vezes, desorganizam o planejamento e comprometem a gestão territorializada da saúde.",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Trata-se de uma pesquisa de abordagem qualitativa, de natureza descritiva, com delineamento transversal.",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Foram realizadas entrevistas semiestruturadas com três representantes do Executivo municipal (Secretário de Saúde, Diretora do Departamento de Atenção à Saúde e Coordenadora da Atenção Básica), que atuavam no cargo há pelo menos seis meses.",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Os dados foram analisados com base na técnica de Análise de Conteúdo proposta por Bardin.",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A judicialização da saúde tem se consolidado como um fenômeno crescente no Brasil, refletindo tanto a consolidação do direito à saúde como direito fundamental pela Constituição Federal de 1988 quanto as deficiências estruturais e operacionais do Sistema Único de Saúde (SUS).\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"No contexto municipal, os efeitos da judicialização se tornam expressivos, exigindo dos gestores respostas imediatas que, muitas vezes, desorganizam o planejamento e comprometem a gestão territorializada da saúde.\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Trata-se de uma pesquisa de abordagem qualitativa, de natureza descritiva, com delineamento transversal.\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Foram realizadas entrevistas semiestruturadas com três representantes do Executivo municipal (Secretário de Saúde, Diretora do Departamento de Atenção à Saúde e Coordenadora da Atenção Básica), que atuavam no cargo há pelo menos seis meses.\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Os dados foram analisados com base na técnica de Análise de Conteúdo proposta por Bardin.\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D058",
+    "tematica_1": {
+      "texto": "O assédio no trabalho em saúde, especialmente na Atenção Primária à Saúde (APS), apresenta-se como fenômeno multidimensional marcado por silenciamentos e fragilidade dos mecanismos institucionais de acolhimento.",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Este estudo analisou as experiências de assédio vivenciadas por trabalhadores da APS, articulando um desenho de métodos mistos para caracterizar o perfil da força de trabalho e mapear o fenômeno.",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"O assédio no trabalho em saúde, especialmente na Atenção Primária à Saúde (APS), apresenta-se como fenômeno multidimensional marcado por silenciamentos e fragilidade dos mecanismos institucionais de acolhimento.\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Este estudo analisou as experiências de assédio vivenciadas por trabalhadores da APS, articulando um desenho de métodos mistos para caracterizar o perfil da força de trabalho e mapear o fenômeno.\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D059",
+    "tematica_1": {
+      "texto": "A estética íntima feminina como campo híbrido que integra cuidado terapêutico, estético e simbólico, legitimando-se como prática de promoção da saúde integral.",
+      "evidencia": [
+        "F14",
+        "F17"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "A demanda por estética íntima em ginecologia: entre desejos e necessidades, com foco na construção de um diálogo informativo e acolhedor.",
+      "evidencia": [
+        "F14"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de Conteúdo",
+        "evidencia": [
+          "F10"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:2b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "hibrido",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"A estética íntima feminina como campo híbrido que integra cuidado terapêutico, estético e simbólico, legitimando-se como prática de promoção da saúde integral.\",\n    \"evidencia\": [\n      \"F14\",\n      \"F17\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"A demanda por estética íntima em ginecologia: entre desejos e necessidades, com foco na construção de um diálogo informativo e acolhedor.\",\n    \"evidencia\": [\n      \"F14\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de Conteúdo\",\n      \"evidencia\": [\n        \"F10\"\n      ]\n    }\n  ]\n}"
+  }
+]
