@@ -127,7 +127,9 @@ def rodar(modelo: str, tecnica: str, versao: str, corpus, sobrescrever: bool) ->
 
     cliente = _cliente()
     digest = next((m.digest for m in cliente.list().models if m.model == modelo), "")
-    prompt = (PASTA_PROMPTS / f"{versao}.txt").read_bytes()
+    # Lido como texto (quebra de linha normalizada): o git no Windows troca LF por CRLF no
+    # checkout, e o hash não pode mudar por causa disso — o texto que vai ao modelo não muda.
+    prompt = (PASTA_PROMPTS / f"{versao}.txt").read_text(encoding="utf-8").encode("utf-8")
     execucao = {
         "inicio": datetime.now().isoformat(timespec="seconds"),
         "modelo": modelo, "digest_do_modelo": digest, "tecnica": tecnica, "versao_prompt": versao,

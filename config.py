@@ -48,7 +48,13 @@ RRF_K = 60
 OLLAMA_HOST = "http://127.0.0.1:11434"
 # Os 3 modelos comparados (decisão do grupo: um fraco, um forte e um mais potente). Mesma
 # família e mesma compactação (q4_K_M), para que a diferença medida seja o tamanho.
-# Máquina: RTX 3060 Ti (8 GB de VRAM), 16 GB de RAM. A CONFIRMAR no teste da etapa 1.
+# Máquina: RTX 3060 Ti (8 GB de VRAM), 16 GB de RAM. Medido na calibração (20 de 2022):
+# - família: o qwen3.5:9b passou o qwen2.5:7b (F1 das metodologias +0,16) e empatou com o
+#   qwen3:8b, com temáticas e formato melhores;
+# - escada: o 2b é claramente o fraco (F1 0,40 contra 0,80 do 4b, prompt v1); 4b e 9b
+#   empatam em qualidade, então a ordem forte/potente é pelo tamanho;
+# - tempo por dissertação: 2b ~1,6 s, 4b ~3,5 s, 9b ~5 s (o 9b fica ~88% na VRAM com o
+#   Windows e outros programas abertos).
 MODELOS_LLM = {
     "fraco": "qwen3.5:2b-q4_K_M",
     "forte": "qwen3.5:4b-q4_K_M",
