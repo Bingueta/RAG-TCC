@@ -176,16 +176,35 @@ def _bm25(dissertacao: DissertacaoUnitarizada, consulta: list[str]) -> np.ndarra
     return np.array(BM25Okapi(frases).get_scores(consulta))
 
 
+def _expressao(texto: str) -> str:
+    """Todas as palavras, sem acento, em minúsculas e cortadas nas 6 primeiras letras.
+
+    Diferente de _tokens, não tira nenhuma palavra: é para procurar uma expressão inteira.
+    Com _tokens, "no município de" virava só "munici" e "em uma instituição" só "instit",
+    e o sinal casava com qualquer frase que citasse um município ou uma instituição (na
+    calibração, o verbete de estudo de caso ia para o modelo em 10 das 20 dissertações).
+    """
+    sem_acento = "".join(c for c in unicodedata.normalize("NFD", texto.lower())
+                         if unicodedata.category(c) != "Mn")
+    return " ".join(p[:6] for p in re.findall(r"[a-z0-9]+", sem_acento))
+
+
+def _contem(texto_normalizado: str, expressao: str) -> bool:
+    """True se a expressão aparece inteira, com as mesmas palavras na mesma ordem."""
+    procurada = _expressao(expressao)
+    return bool(procurada) and f" {procurada} " in f" {texto_normalizado} "
+
+
 def _verbetes_hibrido(frases_metodologia, dissertacao, verbetes, k):
     """Verbetes: junta a lista por sentido com a contagem de termos escritos nas frases."""
     densos = verbetes_para(frases_metodologia, dissertacao, verbetes, len(verbetes))
     posicao_denso = {verbetes.index(v): p for p, (v, _) in enumerate(densos, start=1)}
-    texto = " " + " ".join(_tokens(" ".join(t.texto for t in frases_metodologia))) + " "
+    texto = _expressao(" ".join(t.texto for t in frases_metodologia))
     contagem = np.zeros(len(verbetes))
     for i, v in enumerate(verbetes):
         for peso, expressoes in ((2, [v.termo, *v.sinonimos]), (1, v.sinais)):
             for expressao in expressoes:
-                if " " + " ".join(_tokens(expressao)) + " " in texto and _tokens(expressao):
+                if _contem(texto, expressao):
                     contagem[i] += peso
     total = _rrf(posicao_denso, _posicoes(contagem, so_positivos=True), tamanho=len(verbetes))
     return [verbetes[i] for i in np.argsort(-total, kind="stable")[:k]]

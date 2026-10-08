@@ -8,7 +8,7 @@ import pytest
 import config
 from src.contratos import Contexto, Dissertacao, DissertacaoUnitarizada, Frase, TrechoRecuperado
 from src.indexar import carregar_base
-from src.recuperar import TecnicaDesconhecida, recuperar, verbetes_para
+from src.recuperar import TecnicaDesconhecida, _contem, _expressao, recuperar, verbetes_para
 
 EXEMPLOS = Path(__file__).parent / "exemplos"
 
@@ -75,6 +75,24 @@ def test_frase_de_entrevista_traz_o_verbete_de_entrevista():
 
 
 # ---------- Técnica "hibrido" ----------
+
+def test_sinal_de_varias_palavras_so_casa_como_expressao_inteira():
+    texto = _expressao("Foram realizadas entrevistas semiestruturadas no município de Itabira.")
+    assert _contem(texto, "no município de")
+    assert _contem(texto, "entrevista semiestruturada")       # plural e singular: corte em 6 letras
+    assert not _contem(_expressao("A pesquisa foi feita no município."), "no município de")
+    assert not _contem(_expressao("Discute o tema no caso de escolas rurais."), "o caso de")
+    assert not _contem(texto, "")
+
+
+def test_citar_lugar_ou_instituicao_nao_oferece_estudo_de_caso():
+    # Antes, os sinais "no município de" e "em uma instituição" viravam "munici" e "instit",
+    # e qualquer resumo que citasse um lugar recebia o verbete de estudo de caso.
+    caso = [v for v in carregar_base(config.CAMINHO_BASE) if v.id == "estudo_de_caso"][0]
+    texto = _expressao("Participaram professores de uma instituição pública de ensino, "
+                       "em uma escola da cidade de Governador Valadares, no município de mesmo nome.")
+    assert not any(_contem(texto, sinal) for sinal in caso.sinais)
+    assert _contem(_expressao("Trata-se de um estudo de casos múltiplos."), "estudo de casos")
 
 def test_hibrido_escolhe_frases_so_da_propria_dissertacao():
     for unitarizada in exemplos_unitarizados():
