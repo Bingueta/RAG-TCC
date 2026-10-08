@@ -1,0 +1,460 @@
+{
+  "execucoes": [
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__denso__v3",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 1.3895,
+      "eixos_cobertos": 1.15,
+      "itens_exatos": 0.375,
+      "palavras_por_tematica": 19.075
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v3",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 1.4304999999999999,
+      "eixos_cobertos": 1.55,
+      "itens_exatos": 0.5588235294117647,
+      "palavras_por_tematica": 20.25
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+      "modelo": "qwen3.5:2b-q4_K_M",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 1.539,
+      "eixos_cobertos": 1.15,
+      "itens_exatos": 0.3055555555555556,
+      "palavras_por_tematica": 20.15
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__denso__v3",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 2.8725,
+      "eixos_cobertos": 1.9,
+      "itens_exatos": 0.6470588235294118,
+      "palavras_por_tematica": 6.55
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v3",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 3.0060000000000002,
+      "eixos_cobertos": 1.9,
+      "itens_exatos": 0.6571428571428571,
+      "palavras_por_tematica": 6.8
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+      "modelo": "qwen3.5:4b-q4_K_M",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 3.015,
+      "eixos_cobertos": 1.7,
+      "itens_exatos": 0.6060606060606061,
+      "palavras_por_tematica": 6.775
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__denso__v3",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "tecnica": "denso",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 0.990990990990991,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 5.149,
+      "eixos_cobertos": 2.3,
+      "itens_exatos": 0.7746478873239436,
+      "palavras_por_tematica": 4.8
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v3",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "tecnica": "hibrido",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 5.0445,
+      "eixos_cobertos": 2.25,
+      "itens_exatos": 0.7567567567567568,
+      "palavras_por_tematica": 4.8
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+      "modelo": "qwen3.5:9b-q4_K_M",
+      "tecnica": "sem_rag",
+      "versao_prompt": "v3",
+      "n": 20,
+      "campos_ok": 1.0,
+      "dissertacoes_com_erro": 0,
+      "tempo_medio_s": 5.0575,
+      "eixos_cobertos": 2.15,
+      "itens_exatos": 0.6708860759493671,
+      "palavras_por_tematica": 4.975
+    }
+  ],
+  "diferencas_pareadas": [],
+  "concordancia": {
+    "pares": [
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.5392857142857143,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.566498778998779,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-4b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4691666666666667,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.43214285714285716,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4583333333333333,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4244047619047619,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.3726190476190476,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.41378066378066375,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.5410714285714285,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-4b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.5071825396825397,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.49087301587301585,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.49976190476190474,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.47904761904761906,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.44,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4695328282828283,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-4b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.475,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.47619047619047616,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.47178571428571425,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4408333333333333,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4208928571428571,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-2b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.4698015873015873,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__denso__v3",
+        "b": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6636904761904762,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__denso__v3",
+        "b": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.7810714285714285,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6390476190476191,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.5896031746031746,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.662797619047619,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6867857142857143,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6021428571428571,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6298809523809524,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6321428571428571,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__denso__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6232142857142857,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.5657738095238095,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-4b-q4_K_M__sem_rag__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.6481944444444444,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-9b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.7499603174603174,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-9b-q4_K_M__denso__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.7068849206349206,
+        "similaridade_tematicas": null
+      },
+      {
+        "a": "qwen3.5-9b-q4_K_M__hibrido__v3",
+        "b": "qwen3.5-9b-q4_K_M__sem_rag__v3",
+        "dissertacoes": 20,
+        "jaccard_metodologias": 0.7177976190476191,
+        "similaridade_tematicas": null
+      }
+    ],
+    "por_dissertacao": {
+      "C001": {
+        "jaccard": 0.7222222222222222,
+        "tematicas": null
+      },
+      "C002": {
+        "jaccard": 0.4353284832451499,
+        "tematicas": null
+      },
+      "C003": {
+        "jaccard": 0.6333002645502646,
+        "tematicas": null
+      },
+      "C004": {
+        "jaccard": 0.5998677248677249,
+        "tematicas": null
+      },
+      "C005": {
+        "jaccard": 0.611111111111111,
+        "tematicas": null
+      },
+      "C006": {
+        "jaccard": 0.7407407407407407,
+        "tematicas": null
+      },
+      "C007": {
+        "jaccard": 0.5654100529100529,
+        "tematicas": null
+      },
+      "C008": {
+        "jaccard": 0.23148148148148148,
+        "tematicas": null
+      },
+      "C009": {
+        "jaccard": 0.20779914529914528,
+        "tematicas": null
+      },
+      "C010": {
+        "jaccard": 0.4687169312169312,
+        "tematicas": null
+      },
+      "C011": {
+        "jaccard": 0.762962962962963,
+        "tematicas": null
+      },
+      "C012": {
+        "jaccard": 0.10327380952380952,
+        "tematicas": null
+      },
+      "C013": {
+        "jaccard": 0.7314814814814815,
+        "tematicas": null
+      },
+      "C014": {
+        "jaccard": 0.43425925925925923,
+        "tematicas": null
+      },
+      "C015": {
+        "jaccard": 0.5740740740740741,
+        "tematicas": null
+      },
+      "C016": {
+        "jaccard": 0.38716931216931216,
+        "tematicas": null
+      },
+      "C017": {
+        "jaccard": 0.8055555555555556,
+        "tematicas": null
+      },
+      "C018": {
+        "jaccard": 0.6643518518518519,
+        "tematicas": null
+      },
+      "C019": {
+        "jaccard": 0.6725749559082892,
+        "tematicas": null
+      },
+      "C020": {
+        "jaccard": 0.624537037037037,
+        "tematicas": null
+      }
+    }
+  }
+}

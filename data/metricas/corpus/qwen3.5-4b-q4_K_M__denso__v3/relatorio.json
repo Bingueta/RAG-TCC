@@ -1,0 +1,143 @@
+{
+  "execucao": "qwen3.5-4b-q4_K_M__denso__v3",
+  "modelo": "qwen3.5:4b-q4_K_M",
+  "tecnica": "denso",
+  "versao_prompt": "v3",
+  "configuracao": {
+    "inicio": "2026-10-07T23:49:38",
+    "corpus": "corpus",
+    "sha256_do_corpus": "43301f10e867f871ae66bcb7ebd1cc562ea9b04de820842269bcf725da5dc5cd",
+    "modelo": "qwen3.5:4b-q4_K_M",
+    "digest_do_modelo": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "tecnica": "denso",
+    "versao_prompt": "v3",
+    "sha256_do_prompt": "c72f2470c0804945fd8862d5bf8402969babf889f8c3bf0359951e88d4f3c77c",
+    "sha256_da_base": "2b668dd69395725a51c2a2b2051fab7538119654b05a878562ca6cc1f10073d8",
+    "sha256_do_recuperar": "efbe39a9a39489ff6ba625885ca02a4ec33edb407249b4e79fec8ab8aeb2dca5",
+    "temperatura": 0,
+    "seed": 42,
+    "num_ctx": 8192,
+    "pensar": false,
+    "tentativas_maximas": 2,
+    "modelo_embedding": "intfloat/multilingual-e5-base",
+    "top_k_frases": 5,
+    "top_k_verbetes": 5,
+    "ollama": "0.40.0",
+    "bibliotecas": {
+      "ollama": "0.6.3",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "spacy": "3.8.16",
+      "rank-bm25": "0.2.2",
+      "numpy": "2.4.6",
+      "openpyxl": "3.1.5"
+    },
+    "maquina": {
+      "sistema": "Windows-10-10.0.26200-SP0",
+      "cpu": "AMD Ryzen 7 5700X 8-Core Processor",
+      "ram_gb": "15,9",
+      "gpu": "NVIDIA GeForce RTX 3060 Ti, 8192 MiB, 610.62",
+      "python": "3.11.9"
+    },
+    "carga": {
+      "segundos_para_carregar": 0.2,
+      "tamanho_gb": 3.34,
+      "na_vram_gb": 3.34,
+      "fracao_na_vram": 1.0
+    },
+    "fim": "2026-10-07T23:56:02",
+    "erros": 0
+  },
+  "sem_gabarito": {
+    "dissertacoes": 59,
+    "status": {
+      "por_campo": {
+        "ok": 314,
+        "sem_evidencia": 2,
+        "nao_informado": 0,
+        "erro": 0
+      },
+      "por_dissertacao": {
+        "ok": 57,
+        "sem_evidencia": 2,
+        "nao_informado": 0,
+        "erro": 0
+      }
+    },
+    "tempo": {
+      "medio_s": 6.445762711864407,
+      "mediano_s": 4.3,
+      "max_s": 61.87,
+      "total_s": 380.3,
+      "n": 59
+    },
+    "tentativas": {
+      "1": 59
+    },
+    "metodologias_por_resposta": 3.5084745762711864,
+    "formato_metodologias": {
+      "itens": 198,
+      "palavras_por_item": 2.2777777777777777,
+      "itens_exatos": 0.6919191919191919,
+      "itens_com_varios_metodos": 0.04040404040404041
+    },
+    "palavras_por_tematica": 7.194915254237288,
+    "eixos_cobertos_medio": 2.1016949152542375,
+    "respostas_por_eixo": {
+      "abordagem": 42,
+      "procedimento": 33,
+      "coleta": 30,
+      "analise": 19
+    },
+    "termos_livres": [
+      "livre:abordagemexploratoria",
+      "livre:abordageminterdisciplinar",
+      "livre:abordagemjuridicodogmatica",
+      "livre:abordagemmultidimensional",
+      "livre:abordagemmultidisciplinar",
+      "livre:amostragemboladeneve",
+      "livre:analisecritica",
+      "livre:analisedeindicadoresecundario",
+      "livre:analisedeindicadoresocioambiental",
+      "livre:analisedeleadingcase",
+      "livre:analisedelegislacao",
+      "livre:analisedemapamental",
+      "livre:analisedenarrativa",
+      "livre:analisedeprocessoadministrativo",
+      "livre:analisedeprontuario",
+      "livre:analisedetexto",
+      "livre:analiseetnografica",
+      "livre:analisejurisprudencial",
+      "livre:analisequantitativa",
+      "livre:analiticodecoorteretrospectivo",
+      "livre:autoetnografia",
+      "livre:biografica",
+      "livre:calculodamedidadeintensidadedeassociacao",
+      "livre:cartografia",
+      "livre:decolonial",
+      "livre:delineamentocasocontrole",
+      "livre:delineamentotransversal",
+      "livre:elaboracaodemapa",
+      "livre:entrevista",
+      "livre:entrevistanarrativa",
+      "livre:entrevistanarrativaautobiografica",
+      "livre:estudoepidemiologicoobservacional",
+      "livre:estudoobservacional",
+      "livre:estudotransversal",
+      "livre:experienciadecienciacidada",
+      "livre:geoprocessamento",
+      "livre:historiaoral",
+      "livre:inventarioparticipativo",
+      "livre:lenteinterseccional",
+      "livre:mapaafetivo",
+      "livre:metodofenomenografico",
+      "livre:naturezadescritiva",
+      "livre:netnografia",
+      "livre:oficinadeeducacaomatematica",
+      "livre:oficinademapeamentocolaborativo",
+      "livre:pesquisabiografica",
+      "livre:pesquisadecampo",
+      "livre:transversal"
+    ]
+  }
+}
