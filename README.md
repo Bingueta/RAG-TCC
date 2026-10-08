@@ -13,7 +13,10 @@ O grupo já fez uma análise manual (sem IA) de 59 dissertações. A ferramenta 
 
 ## Situação atual
 
-**Em planejamento.** Ainda não há código. A ferramenta vai ser **automática**: roda as 59 dissertações em lote e gera uma planilha Excel, que é comparada com a análise manual.
+**A ferramenta funciona.** Ela é **automática**: roda as 59 dissertações em lote e gera uma planilha Excel por combinação de modelo e técnica de RAG. Partes 1 a 4 prontas e testadas; a Parte 5 (avaliação) mede a calibração e, nas 59, os indicadores que não precisam de gabarito. A comparação com a análise manual espera as respostas que a professora vai enviar.
+
+- Andamento e decisões: [docs/PROGRESSO.md](docs/PROGRESSO.md).
+- Qual LLM foi usado, como, o passo a passo e os números: [docs/RESULTADOS.md](docs/RESULTADOS.md).
 
 ## Por onde começar
 
@@ -28,9 +31,9 @@ O grupo já fez uma análise manual (sem IA) de 59 dissertações. A ferramenta 
 | --- | --- |
 | `data/` | Os dados: as 59 dissertações (original em `brutos/dissertacoes.json`, versão preparada em `corpus.json`), base de metodologia e respostas da IA (`sugestoes/`) |
 | `src/` | O código da ferramenta, uma parte por arquivo |
-| `tests/` | Testes automáticos e dados de exemplo (será criada com o código) |
-| `docs/` | Os documentos de planejamento |
-| `notebooks/` | Testes e análises exploratórias |
+| `tests/` | Testes automáticos e dados de exemplo (dissertações inventadas, nunca uma das 59) |
+| `docs/` | Planejamento, divisão de tarefas, progresso e resultados |
+| `notebooks/` | Scripts de apoio: a calibração da Parte 3 e os diagnósticos da Parte 5 |
 
 ## Regras importantes
 
@@ -41,4 +44,50 @@ O grupo já fez uma análise manual (sem IA) de 59 dissertações. A ferramenta 
 
 ## Instalação
 
-Será descrita aqui quando o código começar (Python 3.11, Windows).
+Testado no Windows 11 com Python 3.11. Os comandos são do PowerShell, na pasta do repositório.
+
+**1. Python e bibliotecas.** Instala também o modelo de português do spaCy e o torch para CPU, cerca de 1 GB no total.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+```
+
+**2. Ollama e os modelos.** O Ollama roda os LLMs no próprio computador, sem internet e sem pagar API. Os três modelos ocupam ~12 GB. Para guardá-los fora do disco C:, troque a pasta em *Settings → Model location* no aplicativo do Ollama: a variável `OLLAMA_MODELS` não basta, porque o aplicativo usa a pasta das configurações dele.
+
+```powershell
+winget install --id Ollama.Ollama
+ollama pull qwen3.5:2b-q4_K_M
+ollama pull qwen3.5:4b-q4_K_M
+ollama pull qwen3.5:9b-q4_K_M
+```
+
+**3. Índice de vetores.** Na primeira vez, baixa o modelo de embedding (~1 GB). Rode de novo sempre que o corpus ou a base de metodologias mudarem.
+
+```powershell
+.\.venv\Scripts\python -m src.indexar
+```
+
+**4. Conferir.** Os testes não precisam do Ollama.
+
+```powershell
+.\.venv\Scripts\python -m pytest
+.\.venv\Scripts\python -m src.pipeline --mock      # o caminho inteiro com 3 dissertações inventadas
+```
+
+## Uso
+
+```powershell
+.\.venv\Scripts\python -m src.pipeline                       # modelo e técnica padrão do config.py, nas 59
+.\.venv\Scripts\python -m src.pipeline --todos               # 3 modelos × 3 técnicas
+.\.venv\Scripts\python -m src.pipeline --modelo qwen3.5:4b-q4_K_M --tecnica sem_rag
+.\.venv\Scripts\python -m src.pipeline --corpus calibracao   # as 20 de calibração
+```
+
+Cada execução grava uma pasta em `data/sugestoes/<modelo>__<técnica>__<prompt>/`, com:
+
+- `respostas.xlsx`: a planilha, com as abas `respostas`, `detalhes` e `execucao`;
+- `respostas.json`: as respostas completas;
+- `execucao.json`: a máquina, o modelo exato, os parâmetros e o tempo de cada dissertação.
+
+Se o programa parar no meio, rodar o mesmo comando de novo retoma de onde parou. Na RTX 3060 Ti, as 59 levam de ~1,5 min (2b) a ~5 min (9b) por técnica.

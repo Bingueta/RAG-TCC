@@ -1,0 +1,2993 @@
+[
+  {
+    "dissertacao_id": "D001",
+    "tematica_1": {
+      "texto": "Síndrome de alienação parental",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Interações territoriais",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Síndrome de alienação parental\", \"evidencia\": [\"F1\"]}, \"tematica_2\": {\"texto\": \"Interações territoriais\", \"evidencia\": [\"F2\"]}, \"metodologias\": [{\"texto\": \"Pesquisa documental\", \"evidencia\": [\"F3\"]}]}"
+  },
+  {
+    "dissertacao_id": "D002",
+    "tematica_1": {
+      "texto": "Conflitos territoriais",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Gestão de unidades de conservação",
+      "evidencia": [
+        "F10",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Método fenomenográfico",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Conflitos territoriais\",\n    \"evidencia\": [\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Gestão de unidades de conservação\",\n    \"evidencia\": [\n      \"F10\",\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Método fenomenográfico\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D003",
+    "tematica_1": {
+      "texto": "Relação com o saber em contexto de pandemia",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Vivências socioespaciais e temporais das estudantes",
+      "evidencia": [
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa biográfica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Relação com o saber em contexto de pandemia\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Vivências socioespaciais e temporais das estudantes\",\n    \"evidencia\": [\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa biográfica\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D004",
+    "tematica_1": {
+      "texto": "Violência doméstica e migração feminina",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Proteção do corpo-território",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista em profundidade",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Violência doméstica e migração feminina\",\n    \"evidencia\": [\n    \"F1\",\n    \"F3\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Proteção do corpo-território\",\n    \"evidencia\": [\n    \"F1\",\n    \"F4\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista em profundidade\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D005",
+    "tematica_1": {
+      "texto": "Práticas de numeramento",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Cartografia crítica",
+      "evidencia": [
+        "F2",
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Cartografia",
+        "evidencia": [
+          "F2",
+          "F3",
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa-ação",
+        "evidencia": [
+          "F1",
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Oficina",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Observação participante",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Práticas de numeramento\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Cartografia crítica\",\n    \"evidencia\": [\n      \"F2\",\n      \"F3\",\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\",\n        \"F2\",\n        \"F3\",\n        \"F4\",\n        \"F5\",\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Cartografia\",\n      \"evidencia\": [\n        \"F2\",\n        \"F3\",\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa-ação\",\n      \"evidencia\": [\n        \"F1\",\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Oficina\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Observação participante\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D006",
+    "tematica_1": {
+      "texto": "Percepção ambiental da população rural",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Impactos socioambientais da pavimentação",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1",
+          "F3",
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "História oral",
+        "evidencia": [
+          "F5",
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista aberta",
+        "evidencia": [
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Percepção ambiental da população rural\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Impactos socioambientais da pavimentação\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\",\n        \"F3\",\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"História oral\",\n      \"evidencia\": [\n        \"F5\",\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista aberta\",\n      \"evidencia\": [\n        \"F6\",\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D007",
+    "tematica_1": {
+      "texto": "Determinantes do tempo de início do tratamento oncológico",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Desigualdades sociais e acesso à saúde masculina",
+      "evidencia": [
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo de coorte retrospectivo",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem quantitativa",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise descritiva",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Cálculo de odds ratio",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Determinantes do tempo de início do tratamento oncológico\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Desigualdades sociais e acesso à saúde masculina\",\n    \"evidencia\": [\n    \"F13\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo de coorte retrospectivo\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem quantitativa\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise descritiva\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Cálculo de odds ratio\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D008",
+    "tematica_1": {
+      "texto": "Racismo docente",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Territorialidade escolar",
+      "evidencia": [
+        "F1",
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F12"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Racismo docente\",\n    \"evidencia\": [\n    \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Territorialidade escolar\",\n    \"evidencia\": [\n    \"F1\",\n    \"F2\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n      \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n      \"F12\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D009",
+    "tematica_1": {
+      "texto": "Mediação de conflitos",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Formação profissional contábil",
+      "evidencia": [
+        "F6",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F7",
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F7",
+          "F11"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F7",
+          "F11"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Mediação de conflitos\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Formação profissional contábil\",\n    \"evidencia\": [\n      \"F6\",\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F7\",\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F7\",\n        \"F11\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F7\",\n        \"F11\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D010",
+    "tematica_1": {
+      "texto": "Transmissão domiciliar da covid-19",
+      "evidencia": [
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Taxa de ataque secundário",
+      "evidencia": [
+        "F5",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo transversal",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise quantitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Dados secundários",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Transmissão domiciliar da covid-19\",\n    \"evidencia\": [\n      \"F3\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Taxa de ataque secundário\",\n    \"evidencia\": [\n      \"F5\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo transversal\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise quantitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Dados secundários\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D011",
+    "tematica_1": {
+      "texto": "Desigualdade de gênero no trabalho",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Empreendedorismo feminino",
+      "evidencia": [
+        "F9",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F10"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F11"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F12"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Desigualdade de gênero no trabalho\",\n    \"evidencia\": [\n    \"F1\",\n    \"F4\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Empreendedorismo feminino\",\n    \"evidencia\": [\n    \"F9\",\n    \"F12\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F10\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F11\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F12\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D012",
+    "tematica_1": {
+      "texto": "Territorialização em saúde",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Processo de trabalho do cirurgião-dentista",
+      "evidencia": [
+        "F4",
+        "F9"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo exploratório",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Estudo transversal",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Estudo de caso",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise descritiva",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Territorialização em saúde\",\n    \"evidencia\": [\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Processo de trabalho do cirurgião-dentista\",\n    \"evidencia\": [\n      \"F4\",\n      \"F9\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo exploratório\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Estudo transversal\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Estudo de caso\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise descritiva\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D013",
+    "tematica_1": {
+      "texto": "Restauração ambiental da bacia hidrográfica",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Desenvolvimento socioeconômico sustentável",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Restauração ambiental da bacia hidrográfica\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Desenvolvimento socioeconômico sustentável\",\n    \"evidencia\": [\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D014",
+    "tematica_1": {
+      "texto": "Sagrado feminino",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Corpo e território",
+      "evidencia": [
+        "F4",
+        "F5",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa exploratória",
+        "evidencia": [
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Sagrado feminino\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F5\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Corpo e território\",\n    \"evidencia\": [\n      \"F4\",\n      \"F5\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa exploratória\",\n      \"evidencia\": [\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D015",
+    "tematica_1": {
+      "texto": "Território fílmico e representações sociais",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Relações de poder e indústria cultural",
+      "evidencia": [
+        "F1",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de discurso",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Território fílmico e representações sociais\",\n    \"evidencia\": [\n    \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Relações de poder e indústria cultural\",\n    \"evidencia\": [\n    \"F1\",\n    \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n      \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de discurso\",\n      \"evidencia\": [\n      \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D016",
+    "tematica_1": {
+      "texto": "Uberização do trabalho",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Precarização laboral",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Amostragem bola de neve",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Uberização do trabalho\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Precarização laboral\",\n    \"evidencia\": [\n    \"F7\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Amostragem bola de neve\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D017",
+    "tematica_1": {
+      "texto": "Educação ambiental e gestão de resíduos",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Ações da associação de catadores",
+      "evidencia": [
+        "F1",
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa exploratória",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Revisão bibliográfica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Netnografia",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise etnográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Educação ambiental e gestão de resíduos\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Ações da associação de catadores\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa exploratória\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Revisão bibliográfica\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Netnografia\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise etnográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D018",
+    "tematica_1": {
+      "texto": "Neoliberalismo e subjetividade",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Geografia das emoções",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Neoliberalismo e subjetividade\",\n    \"evidencia\": [\n    \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Geografia das emoções\",\n    \"evidencia\": [\n    \"F4\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n      \"F2\",\n      \"F3\",\n      \"F4\",\n      \"F5\",\n      \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n      \"F1\",\n      \"F2\",\n      \"F3\",\n      \"F4\",\n      \"F5\",\n      \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n      \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D019",
+    "tematica_1": {
+      "texto": "Territorialidades discentes em EaD",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Ensino jurídico e multiterritorialidade",
+      "evidencia": [
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa de campo",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Grupo focal",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1",
+          "F2",
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Territorialidades discentes em EaD\",\n    \"evidencia\": [\n      \"F1\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Ensino jurídico e multiterritorialidade\",\n    \"evidencia\": [\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa de campo\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Grupo focal\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\",\n        \"F2\",\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D020",
+    "tematica_1": {
+      "texto": "Relação entre alunos e patrimônios culturais",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Afetos, memórias e identidade territorial",
+      "evidencia": [
+        "F3",
+        "F5",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F7",
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Mapa afetivo",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Relação entre alunos e patrimônios culturais\",\n    \"evidencia\": [\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Afetos, memórias e identidade territorial\",\n    \"evidencia\": [\n      \"F3\",\n      \"F5\",\n      \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F7\",\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Mapa afetivo\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D021",
+    "tematica_1": {
+      "texto": "Letramento cartográfico e numeramento",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Cartografias escolares com estudantes",
+      "evidencia": [
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de mapas mentais",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Letramento cartográfico e numeramento\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Cartografias escolares com estudantes\",\n    \"evidencia\": [\n      \"F5\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de mapas mentais\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D022",
+    "tematica_1": {
+      "texto": "Ciência cidadã no ensino fundamental",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Leishmaniose visceral e território",
+      "evidencia": [
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Ciência cidadã",
+        "evidencia": [
+          "F1",
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa-ação",
+        "evidencia": [
+          "F1",
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Oficina",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Rodas de conversa",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Cartografia digital",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Produção de fotografias",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Ciência cidadã no ensino fundamental\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Leishmaniose visceral e território\",\n    \"evidencia\": [\n      \"F5\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Ciência cidadã\",\n      \"evidencia\": [\n        \"F1\",\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa-ação\",\n      \"evidencia\": [\n        \"F1\",\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Oficina\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Rodas de conversa\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Cartografia digital\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Produção de fotografias\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D023",
+    "tematica_1": {
+      "texto": "Reforma trabalhista e precarização do emprego",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Trabalho intermitente sob influência da pandemia",
+      "evidencia": [
+        "F1",
+        "F6",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem mista",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Dados secundários",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Reforma trabalhista e precarização do emprego\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Trabalho intermitente sob influência da pandemia\",\n    \"evidencia\": [\n    \"F1\",\n    \"F6\",\n    \"F7\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem mista\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Dados secundários\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D024",
+    "tematica_1": {
+      "texto": "Docentes mães na educação básica",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Transição do ensino presencial para o remoto",
+      "evidencia": [
+        "F3",
+        "F4",
+        "F11"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo observacional",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Estudo descritivo",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Corte transversal",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise descritiva",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Docentes mães na educação básica\",\n    \"evidencia\": [\n    \"F4\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Transição do ensino presencial para o remoto\",\n    \"evidencia\": [\n    \"F3\",\n    \"F4\",\n    \"F11\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo observacional\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Estudo descritivo\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Corte transversal\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Análise descritiva\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D025",
+    "tematica_1": {
+      "texto": "Análise da BNCC e PCNs",
+      "evidencia": [
+        "F6",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Representação do corpo-território-sapatão cisgênero",
+      "evidencia": [
+        "F7",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F6",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Análise da BNCC e PCNs\",\n    \"evidencia\": [\n      \"F6\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Representação do corpo-território-sapatão cisgênero\",\n    \"evidencia\": [\n      \"F7\",\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F6\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D026",
+    "tematica_1": {
+      "texto": "Impactos das tecnologias digitais na comunicação familiar",
+      "evidencia": [
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Comunicação entre migrantes e familiares no território de origem",
+      "evidencia": [
+        "F3",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "História Oral",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de Conteúdo",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Impactos das tecnologias digitais na comunicação familiar\",\n    \"evidencia\": [\n    \"F3\",\n    \"F4\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Comunicação entre migrantes e familiares no território de origem\",\n    \"evidencia\": [\n    \"F3\",\n    \"F6\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"História Oral\",\n      \"evidencia\": [\n      \"F6\"\n    ]\n},\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n      \"F6\"\n    ]\n},\n    {\n      \"texto\": \"Análise de Conteúdo\",\n      \"evidencia\": [\n      \"F7\"\n    ]\n  }\n]\n}"
+  },
+  {
+    "dissertacao_id": "D027",
+    "tematica_1": {
+      "texto": "Mediação escolar",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Conflito escolar",
+      "evidencia": [
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa qualitativa",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Revisão bibliográfica",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Mediação escolar\",\n    \"evidencia\": [\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Conflito escolar\",\n    \"evidencia\": [\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa qualitativa\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Revisão bibliográfica\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D028",
+    "tematica_1": {
+      "texto": "Recuperação de nascentes",
+      "evidencia": [
+        "F4",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Engajamento de produtores rurais",
+      "evidencia": [
+        "F8",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise descritiva de conteúdo",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Recuperação de nascentes\",\n    \"evidencia\": [\n    \"F4\",\n    \"F5\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Engajamento de produtores rurais\",\n    \"evidencia\": [\n    \"F8\",\n    \"F10\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n      \"F9\"\n    ]\n    },\n    {\n      \"texto\": \"Análise descritiva de conteúdo\",\n      \"evidencia\": [\n      \"F9\"\n    ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D029",
+    "tematica_1": {
+      "texto": "Doenças psicossomáticas no teletrabalho",
+      "evidencia": [
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Responsabilidade do empregador em saúde laboral",
+      "evidencia": [
+        "F3",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise jurisprudencial",
+        "evidencia": [
+          "F3",
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem multidisciplinar",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Doenças psicossomáticas no teletrabalho\", \"evidencia\": [\"F3\", \"F4\"]}, \"tematica_2\": {\"texto\": \"Responsabilidade do empregador em saúde laboral\", \"evidencia\": [\"F3\", \"F5\"]}, \"metodologias\": [{\"texto\": \"Análise jurisprudencial\", \"evidencia\": [\"F3\", \"F4\"]}, {\"texto\": \"Abordagem multidisciplinar\", \"evidencia\": [\"F4\"]}]}"
+  },
+  {
+    "dissertacao_id": "D030",
+    "tematica_1": {
+      "texto": "Territorialidades escolares e vínculos territoriais",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Trajetórias educativas e aprendizagem em tempo integral",
+      "evidencia": [
+        "F2",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista estruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F6",
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F11"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Territorialidades escolares e vínculos territoriais\",\n    \"evidencia\": [\n    \"F1\",\n    \"F4\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Trajetórias educativas e aprendizagem em tempo integral\",\n    \"evidencia\": [\n    \"F2\",\n    \"F6\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista estruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n        \"F6\",\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F11\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D031",
+    "tematica_1": {
+      "texto": "Violência doméstica contra a mulher",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Proteção social e políticas públicas",
+      "evidencia": [
+        "F1",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem quantitativa",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Observação",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa epidemiológica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa ecológica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Violência doméstica contra a mulher\", \"evidencia\": [\"F1\", \"F2\", \"F7\"]}, \"tematica_2\": {\"texto\": \"Proteção social e políticas públicas\", \"evidencia\": [\"F1\", \"F8\"]}, \"metodologias\": [{\"texto\": \"Pesquisa descritiva\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Abordagem quantitativa\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Observação\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Pesquisa epidemiológica\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Pesquisa ecológica\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Pesquisa documental\", \"evidencia\": [\"F5\"]}]}"
+  },
+  {
+    "dissertacao_id": "D032",
+    "tematica_1": {
+      "texto": "Legislação urbanística e zoneamento",
+      "evidencia": [
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Unidades de conservação e zona de amortecimento",
+      "evidencia": [
+        "F2",
+        "F5",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa qualitativa",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Legislação urbanística e zoneamento\",\n    \"evidencia\": [\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Unidades de conservação e zona de amortecimento\",\n    \"evidencia\": [\n      \"F2\",\n      \"F5\",\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa qualitativa\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D033",
+    "tematica_1": {
+      "texto": "Violência doméstica contra mulheres",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Grupos de responsabilização para homens autores de violência",
+      "evidencia": [
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Revisão bibliográfica",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Violência doméstica contra mulheres\", \"evidencia\": [\"F1\"]}, \"tematica_2\": {\"texto\": \"Grupos de responsabilização para homens autores de violência\", \"evidencia\": [\"F3\", \"F4\", \"F5\", \"F6\"]}, \"metodologias\": [{\"texto\": \"Revisão bibliográfica\", \"evidencia\": [\"F4\"]}]}"
+  },
+  {
+    "dissertacao_id": "D034",
+    "tematica_1": {
+      "texto": "Educação do campo e tempo integral",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Relações com o saber dos estudantes",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Grupo focal",
+        "evidencia": [
+          "F5",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de textos",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Educação do campo e tempo integral\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Relações com o saber dos estudantes\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Grupo focal\",\n      \"evidencia\": [\n        \"F5\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de textos\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D035",
+    "tematica_1": {
+      "texto": "Gestão de recursos hídricos",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Planejamento urbano",
+      "evidencia": [
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem interdisciplinar",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3",
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de dados secundários",
+        "evidencia": [
+          "F3",
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Geoprocessamento",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Gestão de recursos hídricos\",\n    \"evidencia\": [\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Planejamento urbano\",\n    \"evidencia\": [\n      \"F8\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem interdisciplinar\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F3\",\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de dados secundários\",\n      \"evidencia\": [\n        \"F3\",\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Geoprocessamento\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D036",
+    "tematica_1": {
+      "texto": "Territorialidades e formação de identidade",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F11",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Vicissitudes na adolescência em vulnerabilidade",
+      "evidencia": [
+        "F1",
+        "F3",
+        "F7",
+        "F10",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Estudo observacional",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Corte transversal",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Grupo focal",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Territorialidades e formação de identidade\",\n    \"evidencia\": [\n    \"F1\",\n    \"F3\",\n    \"F11\",\n    \"F12\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Vicissitudes na adolescência em vulnerabilidade\",\n    \"evidencia\": [\n    \"F1\",\n    \"F3\",\n    \"F7\",\n    \"F10\",\n    \"F12\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Estudo observacional\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Corte transversal\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Grupo focal\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D037",
+    "tematica_1": {
+      "texto": "Resistência Krenak",
+      "evidencia": [
+        "F5",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Ancestralidade e memória",
+      "evidencia": [
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Autoetnografia",
+        "evidencia": [
+          "F5",
+          "F7",
+          "F9",
+          "F10"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Resistência Krenak\",\n    \"evidencia\": [\n      \"F5\",\n      \"F7\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Ancestralidade e memória\",\n    \"evidencia\": [\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Autoetnografia\",\n      \"evidencia\": [\n        \"F5\",\n        \"F7\",\n        \"F9\",\n        \"F10\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D038",
+    "tematica_1": {
+      "texto": "Assédio moral no ambiente de trabalho",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Jurisprudência do Tribunal Regional do Trabalho",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F1",
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F2",
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Assédio moral no ambiente de trabalho\", \"evidencia\": [\"F4\", \"F7\"]}, \"tematica_2\": {\"texto\": \"Jurisprudência do Tribunal Regional do Trabalho\", \"evidencia\": [\"F1\", \"F3\"]}, \"metodologias\": [{\"texto\": \"Pesquisa documental\", \"evidencia\": [\"F1\", \"F3\"]}, {\"texto\": \"Análise de conteúdo\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Abordagem qualitativa\", \"evidencia\": [\"F2\", \"F3\"]}]}"
+  },
+  {
+    "dissertacao_id": "D039",
+    "tematica_1": {
+      "texto": "Questão agrária e conflitos territoriais",
+      "evidencia": [
+        "F4",
+        "F5",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Violência territorial e memória camponesa",
+      "evidencia": [
+        "F5",
+        "F8",
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Análise de narrativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Questão agrária e conflitos territoriais\",\n    \"evidencia\": [\n    \"F4\",\n    \"F5\",\n    \"F13\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Violência territorial e memória camponesa\",\n    \"evidencia\": [\n    \"F5\",\n    \"F8\",\n    \"F12\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Análise de narrativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D040",
+    "tematica_1": {
+      "texto": "Memória coletiva e identidade comunitária",
+      "evidencia": [
+        "F1",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Impactos de desastres naturais no território urbano",
+      "evidencia": [
+        "F4",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F2",
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Memória coletiva e identidade comunitária\",\n    \"evidencia\": [\n      \"F1\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Impactos de desastres naturais no território urbano\",\n    \"evidencia\": [\n      \"F4\",\n      \"F7\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n        \"F5\",\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F5\",\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F2\",\n        \"F5\",\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D041",
+    "tematica_1": {
+      "texto": "Racismo estrutural e dispositivo de racialidade",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Conformações dos corpos-territórios de jovens negros",
+      "evidencia": [
+        "F3",
+        "F5",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4",
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista narrativa autobiográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Racismo estrutural e dispositivo de racialidade\", \"evidencia\": [\"F1\", \"F2\", \"F4\", \"F6\"]}, \"tematica_2\": {\"texto\": \"Conformações dos corpos-territórios de jovens negros\", \"evidencia\": [\"F3\", \"F5\", \"F8\"]}, \"metodologias\": [{\"texto\": \"Abordagem qualitativa\", \"evidencia\": [\"F4\", \"F5\"]}, {\"texto\": \"Entrevista narrativa autobiográfica\", \"evidencia\": [\"F5\"]}, {\"texto\": \"Pesquisa documental\", \"evidencia\": [\"F5\"]}]}"
+  },
+  {
+    "dissertacao_id": "D042",
+    "tematica_1": {
+      "texto": "Herança digital",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Dignidade humana",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Herança digital\", \"evidencia\": [\"F4\"]}, \"tematica_2\": {\"texto\": \"Dignidade humana\", \"evidencia\": [\"F4\"]}, \"metodologias\": [{\"texto\": \"Abordagem qualitativa\", \"evidencia\": [\"F6\"]}, {\"texto\": \"Pesquisa bibliográfica\", \"evidencia\": [\"F6\"]}]}"
+  },
+  {
+    "dissertacao_id": "D043",
+    "tematica_1": {
+      "texto": "Gênero e agricultura familiar",
+      "evidencia": [
+        "F2",
+        "F3",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Gestão territorial em áreas de conservação",
+      "evidencia": [
+        "F4",
+        "F13"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem exploratória",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Revisão bibliográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Gênero e agricultura familiar\",\n    \"evidencia\": [\n      \"F2\",\n      \"F3\",\n      \"F6\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Gestão territorial em áreas de conservação\",\n    \"evidencia\": [\n      \"F4\",\n      \"F13\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem exploratória\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Revisão bibliográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D044",
+    "tematica_1": {
+      "texto": "Experiências de mulheres negras no ensino superior",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Deslocamento corpóreo e acúmulo racial",
+      "evidencia": [
+        "F7",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise fenomenológica",
+        "evidencia": [
+          "F3",
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Experiências de mulheres negras no ensino superior\",\n    \"evidencia\": [\n    \"F1\"\n  ]},\n  \"tematica_2\": {\n    \"texto\": \"Deslocamento corpóreo e acúmulo racial\",\n    \"evidencia\": [\n    \"F7\",\n    \"F8\"\n  ]},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n        \"F5\",\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise fenomenológica\",\n      \"evidencia\": [\n        \"F3\",\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D045",
+    "tematica_1": {
+      "texto": "Pessoas em situação de rua e dependência química",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Território e vulnerabilidade social",
+      "evidencia": [
+        "F12"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem mista",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Dados secundários",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Pessoas em situação de rua e dependência química\",\n    \"evidencia\": [\n    \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Território e vulnerabilidade social\",\n    \"evidencia\": [\n    \"F12\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem mista\",\n      \"evidencia\": [\n      \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n      \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Dados secundários\",\n      \"evidencia\": [\n      \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n      \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D046",
+    "tematica_1": {
+      "texto": "Produção socioespacial urbana",
+      "evidencia": [
+        "F1",
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Desigualdades intraurbanas",
+      "evidencia": [
+        "F2",
+        "F4",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise cartográfica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Dados secundários",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Produção socioespacial urbana\",\n    \"evidencia\": [\n      \"F1\",\n      \"F2\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Desigualdades intraurbanas\",\n    \"evidencia\": [\n      \"F2\",\n      \"F4\",\n      \"F6\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Análise cartográfica\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Dados secundários\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D047",
+    "tematica_1": {
+      "texto": "Educação matemática inclusiva",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Construção de territorialidades escolares",
+      "evidencia": [
+        "F1",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Oficina de educação matemática",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Educação matemática inclusiva\", \"evidencia\": [\"F1\"]}, \"tematica_2\": {\"texto\": \"Construção de territorialidades escolares\", \"evidencia\": [\"F1\", \"F5\", \"F6\"]}, \"metodologias\": [{\"texto\": \"Pesquisa descritiva\", \"evidencia\": [\"F2\"]}, {\"texto\": \"Abordagem qualitativa\", \"evidencia\": [\"F2\"]}, {\"texto\": \"Oficina de educação matemática\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Entrevista semiestruturada\", \"evidencia\": [\"F4\"]}]}"
+  },
+  {
+    "dissertacao_id": "D048",
+    "tematica_1": {
+      "texto": "Referências culturais e territorialidades rurais",
+      "evidencia": [
+        "F1",
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Identidades e modos de vida tradicionais",
+      "evidencia": [
+        "F1",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Inventário Participativo",
+        "evidencia": [
+          "F3",
+          "F7"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F1"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Referências culturais e territorialidades rurais\",\n    \"evidencia\": [\n    \"F1\",\n    \"F5\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Identidades e modos de vida tradicionais\",\n    \"evidencia\": [\n    \"F1\",\n    \"F6\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Inventário Participativo\",\n      \"evidencia\": [\n        \"F3\",\n        \"F7\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F1\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D049",
+    "tematica_1": {
+      "texto": "Contratação temporária de servidores",
+      "evidencia": [
+        "F2",
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Impacto eleitoral e clientelismo",
+      "evidencia": [
+        "F3",
+        "F9",
+        "F10"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F5",
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Contratação temporária de servidores\",\n    \"evidencia\": [\n      \"F2\",\n      \"F3\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Impacto eleitoral e clientelismo\",\n    \"evidencia\": [\n      \"F3\",\n      \"F9\",\n      \"F10\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F5\",\n        \"F6\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D050",
+    "tematica_1": {
+      "texto": "Escolha de segunda graduação em Psicologia",
+      "evidencia": [
+        "F5"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Territorialidade e existência na decisão profissional",
+      "evidencia": [
+        "F5",
+        "F15"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo observacional",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Corte transversal",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F10"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Escolha de segunda graduação em Psicologia\",\n    \"evidencia\": [\n    \"F5\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Territorialidade e existência na decisão profissional\",\n    \"evidencia\": [\n    \"F5\",\n    \"F15\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo observacional\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Corte transversal\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F10\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D051",
+    "tematica_1": {
+      "texto": "Transtornos do neurodesenvolvimento e distúrbios alimentares",
+      "evidencia": [
+        "F1"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Corpo, território e alimentação infantil",
+      "evidencia": [
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem mista",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Estudo de caso-controle",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Transtornos do neurodesenvolvimento e distúrbios alimentares\",\n    \"evidencia\": [\n    \"F1\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Corpo, território e alimentação infantil\",\n    \"evidencia\": [\n    \"F8\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem mista\",\n      \"evidencia\": [\n        \"F2\"\n      ]\n    },\n    {\n      \"texto\": \"Estudo de caso-controle\",\n      \"evidencia\": [\n      \"F2\"\n    ]\n},\n    {\n      \"texto\": \"Entrevista\",\n      \"evidencia\": [\n      \"F2\"\n    ]\n},\n    {\n      \"texto\": \"Questionário\",\n      \"evidencia\": [\n      \"F9\"\n    ]\n}\n]\n}"
+  },
+  {
+    "dissertacao_id": "D052",
+    "tematica_1": {
+      "texto": "Territorialidades juvenis",
+      "evidencia": [
+        "F1",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Medidas socioeducativas em meio aberto",
+      "evidencia": [
+        "F1",
+        "F5",
+        "F6"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualiquantitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista narrativa",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Territorialidades juvenis\", \"evidencia\": [\"F1\", \"F8\"]}, \"tematica_2\": {\"texto\": \"Medidas socioeducativas em meio aberto\", \"evidencia\": [\"F1\", \"F5\", \"F6\"]}, \"metodologias\": [{\"texto\": \"Abordagem qualiquantitativa\", \"evidencia\": [\"F5\"]}, {\"texto\": \"Pesquisa documental\", \"evidencia\": [\"F5\"]}, {\"texto\": \"Entrevista narrativa\", \"evidencia\": [\"F6\"]}]}"
+  },
+  {
+    "dissertacao_id": "D053",
+    "tematica_1": {
+      "texto": "Viabilidade de mosaico de unidades de conservação",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Gestão integrada do território e proteção da biodiversidade",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa documental",
+        "evidencia": [
+          "F3",
+          "F8"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Viabilidade de mosaico de unidades de conservação\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Gestão integrada do território e proteção da biodiversidade\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F3\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa documental\",\n      \"evidencia\": [\n        \"F3\",\n        \"F8\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D054",
+    "tematica_1": {
+      "texto": "Desenvolvimento regional e estagnação econômica",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Fluxos migratórios e esvaziamento populacional",
+      "evidencia": [
+        "F3"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Dados secundários",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Desenvolvimento regional e estagnação econômica\",\n    \"evidencia\": [\n      \"F2\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Fluxos migratórios e esvaziamento populacional\",\n    \"evidencia\": [\n      \"F3\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Dados secundários\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D055",
+    "tematica_1": {
+      "texto": "Justiça ambiental e mineração",
+      "evidencia": [
+        "F3",
+        "F7"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Impactos socioambientais da atividade minerária",
+      "evidencia": [
+        "F5",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa bibliográfica",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise documental",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Justiça ambiental e mineração\",\n    \"evidencia\": [\n    \"F3\",\n    \"F7\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Impactos socioambientais da atividade minerária\",\n    \"evidencia\": [\n    \"F5\",\n    \"F8\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n      \"F2\"\n    ]\n    },\n    {\n      \"texto\": \"Pesquisa bibliográfica\",\n      \"evidencia\": [\n      \"F3\"\n    ]\n    },\n    {\n      \"texto\": \"Análise documental\",\n      \"evidencia\": [\n      \"F6\"\n    ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D056",
+    "tematica_1": {
+      "texto": "Saúde das mulheres migrantes retornadas",
+      "evidencia": [
+        "F1",
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Determinantes sociais de saúde e reterritorialização",
+      "evidencia": [
+        "F2",
+        "F8"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa exploratória-descritiva",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Saúde das mulheres migrantes retornadas\",\n    \"evidencia\": [\n    \"F1\",\n    \"F2\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Determinantes sociais de saúde e reterritorialização\",\n    \"evidencia\": [\n    \"F2\",\n    \"F8\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa exploratória-descritiva\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F4\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D057",
+    "tematica_1": {
+      "texto": "Judicialização da saúde",
+      "evidencia": [
+        "F1",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Percepção de gestores de saúde",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem qualitativa",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F6"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F7"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Judicialização da saúde\",\n    \"evidencia\": [\n      \"F1\",\n      \"F4\"\n    ]\n  },\n  \"tematica_2\": {\n    \"texto\": \"Percepção de gestores de saúde\",\n    \"evidencia\": [\n      \"F4\"\n    ]\n  },\n  \"metodologias\": [\n    {\n      \"texto\": \"Abordagem qualitativa\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F6\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F7\"\n      ]\n    }\n  ]\n}"
+  },
+  {
+    "dissertacao_id": "D058",
+    "tematica_1": {
+      "texto": "Assédio no trabalho em saúde",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Atenção primária à saúde",
+      "evidencia": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Abordagem mista",
+        "evidencia": [
+          "F2"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa quantitativa",
+        "evidencia": [
+          "F2",
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa qualitativa",
+        "evidencia": [
+          "F2",
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista",
+        "evidencia": [
+          "F3",
+          "F4"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Plataforma UniSurvey",
+        "evidencia": [
+          "F3"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F4"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\"tematica_1\": {\"texto\": \"Assédio no trabalho em saúde\", \"evidencia\": [\"F1\", \"F2\", \"F3\", \"F4\"]}, \"tematica_2\": {\"texto\": \"Atenção primária à saúde\", \"evidencia\": [\"F1\", \"F2\", \"F3\", \"F4\"]}, \"metodologias\": [{\"texto\": \"Abordagem mista\", \"evidencia\": [\"F2\"]}, {\"texto\": \"Pesquisa quantitativa\", \"evidencia\": [\"F2\", \"F3\"]}, {\"texto\": \"Pesquisa qualitativa\", \"evidencia\": [\"F2\", \"F4\"]}, {\"texto\": \"Entrevista\", \"evidencia\": [\"F3\", \"F4\"]}, {\"texto\": \"Plataforma UniSurvey\", \"evidencia\": [\"F3\"]}, {\"texto\": \"Análise de conteúdo\", \"evidencia\": [\"F4\"]}]}"
+  },
+  {
+    "dissertacao_id": "D059",
+    "tematica_1": {
+      "texto": "Ginecologia estética e regenerativa",
+      "evidencia": [
+        "F2"
+      ],
+      "status": "ok"
+    },
+    "tematica_2": {
+      "texto": "Percepções de ginecologistas sobre estética íntima",
+      "evidencia": [
+        "F4"
+      ],
+      "status": "ok"
+    },
+    "metodologias": [
+      {
+        "texto": "Estudo observacional",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Pesquisa descritiva",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Corte transversal",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Abordagem mista",
+        "evidencia": [
+          "F5"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Questionário estruturado",
+        "evidencia": [
+          "F8"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Entrevista semiestruturada",
+        "evidencia": [
+          "F9"
+        ],
+        "status": "ok"
+      },
+      {
+        "texto": "Análise de conteúdo",
+        "evidencia": [
+          "F14"
+        ],
+        "status": "ok"
+      }
+    ],
+    "modelo": "qwen3.5:9b-q4_K_M",
+    "versao_prompt": "v3",
+    "tecnica": "denso",
+    "saida_bruta": "{\n  \"tematica_1\": {\n    \"texto\": \"Ginecologia estética e regenerativa\",\n    \"evidencia\": [\n    \"F2\"\n  ]\n},\n  \"tematica_2\": {\n    \"texto\": \"Percepções de ginecologistas sobre estética íntima\",\n    \"evidencia\": [\n    \"F4\"\n  ]\n},\n  \"metodologias\": [\n    {\n      \"texto\": \"Estudo observacional\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Pesquisa descritiva\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Corte transversal\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Abordagem mista\",\n      \"evidencia\": [\n        \"F5\"\n      ]\n    },\n    {\n      \"texto\": \"Questionário estruturado\",\n      \"evidencia\": [\n        \"F8\"\n      ]\n    },\n    {\n      \"texto\": \"Entrevista semiestruturada\",\n      \"evidencia\": [\n        \"F9\"\n      ]\n    },\n    {\n      \"texto\": \"Análise de conteúdo\",\n      \"evidencia\": [\n        \"F14\"\n      ]\n    }\n  ]\n}"
+  }
+]

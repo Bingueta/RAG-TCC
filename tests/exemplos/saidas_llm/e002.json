@@ -1,0 +1,34 @@
+{
+  "tematica_1": {
+    "texto": "Uso de telas por estudantes do ensino médio",
+    "evidencia": [
+      "F1"
+    ]
+  },
+  "tematica_2": {
+    "texto": "Tempo de tela fora da escola",
+    "evidencia": [
+      "F4"
+    ]
+  },
+  "metodologias": [
+    {
+      "texto": "Questionário",
+      "evidencia": [
+        "F2"
+      ]
+    },
+    {
+      "texto": "Estatística descritiva",
+      "evidencia": [
+        "F3"
+      ]
+    },
+    {
+      "texto": "Estatística inferencial",
+      "evidencia": [
+        "F3"
+      ]
+    }
+  ]
+}

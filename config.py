@@ -42,3 +42,70 @@ TOP_K_FRASES = 5
 TOP_K_VERBETES = 5
 # Constante do Reciprocal Rank Fusion: valor padrão da literatura, usado no projeto de referência.
 RRF_K = 60
+
+# ===== PARTE 3: geração com LLM e validação =====
+# Ollama rodando na própria máquina (endereço padrão da instalação). Nada sai para a internet.
+OLLAMA_HOST = "http://127.0.0.1:11434"
+# Os 3 modelos comparados (decisão do grupo: um fraco, um forte e um mais potente). Mesma
+# família e mesma compactação (q4_K_M), para que a diferença medida seja o tamanho.
+# Máquina: RTX 3060 Ti (8 GB de VRAM), 16 GB de RAM. Medido na calibração (20 de 2022):
+# - família: o qwen3.5:9b passou o qwen2.5:7b (F1 das metodologias +0,16) e empatou com o
+#   qwen3:8b, com temáticas e formato melhores;
+# - escada: o 2b é claramente o fraco (F1 0,40 contra 0,80 do 4b, prompt v1); 4b e 9b
+#   empatavam em qualidade no prompt v2; com o v3, o 9b passa à frente (F1 médio nas três
+#   técnicas: 2b 0,62, 4b 0,79, 9b 0,83);
+# - tempo por dissertação: 2b ~1,6 s, 4b ~3,5 s, 9b ~5 s (o 9b fica ~88% na VRAM com o
+#   Windows e outros programas abertos).
+MODELOS_LLM = {
+    "fraco": "qwen3.5:2b-q4_K_M",
+    "forte": "qwen3.5:4b-q4_K_M",
+    "potente": "qwen3.5:9b-q4_K_M",
+}
+# Versão do prompt: o arquivo src/prompts/<versão>.txt. Cada ajuste vira um arquivo novo
+# (v1, v2…), para que toda execução registre exatamente com que texto rodou.
+# FIXADA no v3, o último ajuste, pelo critério escrito antes da rodada (PROGRESSO.md): na
+# calibração, o F1 médio das 9 combinações foi de 0,743 (v2) para 0,748 (v3), sem nenhuma
+# trava disparada. É um empate dentro do ruído de 20 dissertações: o v3 melhorou o 9b
+# (+0,08 no hibrido) e não ajudou o 4b. Daqui em diante não muda: as 59 rodam com o v3.
+VERSAO_PROMPT = "v3"
+# Temperatura 0 e seed fixa: a mesma dissertação gera sempre a mesma resposta na mesma máquina.
+TEMPERATURA = 0
+SEED = 42
+# Janela de contexto. O padrão do Ollama (2048) estourava no projeto de referência com 5
+# passagens; aqui o prompt com o maior resumo da calibração (~3.400 caracteres) + verbetes
+# fica bem abaixo de 8192.
+NUM_CTX = 8192
+# Os Qwen3/3.5 "pensam" antes de responder por padrão. Desligado: o pensamento sai fora do
+# JSON, deixa cada resposta várias vezes mais lenta e não é o que os outros modelos fazem.
+PENSAR = False
+# Quantas vezes pedir a resposta. A segunda tentativa manda o erro de volta ao modelo (com
+# temperatura 0, repetir o mesmo pedido daria a mesma resposta quebrada).
+TENTATIVAS = 2
+# Tempo máximo de uma chamada ao modelo, em segundos. O 9b com parte na RAM é o mais lento.
+TEMPO_LIMITE = 300
+
+# ===== PARTE 4: execução =====
+# Corpus que o pipeline roda quando não se passa --corpus. Começou em "calibracao" (decisão
+# C3: nada roda nas 59 antes de o prompt e a base estarem fixos) e passou a "corpus" em
+# 07/10/2026, depois de fixados o prompt v3 e a base (tag v1-fixado no git).
+CORPUS_ATIVO = "corpus"
+# Modelo e técnica de um "python -m src.pipeline" sem argumentos. O 9b com o v3 teve o melhor
+# F1 nas três técnicas da calibração; entre as técnicas, a diferença ficou dentro do ruído, e
+# o hibrido é a proposta do TCC (busca por sentido + palavra exata). --todos roda tudo.
+MODELO_PADRAO = MODELOS_LLM["potente"]
+TECNICA_PADRAO = "hibrido"
+
+# ===== PARTE 5: avaliação =====
+# Execuções a avaliar: uma pasta por combinação de modelo, técnica e versão do prompt.
+PASTA_SUGESTOES_CALIBRACAO = RAIZ / "data" / "sugestoes" / "calibracao"
+# Relatórios da avaliação (fora do git: trazem trechos das referências e, depois, das
+# respostas humanas).
+PASTA_AVALIACAO = RAIZ / "data" / "avaliacao"
+# Referência escrita por IA, às cegas, para ajustar o prompt na calibração. Fica fora do
+# git e NÃO é o gabarito do TCC: esse é o do grupo, no caminho de baixo.
+CAMINHO_REFERENCIA_IA_CALIBRACAO = PASTA_AVALIACAO / "referencia_ia_calibracao.json"
+CAMINHO_GABARITO_CALIBRACAO = RAIZ / "data" / "calibracao" / "gabarito_calibracao.json"
+# Incerteza com só 20 dissertações: IC de 95% por bootstrap. 5000 reamostras deixam os
+# percentis estáveis na segunda casa; a semente fixa faz o intervalo sair igual em toda rodada.
+BOOTSTRAP_REPETICOES = 5000
+BOOTSTRAP_SEMENTE = 42

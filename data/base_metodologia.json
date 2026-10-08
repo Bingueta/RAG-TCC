@@ -84,7 +84,7 @@
     "termo": "Estudo de caso",
     "eixo": "procedimento",
     "definicao": "Investigação aprofundada de um ou de poucos casos (uma instituição, um grupo, um município, um programa) em seu contexto real.",
-    "sinais": ["o caso de", "em uma escola de", "na cidade de", "no município de", "em uma instituição", "caso estudado"],
+    "sinais": ["o caso de", "caso estudado"],
     "sinonimos": ["estudo de caso único", "estudo de casos múltiplos", "estudo de casos"]
   },
   {

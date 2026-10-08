@@ -1,0 +1,54 @@
+Você ajuda numa análise de conteúdo de resumos de dissertações acadêmicas. Leia o resumo abaixo e identifique as DUAS temáticas principais e TODAS as metodologias da pesquisa.
+
+TEMÁTICAS
+
+1. Escreva exatamente duas, as duas mais centrais do trabalho, mesmo que o resumo trate de uma só ou de muitas. A temática 1 é a mais central, e as duas são diferentes entre si.
+
+2. Cada temática é o nome de um assunto, curto (de 2 a 8 palavras), como num catálogo de biblioteca: sem verbo, sem nome de lugar, instituição, período ou número.
+
+METODOLOGIAS
+
+3. Liste todas as que o resumo mostra, considerando: natureza (básica ou aplicada), objetivos (exploratória, descritiva, explicativa), abordagem (qualitativa, quantitativa, mista), procedimento (estudo de caso, pesquisa documental, pesquisa-ação…), técnicas e instrumentos de coleta (entrevista, questionário, observação…) e técnicas de análise.
+
+4. Uma metodologia por item, com um nome técnico curto (de 1 a 5 palavras). Nunca junte duas num item: "pesquisa exploratória e documental, de abordagem mista" vira três itens ("Pesquisa exploratória", "Pesquisa documental", "Abordagem mista"). Não copie a frase do resumo e não acrescente software, lugar, data ou número.
+   - Escreva o nome técnico, não a descrição do que foi feito: "exame de prontuários médicos" é "Pesquisa documental", e não "Análise de prontuários".
+   - A abordagem se escreve sempre "Abordagem qualitativa", "Abordagem quantitativa" ou "Abordagem mista" (e não "Análise quantitativa").
+
+5. O resumo raramente diz "a metodologia é…": ele descreve o que foi feito. Dê o nome técnico ao que foi descrito quando a descrição não deixa dúvida. Exemplo: "foram aplicados formulários com perguntas fechadas a 200 moradores" → "Questionário". Se houver dúvida, não inclua.
+
+6. Use o nome que o resumo sustenta, nem mais nem menos específico:
+   - o tipo da entrevista (estruturada, semiestruturada, aberta) é só o que o resumo diz; se ele diz apenas "entrevistas", escreva "Entrevista";
+   - se o resumo nomeia a técnica, o teste ou o instrumento usado, escreva esse nome, e não um genérico ("Teste qui-quadrado", e não "Análise estatística");
+   - a técnica de análise é a que o resumo nomeia; não escreva "Análise de conteúdo" se o resumo não falar nela.
+
+7. Procedimento (estudo de caso, pesquisa-ação, etnografia, pesquisa experimental…) só entra se o resumo usa o nome ou descreve o procedimento sem ambiguidade. Estudar um lugar, uma instituição ou um grupo concreto NÃO faz, sozinho, um estudo de caso.
+
+8. Fonte dos dados, que é fácil de esquecer:
+   - se o material analisado são documentos (leis, relatórios, atas, processos, prontuários, registros oficiais, jornais, revistas) → "Pesquisa documental";
+   - se são dados já coletados por outros (bases públicas, censos, sistemas de informação, plataformas e bancos de dados de outras instituições, registros administrativos) → "Dados secundários";
+   - se são livros, artigos, teses e dissertações → "Pesquisa bibliográfica", mas só quando o resumo diz que fez uma revisão ou um levantamento bibliográfico. Citar autores ou um referencial teórico não basta.
+
+9. Não são metodologia: a postura ou o campo do estudo (interdisciplinar, crítico, comparado), o objeto estudado e o referencial teórico. Não os liste.
+
+10. Os verbetes de referência (quando houver) ajudam a escolher o nome técnico, mas NÃO são uma lista fechada. Instrumentos, técnicas e abordagens que o resumo nomeia entram mesmo que não estejam nos verbetes, inclusive os que levam nome de autor ("pesquisa-ação segundo Thiollent", "cartografia", "história oral"). E um verbete só entra se o resumo der evidência.
+
+11. Se o resumo não diz nenhum método, responda uma única metodologia com o texto "Não informado no resumo" e evidência vazia.
+
+EVIDÊNCIA E FORMATO
+
+12. Cada temática e cada metodologia vem com os códigos das frases que a justificam. Escreva só o código (por exemplo "F3"), sem copiar o texto da frase. Use só códigos que aparecem nas frases abaixo.
+
+13. Não invente: nada de método, instrumento, número ou local que o resumo não mostre.
+
+14. Responda em português, só com o JSON pedido, sem comentários.
+
+DISSERTAÇÃO
+
+Título: ${titulo}
+Palavras-chave: ${palavras_chave}
+
+${frases}
+${verbetes}${titulos}
+FORMATO DA RESPOSTA
+
+{"tematica_1": {"texto": "...", "evidencia": ["F.."]}, "tematica_2": {"texto": "...", "evidencia": ["F.."]}, "metodologias": [{"texto": "...", "evidencia": ["F.."]}]}

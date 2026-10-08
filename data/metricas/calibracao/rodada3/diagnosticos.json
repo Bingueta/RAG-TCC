@@ -1,0 +1,262 @@
+{
+  "execucoes": [
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v2",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.4166163003663004,
+      "base_inventados": 6,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 9,
+      "fonte_inventados": 1,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 17,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-2b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.4236309523809524,
+      "base_inventados": 9,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 9,
+      "fonte_inventados": 0,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 12,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v2",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7448015873015873,
+      "base_inventados": 7,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 14,
+      "fonte_inventados": 3,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 22,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-4b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7381623931623932,
+      "base_inventados": 7,
+      "estudo_de_caso_certo": 1,
+      "fonte_achados": 13,
+      "fonte_inventados": 4,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 19,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v2",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.6511965811965812,
+      "base_inventados": 9,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 2,
+      "fonte_achados": 12,
+      "fonte_inventados": 3,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 12,
+      "fora_da_base_obrigatorios": 27
+    },
+    {
+      "execucao": "qwen3.5-9b-q4_K_M__hibrido__v2__busca-corrigida",
+      "tecnica": "hibrido",
+      "dissertacoes": 20,
+      "f1_exato": 0.7226905634048492,
+      "base_inventados": 9,
+      "estudo_de_caso_certo": 1,
+      "estudo_de_caso_inventado": 1,
+      "fonte_achados": 12,
+      "fonte_inventados": 5,
+      "fonte_obrigatorios": 19,
+      "fora_da_base_achados": 18,
+      "fora_da_base_obrigatorios": 27
+    }
+  ],
+  "verbetes_oferecidos": {
+    "denso": {
+      "estudo_de_caso_em": 1,
+      "entrevista_semiestruturada_em": 0,
+      "mais_oferecidos": [
+        [
+          "abordagem_qualitativa",
+          19
+        ],
+        [
+          "pesquisa_bibliografica",
+          17
+        ],
+        [
+          "abordagem_quantitativa",
+          15
+        ],
+        [
+          "analise_de_conteudo",
+          15
+        ],
+        [
+          "dados_secundarios",
+          11
+        ],
+        [
+          "pesquisa_exploratoria",
+          7
+        ],
+        [
+          "pesquisa_descritiva",
+          4
+        ],
+        [
+          "pesquisa_acao",
+          4
+        ],
+        [
+          "pesquisa_explicativa",
+          2
+        ],
+        [
+          "questionario",
+          2
+        ]
+      ],
+      "dissertacoes": 20
+    },
+    "hibrido": {
+      "estudo_de_caso_em": 1,
+      "entrevista_semiestruturada_em": 8,
+      "mais_oferecidos": [
+        [
+          "abordagem_qualitativa",
+          17
+        ],
+        [
+          "analise_de_conteudo",
+          13
+        ],
+        [
+          "pesquisa_bibliografica",
+          11
+        ],
+        [
+          "pesquisa_descritiva",
+          8
+        ],
+        [
+          "entrevista_semiestruturada",
+          8
+        ],
+        [
+          "pesquisa_documental",
+          7
+        ],
+        [
+          "dados_secundarios",
+          6
+        ],
+        [
+          "abordagem_quantitativa",
+          6
+        ],
+        [
+          "questionario",
+          5
+        ],
+        [
+          "observacao",
+          3
+        ]
+      ],
+      "dissertacoes": 20
+    }
+  },
+  "pares": [
+    {
+      "depois": "qwen3.5-2b-q4_K_M__hibrido__v2__busca-corrigida",
+      "antes": "qwen3.5-2b-q4_K_M__hibrido__v2",
+      "f1": {
+        "n": 20,
+        "media": -0.051035000000000004,
+        "ic95": [
+          -0.131155,
+          0.012929999999999997
+        ],
+        "ganhou": 2,
+        "perdeu": 4,
+        "empatou": 14
+      },
+      "similaridade_tematicas": {
+        "n": 20,
+        "media": -0.0007150000000000101,
+        "ic95": [
+          -0.003010000000000007,
+          0.0012099999999999722
+        ],
+        "ganhou": 7,
+        "perdeu": 6,
+        "empatou": 7
+      }
+    },
+    {
+      "depois": "qwen3.5-4b-q4_K_M__hibrido__v2__busca-corrigida",
+      "antes": "qwen3.5-4b-q4_K_M__hibrido__v2",
+      "f1": {
+        "n": 20,
+        "media": -0.031635,
+        "ic95": [
+          -0.13121999999999998,
+          0.044649999999999995
+        ],
+        "ganhou": 3,
+        "perdeu": 2,
+        "empatou": 15
+      },
+      "similaridade_tematicas": {
+        "n": 20,
+        "media": -0.0010050000000000003,
+        "ic95": [
+          -0.003955000000000003,
+          0.0009400000000000019
+        ],
+        "ganhou": 1,
+        "perdeu": 2,
+        "empatou": 17
+      }
+    },
+    {
+      "depois": "qwen3.5-9b-q4_K_M__hibrido__v2__busca-corrigida",
+      "antes": "qwen3.5-9b-q4_K_M__hibrido__v2",
+      "f1": {
+        "n": 20,
+        "media": 0.054825,
+        "ic95": [
+          0.0,
+          0.14606999999999998
+        ],
+        "ganhou": 3,
+        "perdeu": 0,
+        "empatou": 17
+      },
+      "similaridade_tematicas": {
+        "n": 20,
+        "media": -0.001820000000000005,
+        "ic95": [
+          -0.005020000000000013,
+          0.00020000000000000017
+        ],
+        "ganhou": 1,
+        "perdeu": 2,
+        "empatou": 17
+      }
+    }
+  ]
+}

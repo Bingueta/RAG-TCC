@@ -1,0 +1,40 @@
+{
+  "tematica_1": {
+    "texto": "Mulheres agricultoras no cooperativismo rural",
+    "evidencia": [
+      "F1"
+    ]
+  },
+  "tematica_2": {
+    "texto": "Trabalho coletivo e território",
+    "evidencia": [
+      "F2"
+    ]
+  },
+  "metodologias": [
+    {
+      "texto": "Pesquisa qualitativa",
+      "evidencia": [
+        "F3"
+      ]
+    },
+    {
+      "texto": "Estudo de caso",
+      "evidencia": [
+        "F3"
+      ]
+    },
+    {
+      "texto": "Entrevista semiestruturada",
+      "evidencia": [
+        "F4"
+      ]
+    },
+    {
+      "texto": "Análise de conteúdo",
+      "evidencia": [
+        "F5"
+      ]
+    }
+  ]
+}
