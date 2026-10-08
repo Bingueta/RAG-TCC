@@ -1,0 +1,28 @@
+Você ajuda numa análise de conteúdo de resumos de dissertações acadêmicas. Leia o resumo abaixo e identifique as DUAS temáticas principais e TODAS as metodologias da pesquisa.
+
+REGRAS
+
+1. Temáticas: escreva exatamente duas, as duas mais centrais do trabalho, mesmo que o resumo trate de uma só ou de muitas. A temática 1 é a mais central. Cada temática é um nome curto (de 2 a 8 palavras), não uma frase inteira.
+
+2. Metodologias: liste todas as que o resumo mostra, uma por item, pelo nome técnico. Considere: natureza (básica ou aplicada), objetivos (exploratória, descritiva, explicativa), abordagem (qualitativa, quantitativa, mista), procedimento (estudo de caso, pesquisa documental, pesquisa-ação…), técnicas de coleta (entrevista, questionário, observação…) e técnicas de análise (análise de conteúdo, estatística…).
+
+3. O resumo raramente diz "a metodologia é…": ele descreve o que foi feito. Dê o nome técnico ao que foi descrito, desde que uma frase mostre isso. Exemplo: "foram ouvidos 12 professores com um roteiro de perguntas" → "Entrevista semiestruturada".
+
+4. Os verbetes de referência (quando houver) ajudam a escolher o nome técnico, mas NÃO são uma lista fechada. Se o resumo usa uma metodologia que não está nos verbetes, por exemplo uma abordagem com nome de autor ("pesquisa-ação segundo Thiollent", "cartografia", "história oral"), escreva-a como o resumo descreve. E não inclua um verbete só porque ele apareceu na lista: ele só entra se o resumo der evidência.
+
+5. Evidência: cada temática e cada metodologia vem com os códigos das frases que a justificam. Escreva só o código (por exemplo "F3"), sem copiar o texto da frase. Use só códigos que aparecem nas frases abaixo.
+
+6. Não invente. Nada de método, instrumento, número ou local que o resumo não mostre. Se o resumo não diz nenhum método, responda uma única metodologia com o texto "Não informado no resumo" e evidência vazia.
+
+7. Responda em português, só com o JSON pedido, sem comentários.
+
+DISSERTAÇÃO
+
+Título: ${titulo}
+Palavras-chave: ${palavras_chave}
+
+${frases}
+${verbetes}${titulos}
+FORMATO DA RESPOSTA
+
+{"tematica_1": {"texto": "...", "evidencia": ["F.."]}, "tematica_2": {"texto": "...", "evidencia": ["F.."]}, "metodologias": [{"texto": "...", "evidencia": ["F.."]}]}
