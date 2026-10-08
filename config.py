@@ -42,3 +42,33 @@ TOP_K_FRASES = 5
 TOP_K_VERBETES = 5
 # Constante do Reciprocal Rank Fusion: valor padrão da literatura, usado no projeto de referência.
 RRF_K = 60
+
+# ===== PARTE 3: geração com LLM e validação =====
+# Ollama rodando na própria máquina (endereço padrão da instalação). Nada sai para a internet.
+OLLAMA_HOST = "http://127.0.0.1:11434"
+# Os 3 modelos comparados (decisão do grupo: um fraco, um forte e um mais potente). Mesma
+# família e mesma compactação (q4_K_M), para que a diferença medida seja o tamanho.
+# Máquina: RTX 3060 Ti (8 GB de VRAM), 16 GB de RAM. A CONFIRMAR no teste da etapa 1.
+MODELOS_LLM = {
+    "fraco": "qwen3.5:2b-q4_K_M",
+    "forte": "qwen3.5:4b-q4_K_M",
+    "potente": "qwen3.5:9b-q4_K_M",
+}
+# Versão do prompt: o arquivo src/prompts/<versão>.txt. Cada ajuste vira um arquivo novo
+# (v1, v2…), para que toda execução registre exatamente com que texto rodou.
+VERSAO_PROMPT = "v1"
+# Temperatura 0 e seed fixa: a mesma dissertação gera sempre a mesma resposta na mesma máquina.
+TEMPERATURA = 0
+SEED = 42
+# Janela de contexto. O padrão do Ollama (2048) estourava no projeto de referência com 5
+# passagens; aqui o prompt com o maior resumo da calibração (~3.400 caracteres) + verbetes
+# fica bem abaixo de 8192.
+NUM_CTX = 8192
+# Os Qwen3/3.5 "pensam" antes de responder por padrão. Desligado: o pensamento sai fora do
+# JSON, deixa cada resposta várias vezes mais lenta e não é o que os outros modelos fazem.
+PENSAR = False
+# Quantas vezes pedir a resposta. A segunda tentativa manda o erro de volta ao modelo (com
+# temperatura 0, repetir o mesmo pedido daria a mesma resposta quebrada).
+TENTATIVAS = 2
+# Tempo máximo de uma chamada ao modelo, em segundos. O 9b com parte na RAM é o mais lento.
+TEMPO_LIMITE = 300

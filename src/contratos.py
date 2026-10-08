@@ -4,7 +4,7 @@ Definidos na seção 3.1 de docs/divisao-tarefas.md. Ninguém altera este arquiv
 qualquer mudança passa por pull request aprovado pelas partes afetadas e é registrada
 como decisão em docs/PROGRESSO.md.
 
-Por enquanto existem os tipos das Partes 1 e 2. Os das outras partes entram quando elas
+Por enquanto existem os tipos das Partes 1, 2 e 3. Os das outras partes entram quando elas
 começarem.
 """
 
@@ -61,3 +61,24 @@ class Contexto:
     frases_metodologia: list[TrechoRecuperado]
     verbetes: list[Verbete]
     titulos_parecidos: list[str] = field(default_factory=list)
+
+
+# ---------- Parte 3 entrega ----------
+
+@dataclass
+class Campo:
+    texto: str                    # "Saúde do idoso"
+    evidencia: list[str]          # ["F2"]
+    status: str = "ok"            # ok, sem_evidencia, nao_informado ou erro
+
+
+@dataclass
+class RespostaIA:
+    dissertacao_id: str
+    tematica_1: Campo
+    tematica_2: Campo
+    metodologias: list[Campo]     # uma metodologia por Campo, cada uma com sua evidência
+    modelo: str                   # "qwen2.5:7b-instruct"
+    versao_prompt: str            # "v1"
+    tecnica: str                  # igual a Contexto.tecnica
+    saida_bruta: str = ""         # texto original do modelo, para investigar erros

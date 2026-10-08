@@ -16,5 +16,9 @@ numpy==2.4.6
 # Busca por palavra exata (BM25), usada na técnica "hibrido".
 rank-bm25==0.2.2
 
+# ===== PARTE 3: geração com LLM =====
+# Cliente Python do Ollama (o Ollama em si é um programa à parte: https://ollama.com).
+ollama==0.6.3
+
 # ===== Testes =====
 pytest==9.1.1
